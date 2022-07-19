@@ -19,5 +19,7 @@ replace their original locations:
 <li> File 3: https://www.bbvaopenmind.com/en/articles/artificial-intelligence-and-the-arts-toward-computational-creativity/
 <li> etc.
 </ul>
+
 All copyrights and related rights on the content remain with their original owners.
+
 All copyright on the typographic and layout choices are 2022 © Manu Srivastava and Juan Pablo
