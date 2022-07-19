@@ -14,10 +14,10 @@ as found using different CSS developed by us and we do not make any commerical u
 Their publication here is not intended to be an alternative or
 replace their original locations:
 <ul>
-<li>• File 1: https://arxiv.org/abs/2102.09109
-<li>• File 2: https://thegradient.pub/the-past-present-and-future-of-ai-art/
-<li>• File 3: https://www.bbvaopenmind.com/en/articles/artificial-intelligence-and-the-arts-toward-computational-creativity/
-<li>• etc.
+<li> File 1: https://arxiv.org/abs/2102.09109
+<li> File 2: https://thegradient.pub/the-past-present-and-future-of-ai-art/
+<li> File 3: https://www.bbvaopenmind.com/en/articles/artificial-intelligence-and-the-arts-toward-computational-creativity/
+<li> etc.
 </ul>
 All copyrights and related rights on the content remain with their original owners.
 All copyright on the typographic and layout choices are 2022 © Manu Srivastava and Juan Pablo
