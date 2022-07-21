@@ -16,3 +16,9 @@
        font-weight: bold;
          font-size: 15px;
          color: #0a0a0a;}
+    /*Internal CSS for tables*/ 
+    table, th {border-bottom:1px solid black;}
+     /*Internal CSS for images*/ 
+  	img {max-width: 90%;
+  	      height: auto;}
+
