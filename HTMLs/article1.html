@@ -7,6 +7,12 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link href="CSS/testCSS.css" rel="stylesheet" type="text/css" media="screen">
+
+	<style >
+		/*Internal CSS for tables*/ 
+         table, th {
+  		border-bottom:1px solid black;}
+	</style>
 </head>
 
 <span id ="title" class="h1">UNDERSTANDING AND CREATING ART WITH AI: REVIEW AND OUTLOOK</span>
@@ -31,113 +37,162 @@
 
 <p>Large-scale digitization efforts which took place in the last decades led to a considerable increase of online available art collections. Those art collections enable us to easily explore and enjoy artworks that are located in various museums or art galleries throughout the world. Apart from enabling us to visually inspect various artworks, the availability of large collections of digitized art images triggers new interdisciplinary research perspectives. The physical painting and its digitized counterpart exist in different material modes, yet they encode and communicate the same complex structure of information. Just as the properties of the canvas and the paint often include contextual information that can be of great interest to art historians, the numerical representation of a digitized artwork also includes information of which the potential is not yet fully exploited. The main goal of digitization projects is usually oriented towards building digital repositories to enable easier ways of accessing and exploring collections. Although this is often considered the end goal of many digitization projects, it is important to emphasize that the existence of these collections is only the beginning and necessary prerequisite for applying advanced computational methods and opening new research perspectives. Figure 1 illustrates the process from digitization to quantitative analysis, knowledge discovery and visualization using computational methods. Research results obtained from the final phase of this process are often used to enhance the functionalities of repositories and online collections by adding advanced ways of content exploration.</p>
 
+<img src="Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1a.jpeg" alt="digital art">
+
 <span id ="subtitles" class="subtitle">Figure 1: Illustration of the process from digitization to advanced computational analysis.</span>
 
 <p>In the context of digitized art analysis, computational methods are generally used either to adopt a distant viewing or a close reading approach [80]. Close reading implies focusing on specific aspects of one particular work or artistic oeuvre, usually addressing problems such as visual stylometry and computational artist authentication [57, 100, 67, 2]. Most of the studies dedicated to those topics rely on the availability of high-quality digital reproductions of the analyzed artworks and mostly focus on brushstrokes and the texture properties. Distant viewing generally involves analyzing large collections by concentrating on particular features or similarity relations and producing corresponding statistical visualizations. The majority of recent studies concerned with computational analysis of art is exploiting the availability of large digitized collections that include images of various quality, and therefore adopt a distant viewing approach. In the last few years there has been a growing number of research collaborations addressing the application of computer vision and deep learning methods in the domain of digital art history. The most commonly addressed tasks include the problem of automatic classification, object detection, content based and multimodal retrieval, quantitative analysis of different features and concepts, computational aesthetics, etc.</p>
 
 <p>The availability of large-scale and well-annotated datasets is a necessary requirement for adopting deep learning models for various tasks. In recent years, many museums and galleries published digital online versions of their collections. Since it is difficult to list all the existing online art collections, this paper focuses only on those collections and datasets that have been most commonly used for computer vision and deep learning research in the last few years. Table 2 contains a list of the most well-known collections of primarily Western art that were often used as sources for creating different task-specific datasets. Also, it includes well-known and novel datasets that have been specifically developed for a particular research task.</p>
 
-<span id ="subtitles" class="subtitle">Table 1: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.	</span>
+<span id ="subtitles" class="subtitle">Table 1: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.	</span><br><br>
 
-<p>Dataset	Source	Number images	of	Task</p>
-
-<p>Painting-91	[74]</p>
-
-<p>4k		artist classification</p>
-
-<p>Pandora	[45]</p>
-
-<p>8k		style classification</p>
-
-<p>Web Gallery of Art	www.wga.hu</p>
-
-<p>40k		artist, style, period classification</p>
-
-<p>WikiArt	www.wikiart.org</p>
-
-<p>85k		artist, style, genre classification</p>
-
-<p>Rijksmuseum Challenge	[92]</p>
-
-<p>112k		artist, material, type classification</p>
-
-<p>Art500k	[87]</p>
-
-<p>550k		artist, genre, style, event, historical figure</p>
-
-<p>				retrieval</p>
-
-<p>OmniArt	[118]</p>
-
-<p>2M		artist, style, period, type, iconography,</p>
-
-<p>				color classification / object detection</p>
-
-<p>ArtDL	[94]</p>
-
-<p>42k		iconographic classification</p>
-
-<p>PRINTART	[15]</p>
-
-<p>1k		object/ pose retrieval</p>
-
-<p>Paintings	[31]</p>
-
-<p>8.6k		object retrieval</p>
-
-<p>Face Paintings	[29]</p>
-
-<p>14 k		face retrieval</p>
-
-<p>Iconart	[54]</p>
-
-<p>6k		iconographic object detection</p>
-
-<p>VisualLink	[108]</p>
-
-<p>38.5k		visual link retrieval</p>
-
-<p>Brueghel dataset	[111]</p>
-
-<p>1.6k		visual link retrieval</p>
-
-<p>IconClass AI Test Set	[99]</p>
-
-<p>87k		iconographic classification / multimodal</p>
-
-<p>				tasks</p>
-
-<p>SemArt	[48]</p>
-
-<p>21k		multimodal retrieval</p>
-
-<p>Artpedia	[116]</p>
-
-<p>3k		multimodal retrieval</p>
-
-<p>BibleVSA	[8]</p>
-
-<p>2.3k		multimodal retrieval</p>
-
-<p>AQUA	[49]</p>
-
-<p>21k		visual question answering</p>
-
-<p>ArtEmis	[3]</p>
-
-<p>81K		multimodal sentiment analysis</p>
-
-<p>WikiArt Emotions	[95]</p>
-
-<p>4.1k		sentiment analysis/ emotion classification</p>
-
-<p>MART	[128]</p>
-
-<p>500		sentiment analysis</p>
-
-<p>JenAesthetic	[6]</p>
-
-<p>1.6k		aesthetics quality assessment</p>
+<table style="width:100%">
+  <tr>
+    <th>Dataset</th>
+    <th>Source</th>
+    <th>Number of images</th>
+    <th>Task</th>
+  </tr>
+  <tr>
+    <td>Painting-91</td>
+    <td><[74]</td>
+    <td>4k</td>
+    <td>artist classification</td>
+  </tr>
+  <tr>
+    <td>Pandora</td>
+    <td>[45]</td>
+    <td>8k</td>
+    <td>style classification</td>
+  </tr>
+  <tr>
+    <td>Web Gallery of Art</td>
+    <td><a href="http://www.wga.hu/">www.wga.hu</a></td>
+    <td>40k</td>
+    <td>artist, style, periodclassification</td>
+  </tr>
+  <tr>
+    <td>WikiArt</td>
+    <td><a href="http://www.wikiart.org/">www.wikiart.org</a></td>
+    <td>85k</td>
+    <td>artist, style,genre classification</td>
+  </tr>
+  <tr>
+    <td>Rijksmuseum Challenge</td>
+    <td>[92]</td>
+    <td>112k</td>
+    <td>artist, material, typeclassification</td>
+  </tr>
+  <tr>
+    <td>Art500k</td>
+    <td>[87]</td>
+    <td>550k</td>
+    <td>   <br>artist, genre,   style, event, historical figure retrieval  </td>
+  </tr>
+  <tr>
+    <td>OmniArt</td>
+    <td>[118]</td>
+    <td>2M</td>
+    <td>   <br>artist, style,   period, type, iconography, color classification / object detection</td>
+  </tr>
+  <tr>
+    <td>ArtDL</td>
+    <td>[94]</td>
+    <td>42k</td>
+    <td>iconographic classification</td>
+  </tr>
+  <tr>
+    <td>PRINTART</td>
+    <td>[15]</td>
+    <td>1k</td>
+    <td>object/ pose retrieval</td>
+  </tr>
+  <tr>
+    <td>Paintings</td>
+    <td>[31]</td>
+    <td>8.6k</td>
+    <td>object retrieval</td>
+  </tr>
+  <tr>
+    <td>Face Paintings</td>
+    <td>[29]</td>
+    <td>14 k</td>
+    <td>face retrieval</td>
+  </tr>
+  <tr>
+    <td>Iconart</td>
+    <td>[54]</td>
+    <td>6k</td>
+    <td>iconographic objectdetection</td>
+  </tr>
+  <tr>
+    <td>VisualLink</td>
+    <td>[108]</td>
+    <td>38.5k</td>
+    <td>visual linkretrieval</td>
+  </tr>
+  <tr>
+    <td>Brueghel dataset</td>
+    <td>[111]</td>
+    <td>1.6k</td>
+    <td>visual linkretrieval</td>
+  </tr>
+  <tr>
+    <td>IconClass AI Test Set</td>
+    <td>[99]</td>
+    <td>87k</td>
+    <td>   <br>iconographic classification / multimodal tasks</td>
+  </tr>
+  <tr>
+    <td>SemArt</td>
+    <td>[48]</td>
+    <td>21k</td>
+    <td>multimodal retrieval</td>
+  </tr>
+  <tr>
+    <td>Artpedia</td>
+    <td>[116]</td>
+    <td>3k</td>
+    <td>multimodal retrieval</td>
+  </tr>
+  <tr>
+    <td>BibleVSA</td>
+    <td>[8]</td>
+    <td>2.3k</td>
+    <td>multimodal retrieval</td>
+  </tr>
+  <tr>
+    <td>AQUA</td>
+    <td>[49]</td>
+    <td>21k</td>
+    <td>visual question answering</td>
+  </tr>
+  <tr>
+    <td>ArtEmis</td>
+    <td>[3]</td>
+    <td>81K</td>
+    <td>multimodal sentiment analysis</td>
+  </tr>
+  <tr>
+    <td>WikiArt Emotions</td>
+    <td>[95]</td>
+    <td>4.1k</td>
+    <td>sentiment analysis/ emotion classification</td>
+  </tr>
+  <tr>
+    <td>MART</td>
+    <td>[128]</td>
+    <td>500</td>
+    <td>sentiment analysis</td>
+  </tr>
+  <tr>
+    <td>JenAesthetic</td>
+    <td>[6]</td>
+    <td>1.6k</td>
+    <td>aesthetics quality assessment</td>
+  </tr>
+</table>
 
 <span id ="subtitles" class="subtitle"> Table 2: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.</span>x
 
@@ -179,6 +234,8 @@
 
 <p>Several important technological advances achieved in the last few years supported the rising interest in AI Art. In the context of computer graphics and computer vision research, over the last decades many rendering and texture synthesis algorithms have been developed. Those algorithms were designed to modify images in various ways, including the application of an “artistic style” to the input image, e.g. painterly or sketched style [60, 64, 39, 55]. However, the use of deep neural networks for the purpose of stylizing photos and creating new images began rather recently and accelerated in the last five years. Figure 2 summarizes some of the most important technological milestones that influenced AI Art production. One of the first methods that gained significant attention was DeepDreams introduced by Mordvintsev et al. [96] in 2015. This method was initially designed to advance the interpretability of deep convolutional neural networks by visualizing patterns that maximize the activation of neurons. Because it produced a rather psychedelic and hallucinatory stylistic effect, the method later became a popular new form of digital art production.</p>
 
+<img src="Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1b.jpeg" alt="digital art process">
+
 <span id ="subtitles" class="subtitle">Figure 2: Ilustration of the most important technological milestones that led to the current AI Art production.</span>
 
 <p>One of the most iconic AI inventions that triggered the rapid use and development of AI technologies for art was Neural Style Transfer (NST). This method was introduced in the highly influential work of Gatys et al. [50] that demonstrated the successful use of CNNs in creating stylized images by separating and combining the image “content” and “style”. This breakthrough was followed by many new research contributions and applications, a comprehensive overview of the existing NST techniques and their various applications is given in [69]. Terminology of computer graphics and computer vision suggests that “content” and “style” are understood in a rather straightforward and simple manner. “Content” is associated with recognizable objects and figures that are depicted in an image, while “style” implies an aesthetically pleasing or interesting visual deviation from the photorealistic depiction of content. However, in the context of art history, style is not only associated with mere visual characteristics of lines and brushstrokes, but is often considered a subtle and contextually dependent concept. Furthermore, stylized images produced using NST methods most commonly represent an obvious combination of existing image inputs and not an original and unique artistic creation. NST methods surely represent a very interesting technological contribution in the domain of automated image manipulation. It is therefore understandable that many applications relying on those methods emerged in order to enable end-users an easy and entertaining framework for photo manipulation. Although NST do have the potential to be used in a creative way for digital art production, it is also necessary to keep a critical stance towards the trend of proclaiming everything with a painterly overlay as art. Due to the limitless combinations, it is indeed technically challenging and time-consuming to locate and pair up two matching content and style images that could produce an aesthetic, meaningful and memorable output image as a novel artwork.</p>
@@ -195,7 +252,9 @@
 
 <p>Although the case of the “Portrait of Edmond Belamy” became very popular for various reasons, within the AI Art community many agree that there are other artists whose work can be considered a more representative example of AI Art: “Many artists working in the field point out that Obvious, the collective behind the AI that made the pricey work, was handsomely rewarded for an idea that was neither very original nor very interesting” [102]. However, since the boost of AI Art popularity triggered by Christie’s auction, the number of artists involved in making AI Art is rising worldwide. The fact that AI Art gained momentum in the last two years is reflected in the growing number of online platforms featuring AI Art such as AIArtists.org 1, as well as exhibitions, conferences, competitions and discussion panels dedicated to AI Art. Figure 3 shows several examples of contemporary AI artworks.</p>
 
-<p>Figure 3: Examples of AI Art: 1) Obvious, Portrait of Belami 2) Mario Klingemann, Memories of Passersby I 3) Sofia Crespo, Neural Zoo 4) Robbie Barrat, Nudes 5) Scot Eaton, Humanity (Fall of the Damned) 6) James She, Keep Running</p>
+<img src="Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1c.jpeg" alt="digital art construction">
+
+<span id ="subtitles" class="subtitle">Figure 3: Examples of AI Art: 1) Obvious, Portrait of Belami 2) Mario Klingemann, Memories of Passersby I 3) Sofia Crespo, Neural Zoo 4) Robbie Barrat, Nudes 5) Scot Eaton, Humanity (Fall of the Damned) 6) James She, Keep Running</span>
 
 <p>Although various artworks are labelled as “AI Art”, it is not often obvious what exact AI technologies are used in the production of specific artworks, as many artists do not reveal all details of their creative process. However, because AI Art production is rapidly increasing and gaining attention, it is necessary to understand and discuss all the aspects that play a role in judging the quality of a particular work. A certain level of technical knowledge and skillfulness is currently required in order to participate in the practice. However, applications of AI technologies are rapidly advancing towards more user-friendly and easily operated frameworks. It is therefore difficult to estimate if the value of a particular AI artwork should depend on the technological complexity and innovation involved in its production, or only on the final visual manifestation and contextual novelty.</p>
 
