@@ -117,4 +117,4 @@ for (var i = 0; i < commands.length; i++) {
 	if (command.command.length > 0) {
 		help.innerHTML += "<li><span><span class='icon " + command.icon + "'></span><span class='command'>" + command.command + "</span></span></li>";
 	}
-}
+} 
