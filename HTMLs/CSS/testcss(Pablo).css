@@ -30,7 +30,7 @@
           max-width: 100%;
           padding-bottom: 10px;}
 
-
+ /*Cyberpunk CSS*/
 :root {
   --glitched-duration: 0.9s;
   --glitched-long-duration: 3s;
@@ -348,7 +348,7 @@ hr {
   display: none;
 }
 
-
+ /*Footer*/
 /* colors */
 $placeholder: #888888;
 $mainBG: #373D45;
