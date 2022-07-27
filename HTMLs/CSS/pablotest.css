@@ -16,19 +16,6 @@
           display: block;
           margin-left: auto;
           margin-right: auto; }
-    /*Internal CSS for blockquotes*/
-         blockquote {background: #f9f9f9;
-          border-left: 3px solid #ccc;
-          margin: 1.5em 10px;
-          padding: 0.5em 10px;}
-         
-         blockquote p {
-          display: inline-block;}
-  /*Internal CSS for Yputube videos iframes*/  
-         iframe[src*=youtube] {display: block;
-          margin: 0 auto;
-          max-width: 100%;
-          padding-bottom: 10px;}
 
  /*Cyberpunk CSS*/
 :root {
@@ -47,7 +34,6 @@
 .content {
   background-color: var(--yellow-color);
   min-height: 220vh;
-  padding: 30px;
   font-family: "Advent Pro", arial ;
 }
 
@@ -564,4 +550,157 @@ html, body {
   .blocks {
     width: 80%;
   }
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+.pi {
+  background: linear-gradient(183deg, rgba(141, 35, 46, 0.5) 1%, rgba(141, 35, 46, 0) 60%), linear-gradient(250deg, rgba(141, 35, 46, 0) 21%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), linear-gradient(250deg, rgba(141, 35, 46, 0) 23%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), linear-gradient(250deg, rgba(141, 35, 46, 0) 25%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), repeating-linear-gradient(179deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 3px, rgba(0, 0, 0, 0.1) 3px, rgba(0, 0, 0, 0.1) 5px);
+  background-color: #0b232f;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  text-decoration: none;
+  outline: 0 none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+::-moz-selection {
+  color: #ff1493;
+  background: #9932cc;
+}
+
+::selection {
+  color: #ff1493;
+  background: #9932cc;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 40px;
+  font-family: "VT323";
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+
+@media all and (max-width: 620px) {
+  .wrap-top {
+    height: 275px;
+  }
+}
+@media all and (max-width: 350px) {
+  .wrap-top {
+    height: auto;
+  }
+}
+.wrap-top #quote {
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  position: relative;
+}
+.wrap-top #quote:before {
+  content: '"';
+  font-size: 5em;
+  position: absolute;
+  left: -50px;
+  top: 0px;
+}
+.wrap-top #author-source {
+  float: right;
+}
+.wrap-top #author-source #author,
+.wrap-top #author-source #source {
+  font-size: 0.85em;
+}
+.wrap-top #author-source #author {
+  float: left;
+  padding-right: 5px;
+}
+.wrap-top #author-source #author:before {
+  content: "- ";
+}
+.wrap-top #author-source #author:after {
+  content: ",";
+}
+.wrap-top #author-source #source {
+  font-style: italic;
+  float: left;
+}
+
+.wrap-mid {
+  padding: 25px 0 100px 0;
+}
+.wrap-mid .tweet {
+  cursoir: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.wrap-mid .tweet:hover {
+  text-shadow: 0 0 13px #fff;
+  cursoir: hand;
+}
+.wrap-mid button {
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px 10px;
+  box-shadow: 0 0 25px #fff;
+  transition: all 0.5s;
+}
+.wrap-mid button:hover {
+  box-shadow: 0 0 30px #fff;
+}
+.wrap-mid #new-quote {
+  float: right;
+}
+
+.wrap-btm {
+  padding: 20% 0 10% 0;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Open Sans, Helvetica, sans-serif;
+}
+.wrap-btm p, .wrap-btm a {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  text-shadow: none;
+  color: #ccc;
+  opacity: 0.4;
+}
+.wrap-btm a {
+  color: #ccc;
+  font-size: 1.05em;
+  opacity: 1;
 }
