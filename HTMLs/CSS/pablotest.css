@@ -13,6 +13,7 @@ p{margin: 30px;}
     		text-align: left;
     		margin: 30px;
     	}
+
     /*Internal CSS for images*/ 
     img {max-width: 90%;
           height: auto;
@@ -619,3 +620,15 @@ ul.biblioul li{
     background: #000A00;
     color: #00B200;
     padding: 10px;
+}
+
+.abstract {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.abstractkw {
+  font-style: italic; 
+  font-weight: bold;
+  font-size: 14px;
+}
