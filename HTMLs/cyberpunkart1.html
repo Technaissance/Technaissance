@@ -10,7 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="JS/testJSCyberpunk.js"></script>
-	<link href="CSS/pablotest.css" rel="stylesheet" type="text/css" media="screen">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -61,152 +62,155 @@
 
 <span class="subtitles">Table 1: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.	</span><br><br>
 
-<table style="width:100%">
+<div class="table-responsive">
+<table class="table">
   <tr>
-    <th>Dataset</th>
-    <th>Source</th>
-    <th>Number of images</th>
-    <th>Task</th>
+    <th scope="col">Dataset</th>
+    <th scope="col">Source</th>
+    <th scope="col">Number of images</th>
+    <th scope="col">Task</th>
   </tr>
   <tr>
-    <td>Painting-91</td>
+    <td scope="row">Painting-91</td>
     <td><[74]</td>
     <td>4k</td>
     <td>artist classification</td>
   </tr>
   <tr>
-    <td>Pandora</td>
+    <td scope="row">Pandora</td>
     <td>[45]</td>
     <td>8k</td>
     <td>style classification</td>
   </tr>
   <tr>
-    <td>Web Gallery of Art</td>
+    <td scope="row">Web Gallery of Art</td>
     <td><a href="http://www.wga.hu/">www.wga.hu</a></td>
     <td>40k</td>
     <td>artist, style, periodclassification</td>
   </tr>
   <tr>
-    <td>WikiArt</td>
+    <td scope="row">WikiArt</td>
     <td><a href="http://www.wikiart.org/">www.wikiart.org</a></td>
     <td>85k</td>
     <td>artist, style,genre classification</td>
   </tr>
   <tr>
-    <td>Rijksmuseum Challenge</td>
+    <td scope="row">Rijksmuseum Challenge</td>
     <td>[92]</td>
     <td>112k</td>
     <td>artist, material, typeclassification</td>
   </tr>
   <tr>
-    <td>Art500k</td>
+    <td scope="row">Art500k</td>
     <td>[87]</td>
     <td>550k</td>
     <td>   <br>artist, genre,   style, event, historical figure retrieval  </td>
   </tr>
   <tr>
-    <td>OmniArt</td>
+    <td scope="row">OmniArt</td>
     <td>[118]</td>
     <td>2M</td>
     <td>   <br>artist, style,   period, type, iconography, color classification / object detection</td>
   </tr>
   <tr>
-    <td>ArtDL</td>
+    <td scope="row">ArtDL</td>
     <td>[94]</td>
     <td>42k</td>
     <td>iconographic classification</td>
   </tr>
   <tr>
-    <td>PRINTART</td>
+    <td scope="row">PRINTART</td>
     <td>[15]</td>
     <td>1k</td>
     <td>object/ pose retrieval</td>
   </tr>
   <tr>
-    <td>Paintings</td>
+    <td scope="row">Paintings</td>
     <td>[31]</td>
     <td>8.6k</td>
     <td>object retrieval</td>
   </tr>
   <tr>
-    <td>Face Paintings</td>
+    <td scope="row">Face Paintings</td>
     <td>[29]</td>
     <td>14 k</td>
     <td>face retrieval</td>
   </tr>
   <tr>
-    <td>Iconart</td>
+    <td scope="row">Iconart</td>
     <td>[54]</td>
     <td>6k</td>
     <td>iconographic objectdetection</td>
   </tr>
   <tr>
-    <td>VisualLink</td>
+    <td scope="row">VisualLink</td>
     <td>[108]</td>
     <td>38.5k</td>
     <td>visual linkretrieval</td>
   </tr>
   <tr>
-    <td>Brueghel dataset</td>
+    <td scope="row">Brueghel dataset</td>
     <td>[111]</td>
     <td>1.6k</td>
     <td>visual linkretrieval</td>
   </tr>
   <tr>
-    <td>IconClass AI Test Set</td>
+    <td scope="row">IconClass AI Test Set</td>
     <td>[99]</td>
     <td>87k</td>
     <td>   <br>iconographic classification / multimodal tasks</td>
   </tr>
   <tr>
-    <td>SemArt</td>
+    <td scope="row">SemArt</td>
     <td>[48]</td>
     <td>21k</td>
     <td>multimodal retrieval</td>
   </tr>
   <tr>
-    <td>Artpedia</td>
+    <td scope="row">Artpedia</td>
     <td>[116]</td>
     <td>3k</td>
     <td>multimodal retrieval</td>
   </tr>
   <tr>
-    <td>BibleVSA</td>
+    <td scope="row">BibleVSA</td>
     <td>[8]</td>
     <td>2.3k</td>
     <td>multimodal retrieval</td>
   </tr>
   <tr>
-    <td>AQUA</td>
+    <td scope="row">AQUA</td>
     <td>[49]</td>
     <td>21k</td>
     <td>visual question answering</td>
   </tr>
   <tr>
-    <td>ArtEmis</td>
+    <td scope="row">ArtEmis</td>
     <td>[3]</td>
     <td>81K</td>
     <td>multimodal sentiment analysis</td>
   </tr>
   <tr>
-    <td>WikiArt Emotions</td>
+    <td scope="row">WikiArt Emotions</td>
     <td>[95]</td>
     <td>4.1k</td>
     <td>sentiment analysis/ emotion classification</td>
   </tr>
   <tr>
-    <td>MART</td>
+    <td scope="row">MART</td>
     <td>[128]</td>
     <td>500</td>
     <td>sentiment analysis</td>
   </tr>
   <tr>
-    <td>JenAesthetic</td>
+    <td scope="row">JenAesthetic</td>
     <td>[6]</td>
     <td>1.6k</td>
     <td>aesthetics quality assessment</td>
   </tr>
 </table>
+</div>
+
 
 <span class="subtitles"> Table 2: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.</span>
 
