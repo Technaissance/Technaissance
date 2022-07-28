@@ -1,21 +1,134 @@
-/*Internal CSS using element name*/
-/*h1{font-style: italic;
-         font-size: 30px;
-         color: #f08080;}*/
+p{margin: 30px;}
     /*Internal CSS using class name*/
-    .subtitle{font-style: italic;
+    .subtitles{font-style: italic;
        font-weight: bold;
          font-size: 15px;
-         color: #0a0a0a;}
+         color: #0a0a0a;
+        display: block;
+        margin-left: 30px;
+     	}
     /*Internal CSS for tables*/ 
-    table, th {border-bottom:1px solid black;}
+    table, th {
+    		border-bottom:1px solid black;
+    		text-align: left;
+    		margin: 30px;
+    	}
     /*Internal CSS for images*/ 
     img {max-width: 90%;
-          height: auto;}
+          height: auto;
+      		margin: 30px;}
     .img3 {max-width: 50%;
           display: block;
-          margin-left: auto;
-          margin-right: auto; }
+          margin: 30px; }
+
+
+/* for bibliography*/
+
+@import url("https://fonts.googleapis.com/css?family=VT323|Audiowide");
+.biblio {
+  background: #000A00;
+  color: #00B200;
+}
+
+.h3biblio {
+  font-family: "Audiowide", sans-serif;
+  padding: 30px;
+
+}
+h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle {
+  text-indent: 2%;
+}
+
+.ulquote {
+  list-style: square;
+}
+
+.ghosted {
+  background-color: transparent;
+  border: 0px;
+  font-family: "VT323", monospace;
+  color: #00B200;
+  float: right;
+}
+.ghosted:hover {
+  cursor: pointer;
+  color: #00FF00;
+}
+
+.main, .secondary {
+  width: 60%;
+  margin: 0% auto;
+  padding: 3%;
+  font-family: "VT323", monospace;
+}
+.main a, .secondary a {
+  color: #00FF00;
+}
+.main hr, .secondary hr {
+  color: #00FF00;
+}
+
+.secondary {
+  margin-top: 5% auto 0% auto;
+}
+
+.third {
+  width: 31%;
+  position: relative;
+  text-align: center;
+  padding: 0% 1%;
+}
+.third.one {
+  float: left;
+}
+.third.three {
+  float: right;
+}
+.third.two {
+  display: inline-block;
+}
+.third li {
+  text-align: left;
+}
+@media screen and (max-width: 37.5em) {
+  .third {
+    width: 100%;
+  }
+}
+
+.collapse {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+}
+
+#blink {
+  color: #00b200;
+}
+
+.left, .right {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+@media screen and (max-width: 37.5em) {
+  .left, .right {
+    width: 100%;
+  }
+}
+
+.right {
+  float: right;
+}
+.right .wrapper {
+  padding: 0% 4%;
+}
+
+.profile {
+  width: 100%;
+  height: auto;
+  float: none;
+}
 
  /*Cyberpunk CSS*/
 :root {
@@ -34,7 +147,9 @@
 .content {
   background-color: var(--yellow-color);
   min-height: 220vh;
-  font-family: "Advent Pro", arial ;
+  font-family: 'PT Mono', monospace;
+  padding: 30px;
+
 }
 
 /* Titles */
@@ -48,6 +163,7 @@ h4.cyberpunk {
   font-weight: 200;
   position: relative;
   padding-bottom: 15px;
+  margin: 30px;
 }
 
 h2.cyberpunk {
@@ -332,233 +448,15 @@ hr {
 }
 
 
-/* colors */
-$placeholder: #888888;
-$mainBG: #373D45;
-$searchIcon: #888888;
-$searchIconActive: white;
-$searchText: white;
-$searchLine: white;
-$blockBG: rgba(0,0,0,0.2);
-$blockBorder: #222222;
-$blockHeader: #F38630;
-$blockLink: white;
-$blockHover: #69D2E7;
-
-//theme
-$blockHeader: #95EDFD;
-$blockHover: #FF92D1;
-
-/* responsive mixin */
-
-$BP_XXL: 1600px;
-$BP_XL: 1200px;
-$BP_L: 1000px;
-$BP_M: 850px;
-$BP_S: 710px;
-$BP_XS: 650px;
-$BP_XXS: 400px;
-
-@mixin responsive($width: $BP_L) {
-	@media screen and (max-width: $width) {
-		@content;
-	}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Audiowide", sans-serif;
 }
-
-/* placeholder */
-
-@mixin placeholder {
-	::-webkit-input-placeholder { @content }
-	:-moz-placeholder           { @content }
-	::-moz-placeholder          { @content }
-	:-ms-input-placeholder      { @content }
-}
-
-@include placeholder {
-	color: $placeholder;
-	opacity: 0;
-	transition: opacity .5s cubic-bezier(0.4, 0.0, 0.2, 1);
-	@at-root input:focus#{&} {
-		opacity: 1;
-	}
-}
-
-/* main content */
-
-/* colors */
-/* responsive mixin */
-/* placeholder */
-::-webkit-input-placeholder {
-  color: #888888;
-  opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-input:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-:-moz-placeholder {
-  color: #888888;
-  opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-input:focus:-moz-placeholder {
-  opacity: 1;
-}
-
-::-moz-placeholder {
-  color: #888888;
-  opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-input:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: #888888;
-  opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-input:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
-/* main content */
-footer {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-  font-family: "Inconsolata", monospace;
-  font-weight: 400;
-  opacity: 1;
-}
-
-html, body {
-  background-color: #373D45;
-}
-
-.search-block {
-  position: relative;
-  width: 40%;
-  margin: 10vh auto 0px;
-  text-align: center;
-}
-@media screen and (max-width: 1000px) {
-  .search-block {
-    width: 60%;
-    margin: 5vh auto 0vh;
-  }
-}
-.search-block label {
-  position: absolute;
-  color: #888888;
-  top: 7px;
-  left: -20px;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.search-block input {
-  width: 100%;
-  margin: 0 auto;
-  padding: 5px 0;
-  font-size: 16px;
-  background: transparent;
-  border: 2px solid transparent;
-  border-bottom: 2px solid transparent;
-  color: white;
-  outline: none;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.search-block input:hover, .search-block input:focus {
-  border-bottom: 2px solid white;
-}
-.search-block input:hover + label, .search-block input:focus + label {
-  color: white;
-}
-.search-block ul.search-help {
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-block;
-}
-@media screen and (max-width: 1000px) {
-  .search-block ul.search-help {
-    max-height: 100px;
-  }
-}
-.search-block ul.search-help li {
-  display: inline-block;
-  padding: 25px;
-  list-style: none;
-  cursor: pointer;
-}
-.search-block ul.search-help li > span {
-  position: relative;
-  color: white;
-  font-size: 20px;
-}
-.search-block ul.search-help li > span .icon {
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.search-block ul.search-help li > span .command {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.search-block ul.search-help li:hover .icon {
-  opacity: 0.2;
-}
-.search-block ul.search-help li:hover .command {
-  opacity: 1;
-}
-
-.blocks {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 50px;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.blocks .block {
-  flex: 1;
-  margin: 2px;
-  padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid #222222;
-  min-width: 160px;
-}
-.blocks .block li {
-  list-style: none;
-}
-.blocks .block .header {
-  color: #95EDFD;
-}
-.blocks .block a {
-  text-decoration: none;
-  cursor: pointer;
-}
-.blocks .block a:visited, .blocks .block a:focus, .blocks .block a:link {
-  color: white;
-}
-.blocks .block a:hover {
-  color: #FF92D1;
-}
-@media screen and (max-width: 1000px) {
-  .blocks {
-    width: 80%;
-  }
-}
-
-
-
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+
+  line-height:1.4em
 }
 
 .clearfix:after {
@@ -593,8 +491,8 @@ html, body {
   text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
   text-decoration: none;
   outline: 0 none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 30px;
+
 }
 
 ::-moz-selection {
@@ -631,13 +529,15 @@ html, body {
   padding-bottom: 30px;
   padding-top: 30px;
   position: relative;
+  margin-left: 20px;
 }
 .wrap-top #quote:before {
   content: '"';
   font-size: 5em;
   position: absolute;
   left: -50px;
-  top: 0px;
+  top: 50px;
+
 }
 .wrap-top #author-source {
   float: right;
@@ -704,3 +604,18 @@ html, body {
   font-size: 1.05em;
   opacity: 1;
 }
+
+/* ul bibliography */
+.bodybib {
+	background: #000A00;
+    color: #00B200;
+}
+
+ul.biblioul li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: square;
+    font-family: "VT323", monospace;
+    background: #000A00;
+    color: #00B200;
+    padding: 10px;
