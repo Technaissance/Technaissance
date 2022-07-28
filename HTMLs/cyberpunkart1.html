@@ -6,20 +6,37 @@
 	<title>Sito in costruzion</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="JS/testJSCyberpunk.js"></script>
-<link href="CSS/pablotest.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
+
 	<div class="content">
 <h1 class="cyberpunk">UNDERSTANDING AND CREATING ART WITH AI: REVIEW AND OUTLOOK</h1>
 
 <p>February 19, 2021</p>
 
-<p>ABSTRACT</p>
+<p><span class="abstract"> ABSTRACT</span></p>
 
-<p>Technologies related to artificial intelligence (AI) have a strong impact on the changes of research and creative practices in visual arts. The growing number of research initiatives and creative applications that emerge in the intersection of AI and art, motivates us to examine and discuss the creative and explorative potentials of AI technologies in the context of art. This paper provides an integrated review of two facets of AI and art: 1) AI is used for art analysis and employed on digitized artwork collections; 2) AI is used for creative purposes and generating novel artworks. In the context of AI-related research for art understanding, we present a comprehensive overview of artwork datasets and recent works that address a variety of tasks such as classification, object detection, similarity retrieval, multimodal representations, computational aesthetics, etc. In relation to the role of AI in creating art, we address various practical and theoretical aspects of AI Art and consolidate related works that deal with those topics in detail. Finally, we provide a concise outlook on the future progression and potential impact of AI technologies on our understanding and creation of art.</p>
+<p><span class="abstract">Technologies related to artificial intelligence (AI) have a strong impact on the changes of research and creative practices in visual arts. The growing number of research initiatives and creative applications that emerge in the intersection of AI and art, motivates us to examine and discuss the creative and explorative potentials of AI technologies in the context of art. This paper provides an integrated review of two facets of AI and art: 1) AI is used for art analysis and employed on digitized artwork collections; 2) AI is used for creative purposes and generating novel artworks. In the context of AI-related research for art understanding, we present a comprehensive overview of artwork datasets and recent works that address a variety of tasks such as classification, object detection, similarity retrieval, multimodal representations, computational aesthetics, etc. In relation to the role of AI in creating art, we address various practical and theoretical aspects of AI Art and consolidate related works that deal with those topics in detail. Finally, we provide a concise outlook on the future progression and potential impact of AI technologies on our understanding and creation of art. </span></p>
 
-<p>Keywords fine art, deep learning, computer vision, AI Art, generative art, computational creativity</p>
+<p><span class="abstractkw">Keywords fine art, deep learning, computer vision, AI Art, generative art, computational creativity</span></p>
+
+<div class="pi">
+<div class="container">
+
+  <div class="wrap-top">
+    <div id="quote">This is a blockquote example</div>
+    <div id="author-source" class="clearfix">
+
+    </div>
+  </div>
+  
+
+</div>
+</div>
 
 <h2 class="cyberpunk">1	Introduction</h2>
 
@@ -35,13 +52,13 @@
 
  <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1a.png" alt="digital art"><br>
 
-<span id ="subtitles" class="subtitle">Figure 1: Illustration of the process from digitization to advanced computational analysis.</span>
+<span class="subtitles">Figure 1: Illustration of the process from digitization to advanced computational analysis.</span>
 
 <p>In the context of digitized art analysis, computational methods are generally used either to adopt a distant viewing or a close reading approach [80]. Close reading implies focusing on specific aspects of one particular work or artistic oeuvre, usually addressing problems such as visual stylometry and computational artist authentication [57, 100, 67, 2]. Most of the studies dedicated to those topics rely on the availability of high-quality digital reproductions of the analyzed artworks and mostly focus on brushstrokes and the texture properties. Distant viewing generally involves analyzing large collections by concentrating on particular features or similarity relations and producing corresponding statistical visualizations. The majority of recent studies concerned with computational analysis of art is exploiting the availability of large digitized collections that include images of various quality, and therefore adopt a distant viewing approach. In the last few years there has been a growing number of research collaborations addressing the application of computer vision and deep learning methods in the domain of digital art history. The most commonly addressed tasks include the problem of automatic classification, object detection, content based and multimodal retrieval, quantitative analysis of different features and concepts, computational aesthetics, etc.</p>
 
 <p>The availability of large-scale and well-annotated datasets is a necessary requirement for adopting deep learning models for various tasks. In recent years, many museums and galleries published digital online versions of their collections. Since it is difficult to list all the existing online art collections, this paper focuses only on those collections and datasets that have been most commonly used for computer vision and deep learning research in the last few years. Table 2 contains a list of the most well-known collections of primarily Western art that were often used as sources for creating different task-specific datasets. Also, it includes well-known and novel datasets that have been specifically developed for a particular research task.</p>
 
-<span id ="subtitles" class="subtitle">Table 1: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.	</span><br><br>
+<span class="subtitles">Table 1: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.	</span><br><br>
 
 <table style="width:100%">
   <tr>
@@ -190,7 +207,7 @@
   </tr>
 </table>
 
-<span id ="subtitles" class="subtitle"> Table 2: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.</span>x
+<span class="subtitles"> Table 2: List of artwork datasets associated with their corresponding number of images and tasks for which they are designed or most commonly used.</span>x
 
 <p>The datasets in Table 2 are linked to tasks for which they have been designed or most commonly used. The majority of online art collections include general annotations related to the whole image and are often used for classification or retrieval tasks. Those annotations are mostly provided by art experts and contain information about the artist, style, genre, technique, period, etc. Some specific tasks such as object detection require more detailed annotations of specific image regions. Recently several datasets of images associated with textual descriptions have emerged in order to perform different multimodal tasks. The datasets used for sentiment analysis and aesthetic quality assessment usually contain annotations that were collected from multiple annotators through specific surveys or crowdsourcing platforms.</p>
 
@@ -232,7 +249,7 @@
 
 <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1b.png" alt="digital art process"><br>
 
-<span id ="subtitles" class="subtitle">Figure 2: Ilustration of the most important technological milestones that led to the current AI Art production.</span>
+<span class="subtitles">Figure 2: Ilustration of the most important technological milestones that led to the current AI Art production.</span>
 
 <p>One of the most iconic AI inventions that triggered the rapid use and development of AI technologies for art was Neural Style Transfer (NST). This method was introduced in the highly influential work of Gatys et al. [50] that demonstrated the successful use of CNNs in creating stylized images by separating and combining the image “content” and “style”. This breakthrough was followed by many new research contributions and applications, a comprehensive overview of the existing NST techniques and their various applications is given in [69]. Terminology of computer graphics and computer vision suggests that “content” and “style” are understood in a rather straightforward and simple manner. “Content” is associated with recognizable objects and figures that are depicted in an image, while “style” implies an aesthetically pleasing or interesting visual deviation from the photorealistic depiction of content. However, in the context of art history, style is not only associated with mere visual characteristics of lines and brushstrokes, but is often considered a subtle and contextually dependent concept. Furthermore, stylized images produced using NST methods most commonly represent an obvious combination of existing image inputs and not an original and unique artistic creation. NST methods surely represent a very interesting technological contribution in the domain of automated image manipulation. It is therefore understandable that many applications relying on those methods emerged in order to enable end-users an easy and entertaining framework for photo manipulation. Although NST do have the potential to be used in a creative way for digital art production, it is also necessary to keep a critical stance towards the trend of proclaiming everything with a painterly overlay as art. Due to the limitless combinations, it is indeed technically challenging and time-consuming to locate and pair up two matching content and style images that could produce an aesthetic, meaningful and memorable output image as a novel artwork.</p>
 
@@ -250,7 +267,7 @@
 
 <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1c.png" alt="digital art construction"><br>
 
-<span id ="subtitles" class="subtitle">Figure 3: Examples of AI Art: 1) Obvious, Portrait of Belami 2) Mario Klingemann, Memories of Passersby I 3) Sofia Crespo, Neural Zoo 4) Robbie Barrat, Nudes 5) Scot Eaton, Humanity (Fall of the Damned) 6) James She, Keep Running</span>
+<span class="subtitles">Figure 3: Examples of AI Art: 1) Obvious, Portrait of Belami 2) Mario Klingemann, Memories of Passersby I 3) Sofia Crespo, Neural Zoo 4) Robbie Barrat, Nudes 5) Scot Eaton, Humanity (Fall of the Damned) 6) James She, Keep Running</span>
 
 <p>Although various artworks are labelled as “AI Art”, it is not often obvious what exact AI technologies are used in the production of specific artworks, as many artists do not reveal all details of their creative process. However, because AI Art production is rapidly increasing and gaining attention, it is necessary to understand and discuss all the aspects that play a role in judging the quality of a particular work. A certain level of technical knowledge and skillfulness is currently required in order to participate in the practice. However, applications of AI technologies are rapidly advancing towards more user-friendly and easily operated frameworks. It is therefore difficult to estimate if the value of a particular AI artwork should depend on the technological complexity and innovation involved in its production, or only on the final visual manifestation and contextual novelty.</p>
 
@@ -297,9 +314,11 @@
 
 <p>In the context of art creation and production, AI technologies are starting to have an ever more important role. Not only in terms of digitally and AI produced art, but also in all the aspects of curation, exhibition and sale of traditional art as well. Having in mind the rapid shift of attention towards online platforms and digital showrooms due to the current global pandemic, the ongoing circumstances contributed to the already rising interest in crypto art and blockchain technologies which have the potential to significantly impact and transform the art market. Regarding the creation of art using AI technologies, in the last few years GAN-based approaches were dominating the AI Art scene. Recently, significant breakthroughs have been achieved in the development of multimodal generative models, e.g. models that can generate images from text. Technological advancement in this direction will probably have significant influence on the production and creation of art. Models that can translate data from different modalities into a joint semantic space represent an interesting tool for artistic exploration because the concept of multimodality is integral to many art forms and has always played an important role in the creative process. Furthermore, it is evident that the increasing use of AI technologies in the creation of art will have significant implications regarding the questions related to authorship, as well as on our human perception of art. With the development of AI models that can generate content which very convincingly imitates human textual, visual or musical creations, many of our traditional, as well as contemporary, theoretical and practical understandings of art might become challenged.</p>
 
-<h4 class="cyberpunk">References</h4>
 
-<ul>
+</div>
+<div class="bodybib">
+<h3 class="h3biblio">References</h3>
+<ul class="biblioul">
 <li>[1] A. RAMESH, M. PAVLOV, G. G., AND GRAY, S. Dall·e: Creating images from text., 2021.</li>
  
 <li>[2] ABRY, P., WENDT, H., AND JAFFARD, S. When van gogh meets mandelbrot: Multifractal classification of painting’s texture. Signal Processing 93, 3 (2013), 554–572.</li>
@@ -589,60 +608,6 @@
 <li>[130]     	ZHU, J.-Y., PARK, T., ISOLA, P., AND EFROS, A. A. Unpaired image-to-image translation using cycle- consistent adversarial networks. In Proceedings of the IEEE international conference on computer vision (2017), pp. 2223–2232.</li>
 </ul>
 </div>
-
-<footer>
-<div class="container">
-  <div class="search-block">
-    <form id="search-form" action="https://google.com/search" method="get">
-      <input type="text" name="q" id="search" autofocus="autofocus" autocomplete="off" placeholder="/?" />
-      <label for="search"><span id="search-icon" class="fa fa-google"></span></label>
-    </form>
-    <ul id="search-help" class="search-help" style="opacity: 0;"></ul>
-  </div>
-  <div class="blocks">
-    <ul class="block">
-				<li class="header">google</li>
-				<li><a href="https://gmail.com">gmail</a></li>
-				<li><a href="https://drive.google.com">drive</a></li>
-				<li><a href="https://keep.google.com">keep</a></li>
-				<li><a href="https://youtube.com">youtube</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">reddit</li>
-				<li><a href="https://www.reddit.com/">front page</a></li>
-				<li><a href="https://www.reddit.com/r/pebble">/r/pebble</a></li>
-				<li><a href="https://www.reddit.com/r/oneplus">/r/oneplus</a></li>
-				<li><a href="https://www.reddit.com/r/unixporn">/r/unixporn</a></li>
-				<li><a href="https://www.reddit.com/r/cyberpunk">/r/cyberpunk</a></li>
-				<li><a href="https://www.reddit.com/r/programmerhumor">/r/programmerhumor</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">social</li>
-				<li><a href="https://twitter.com">twitter</a></li>
-				<li><a href="https://instagram.com">instagram</a></li>
-				<li><a href="https://facebook.com">facebook</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">watch</li>
-				<li><a href="https://trakt.tv/">trakt</a></li>
-				<li><a href="https://netflix.com">netflix</a></li>
-				<li><a href="https://www.amazon.com/gp/video/storefront">amazon video</a></li>
-				<li><a href="https://crunchyroll.com/">crunchyroll</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">dev</li>
-				<li><a href="https://gitlab.com">gitlab</a></li>
-				<li><a href="https://codepen.io">codepen</a></li>
-				<li><a href="http://dotshare.it/">dotshare</a></li>
-			</ul>
-			<ul class="block">
-				<li class="header">news</li>
-				<li><a href="https://www.producthunt.com/">product hunt</a></li>
-				<li><a href="https://dribbble.com/">dribbble</a></li>
-			</ul>
-  </div>
-</div>
-</footer>
 </body>
 
 </html>
