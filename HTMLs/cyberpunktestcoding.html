@@ -398,10 +398,20 @@ hr {
 .bodyp {
   background: linear-gradient(183deg, rgba(141, 35, 46, 0.5) 1%, rgba(141, 35, 46, 0) 60%), linear-gradient(250deg, rgba(141, 35, 46, 0) 21%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), linear-gradient(250deg, rgba(141, 35, 46, 0) 23%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), linear-gradient(250deg, rgba(141, 35, 46, 0) 25%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), repeating-linear-gradient(179deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 3px, rgba(0, 0, 0, 0.1) 3px, rgba(0, 0, 0, 0.1) 5px);
   background-color: #0b232f;
-
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
   width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+.bodyp {
+  background: linear-gradient(183deg, rgba(141, 35, 46, 0.5) 1%, rgba(141, 35, 46, 0) 60%), linear-gradient(250deg, rgba(141, 35, 46, 0) 21%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), linear-gradient(250deg, rgba(141, 35, 46, 0) 23%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), linear-gradient(250deg, rgba(141, 35, 46, 0) 25%, rgba(141, 35, 46, 0.2) 20%, rgba(11, 35, 47, 0.2) 50%), repeating-linear-gradient(179deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 3px, rgba(0, 0, 0, 0.1) 3px, rgba(0, 0, 0, 0.1) 5px);
+  background-color: #0b232f;
+  overflow: hidden;
+  width: 100%;
+}
+
 
 ::-moz-selection {
   color: #ff1493;
