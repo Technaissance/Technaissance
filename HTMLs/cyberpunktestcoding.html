@@ -443,13 +443,41 @@ hr {
 }
 
 
+.boxo {
+    background-color: #000A00;
+    color: #00B200;
+    margin-top: 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+}
 
 
+.boxo {
+    background-color: #000A00;
+    color: #00B200;
+    margin-top: 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 200px;
+    overflow-y: scroll;
+}
 
-ul.boxo li{
-  list-style: square;
+ul.boxo li {
+    list-style: square;
     font-family: "VT323", monospace;
     margin: 30px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.boxo::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.boxo {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>
 </head>
@@ -481,8 +509,9 @@ ul.boxo li{
     </div>
   
 </div>
-<div id="content" style="height: 100%; overflow: auto">
-    <ul>
+    <ul class="boxo">
+
+
 <li>[1] A. RAMESH, M. PAVLOV, G. G., AND GRAY, S. Dall·e: Creating images from text., 2021.</li>
  
 <li>[2] ABRY, P., WENDT, H., AND JAFFARD, S. When van gogh meets mandelbrot: Multifractal classification of painting’s texture. Signal Processing 93, 3 (2013), 554–572.</li>
@@ -773,7 +802,7 @@ ul.boxo li{
  
 
   </ul>
-</div>
+
 </body>
 </body>
 </html>
