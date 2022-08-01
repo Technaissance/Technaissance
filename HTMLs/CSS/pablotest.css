@@ -510,6 +510,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "VT323";
   font-size: 1.3em;
   line-height: 1.3;
+  background-size: cover;
 }
 
 @media all and (max-width: 620px) {
