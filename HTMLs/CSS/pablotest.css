@@ -150,6 +150,7 @@ h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle, h6.subtitle {
   min-height: 220vh;
   font-family: 'PT Mono', monospace;
   padding: 30px;
+  box-sizing: border-box;
 
 }
 
@@ -453,12 +454,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Audiowide", sans-serif;
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
 
-  line-height:1.4em
-}
 
 .clearfix:after {
   visibility: hidden;
@@ -473,10 +469,6 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-/* start commented backslash hack \*/
-* html .clearfix {
-  height: 1%;
-}
 
 .clearfix {
   display: block;
@@ -493,6 +485,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   outline: 0 none;
   margin: 30px;
+  line-height:1.4em
 
 }
 
@@ -537,7 +530,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 5em;
   position: absolute;
   left: -50px;
-  top: 50px;
+  top: -10px;
 
 }
 .wrap-top #author-source {
@@ -620,6 +613,7 @@ ul.biblioul li{
     background: #000A00;
     color: #00B200;
     padding: 10px;
+    margin: 0px;
 }
 
 .abstract {
