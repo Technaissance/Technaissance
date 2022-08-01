@@ -13,7 +13,13 @@
   <script type="text/javascript" src="JS/testJSCyberpunk.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <style type="text/css">
+<style type="text/css">
+ /* INNER TEXT */
+ .innertext {
+   font-family: "VT323";
+ }
+
+
 /* BODY */
 
 :root {
@@ -32,11 +38,12 @@
 body {
   background-color: var(--yellow-color);
   min-height: 220vh;
+  margin: 30px;
 }
 
 p {
   font-family:'PT Mono', monospace;
-  margin: 30px;
+
 }
 
 
@@ -52,7 +59,6 @@ h4.cyberpunk {
   position: relative;
   padding-bottom: 15px;
  font-family: "Advent Pro", arial;
- margin: 30px;
 
 }
 
@@ -384,7 +390,9 @@ hr {
   color: #ff1493;
   background: #9932cc;
 }
-
+.blocktext{
+  font-family:"VT32";
+}
 .container {
   max-width: 650px;
   margin: 0 auto;
@@ -419,7 +427,8 @@ hr {
   padding-bottom: 30px;
   position: relative;
   color: #fff;
-  text-shadow: -1px 1px 8px #ffc, 1px -1px 
+  text-shadow: -1px 1px 8px #ffc, 1px -1px ;
+
 }
 .wrap-top #quote:before {
   content: '"';
@@ -451,7 +460,7 @@ hr {
 <div class="container">
 
   <div class="wrap-top">
-    <div id="quote">lalalall</div>
+    <div id="quote"><span class="blocktext"> lalalall</span></div>
     <div id="author-source" class="clearfix">
       <div id="author"></div>
       <div id="source"></div>
