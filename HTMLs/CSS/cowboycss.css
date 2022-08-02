@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+h2 {
+  font-family: 'PT Mono', monospace;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'PT Mono', monospace;
+  font-size: 20px;
+}
+
+
+.abstract {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.abstractkw {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+}
+  /*Internal CSS using class name*/
+    .subtitles{font-style: italic;
+       font-weight: bold;
+         font-size: 15px;
+         color: #0a0a0a;
+        display: block;
+        margin-left: 30px;
+      }
+    /*Internal CSS for tables*/ 
+    table, th {
+        border-bottom:1px solid black;
+        text-align: left;
+        margin: 30px;
+      }
+
+    /*Internal CSS for images*/ 
+    img {max-width: 90%;
+          height: auto;
+          margin: 30px;}
+    .img3 {max-width: 50%;
+          display: block;
+          margin: 30px; }
+
+/*BLOCKQUOTE*/ 
+
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/specialelite/v18/XLYgIZbkc4JPUL5CVArUVL0ntnAOTQ.ttf) format('truetype');
+}
+
+.quotes {
+  font-family: 'Special Elite', cursive;
+  background: #fffdf5;
+  background-color: #D28C3E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+blockquote {
+  font-weight: 100;
+  font-size: 2rem;
+  max-width: 600px;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+}
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  font-size: 8rem;
+  width: 4rem;
+  height: 4rem;
+}
+blockquote:before {
+  content: '“';
+  left: -5rem;
+  top: -2rem;
+}
+blockquote:after {
+  content: '”';
+  right: -5rem;
+  bottom: 1rem;
+}
+cite {
+  line-height: 3;
+  text-align: left;
+}
+/*BLOCKQUOTE*/ 
+@font-face {
+  font-family: "The Dead Saloon";
+  src: url(/week-one/library/fonts/thedeadsaloon-Regular.ttf) format("truetype"), url(/week-one/library/fonts/thedeadsaloon-Regular.woff) format("woff");
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-family: "The Dead Saloon", sans-serif;
+  background-color: #b53c4d;
+}
+
+
+blockquote {
+    page-break-inside: avoid;
+  }
+
+ 
+.background-cover {
+  width: 100%;
+  background-image: url(https://github.com/Technaissance/Technaissance/blob/main/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/cowboy/cleanest.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.background-cover .content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  height: 290px;
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  transform: rotate(-6deg);
+}
+@media (min-width: 48em) {
+  .background-cover .content {
+    padding-top: 62px;
+    height: 388px;
+  }
+}
+.background-cover .content h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #b75b21, 10px 10px 0 #d28c3d, 14px 14px 0 #b53c4d, 18px 18px 0 #b75b21, 22px 22px 0 #d28c3d;
+  animation: flash .33s infinite;
+  -webkit-animation: flash .33s infinite;
+  font-size: 2.1875em;
+  line-height: 1.37143em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+@media (min-width: 48em) {
+  .background-cover .content h1 {
+    font-size: 4.6875em;
+    line-height: 1.28em;
+    text-indent: 0px;
+    font-size: 50px;
+    -webkit-transform: translateX(-50%) translateY(-60%);
+    -moz-transform: translateX(-50%) translateY(-60%);
+    -ms-transform: translateX(-50%) translateY(-60%);
+    -o-transform: translateX(-50%) translateY(-60%);
+    transform: translateX(-50%) translateY(-60%);
+}
+}
+
+#main {
+  zoom: 1;
+  background-color: #d28c3d;
+  color: #211617;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+
+#main .inner:before, #main .inner:after {
+  content: "\0020";
+  display: table;
+  height: 0;
+  overflow: hidden;
+}
+#main .inner:after {
+  clear: both;
+}
+
+
+@keyframes flash {
+  0% {
+    color: #b53c4d;
+    text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #b75b21, 10px 10px 0 #d28c3d, 14px 14px 0 #b53c4d, 18px 18px 0 #b75b21, 22px 22px 0 #d28c3d;
+  }
+
+  33% {
+    color: #b75b21;
+    text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #d28c3d, 10px 10px 0 #b53c4d, 14px 14px 0 #b75b21, 18px 18px 0 #d28c3d, 22px 22px 0 #b53c4d;
+  }
+
+  66% {
+    color: #d28c3d;
+    text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #b53c4d, 10px 10px 0 #b75b21, 14px 14px 0 #d28c3d, 18px 18px 0 #b53c4d, 22px 22px 0 #b75b21;
+  }
+
+  100% {
+    color: #b53c4d;
+    text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #b75b21, 10px 10px 0 #d28c3d, 14px 14px 0 #b53c4d, 18px 18px 0 #b75b21, 22px 22px 0 #d28c3d;
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    color: #b53c4d;
+    text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #b75b21, 10px 10px 0 #d28c3d, 14px 14px 0 #b53c4d, 18px 18px 0 #b75b21, 22px 22px 0 #d28c3d;
+  }
+
+  33% {
+    color: #b75b21;
+    text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #d28c3d, 10px 10px 0 #b53c4d, 14px 14px 0 #b75b21, 18px 18px 0 #d28c3d, 22px 22px 0 #b53c4d;
+  }
+
+  66% {
+    color: #d28c3d;
+    text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #b53c4d, 10px 10px 0 #b75b21, 14px 14px 0 #d28c3d, 18px 18px 0 #b53c4d, 22px 22px 0 #b75b21;
+  }
+
+  100% {
+    color: #b53c4d;
+    text-shadow: -2px -2px 0 #211617, 2px -2px 0 #211617, -2px 2px 0 #211617, 2px 2px 0 #211617, 6px 6px 0 #b75b21, 10px 10px 0 #d28c3d, 14px 14px 0 #b53c4d, 18px 18px 0 #b75b21;
+  }
+}
+
+body {
+  font-family: "The Dead Saloon", sans-serif;
+}
+
+.background-cover {
+  width: 100%;
+  background-image: url(https://github.com/Technaissance/Technaissance/blob/main/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/cowboy/cleanest.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#main .inner-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+#main .inner-content ul LI {
+  line-height: 1.5em;
+}
+#main .inner-content ul LI:before {
+  content: " ";
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82015/10-gallon-cowboy-hat.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-right: 1.5em;
+  margin-right: 0.5em;
+}
+
+@font-face {
+  font-family: "The Dead Saloon";
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82015/thedeadsaloon-Regular.ttf) format("truetype"), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82015/thedeadsaloon-Regular.woff) format("woff");
+}
+
+/*  BIBLIOGRAPHY */
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+
+
+
+
+
+
+.nero {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #000A00;
+    background-color: #ffffff;
+    font-family: "Lora", serif;
+}
+
+.bibliography {
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+ul.bibliography {
+  list-style:none;
+  padding-left:0;
+}
+
+ul.bibliography li {
+    color: #ffffff;
+    font-family: "Lora", serif;
+    color: #000A00;
+    background-color: #ffffff;
+    list-style: none;
+
+}
+
+
+
+ul.bibliography LI:before {
+    content: " ";
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82015/10-gallon-cowboy-hat.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-right: 1.5em;
+
+
+}
+/*  OLD IMAGES EFFECT */
+
+
+@keyframes gradientSize {
+  0% {
+    opacity: 0.3;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.75;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes moveLine {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  9% {
+    left: 0;
+    opacity: 0;
+  }
+  10% {
+    left: 15%;
+    opacity: 0.25;
+  }
+  15% {
+    left: 20%;
+    opacity: 0.1;
+  }
+  20% {
+    left: 10%;
+    opacity: 0.2;
+  }
+  25% {
+    left: 25%;
+    opacity: 0.2;
+  }
+  30% {
+    left: 30%;
+    opacity: 0.3;
+  }
+  40% {
+    left: 20%;
+    opacity: 0.2;
+  }
+  50% {
+    left: 30%;
+    opacity: 0.1;
+  }
+  60% {
+    left: 20%;
+    opacity: 0.2;
+  }
+  70% {
+    left: 0%;
+    opacity: 0.2;
+  }
+  80% {
+    left: 10%;
+    opacity: 0.2;
+  }
+  90% {
+    left: 30%;
+    opacity: 0.3;
+  }
+  100% {
+    left: 10%;
+    opacity: 0.1;
+  }
+}
+@keyframes bgMove {
+  0% {
+    background-position: 0px center;
+  }
+  5% {
+    background-position: 0 center;
+  }
+  10% {
+    background-position: 0 -2px;
+  }
+  15% {
+    background-position: 0 center;
+  }
+  30% {
+    background-position: 0px center;
+  }
+  37% {
+    background-position: 0 -2px;
+  }
+  40% {
+    background-position: 0px center;
+  }
+  45% {
+    background-position: 0 2px;
+  }
+  50% {
+    background-position: 0px center;
+  }
+  62% {
+    background-position: 0px center;
+  }
+  65% {
+    background-position: 0 -2px;
+  }
+  67% {
+    background-position: 0px center;
+  }
+  78% {
+    background-position: 0px center;
+  }
+  80% {
+    background-position: 0 2px;
+  }
+  85% {
+    background-position: 0 center;
+  }
+  87% {
+    background-position: 0 center;
+  }
+  89% {
+    background-position: 0 -2px;
+  }
+  91% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: 0px center;
+  }
+}
+
+
+#container {
+  width: 100%;
+  height: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #95795b;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center; /* vertical */
+  justify-content: center; /* horizontal */
+  overflow: hidden;
+  animation-name: bgMove;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+
+
+}
+
+#over img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 60px; 
+
+
+}
+
+#container:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #bfac97;
+  mix-blend-mode: color;
+  content: " ";
+}
+#container #effects {
+  width: 105%;
+  height: 105%;
+  margin-top: -20px;
+  margin-left: -20px;
+  position: absolute;
+
+}
+#container #effects:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: gradientSize;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -moz-box-shadow: inset 0 0 10em black;
+  -webkit-box-shadow: inset 0 0 10em black;
+  box-shadow: inset 0 0 10em black;
+}
+#container #effects:after {
+  width: 1px;
+  height: 100%;
+  background: black;
+  content: " ";
+  display: block;
+  position: absolute;
+  animation-name: moveLine;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+
+
