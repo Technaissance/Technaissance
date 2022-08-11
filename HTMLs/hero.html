@@ -10,17 +10,9 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function()
-{
-    $("#chatWrapper").height($("#myVideo").height());
-    
-    $(window).resize(function()
-    {
-        $("#chatWrapper").height($("#myVideo").height());
-    });
-});</script>
+
 <style>
+
 .head-allign{
   justify-content: center
 
@@ -295,9 +287,15 @@ a[data-toggle="collapse"] {
   padding: 40px;
 }
 
-.size {
-  
+.sizea {
+  height: 800px;
 }
+
+.sizeb {
+    height: 900px;
+}
+
+
 
 </style>
 
@@ -401,8 +399,8 @@ a[data-toggle="collapse"] {
                 <div class="container-fluid">
                   <div class="row g-2 divo">
                     <div class="col-8 ">
-                        <div id="myVideo">
-                      <div class="p-3 border bg-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est a purus pretium auctor. Pellentesque placerat elit id gravida tempus. Proin luctus vulputate mauris ut feugiat. Sed interdum posuere quam a mollis. In finibus quis magna quis viverra. Suspendisse non porttitor lacus. Ut et diam aliquet, tincidunt elit at, placerat sapien.
+
+                      <div class="p-3 border bg-light sizea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est a purus pretium auctor. Pellentesque placerat elit id gravida tempus. Proin luctus vulputate mauris ut feugiat. Sed interdum posuere quam a mollis. In finibus quis magna quis viverra. Suspendisse non porttitor lacus. Ut et diam aliquet, tincidunt elit at, placerat sapien.
 
 Nulla facilisi. Integer gravida risus vitae nunc tincidunt, non bibendum tortor scelerisque. Mauris sollicitudin tincidunt leo, nec ultrices lacus aliquet a. Proin sed tempus orci. Curabitur et magna purus. Proin sit amet dui quis lectus faucibus tincidunt. Pellentesque eu justo eget quam vulputate placerat ac id massa.
 
@@ -410,11 +408,11 @@ Nunc porta velit non magna aliquet, malesuada tempus massa consectetur. Suspendi
 
 Sed congue felis non quam iaculis, quis rutrum ante sodales. Phasellus et dolor metus. Fusce sapien lorem, euismod lobortis ultricies non, elementum nec arcu. Etiam vitae turpis vitae purus placerat egestas. Mauris sed nibh sit amet ante bibendum ullamcorper. Sed tempor, nisi aliquam lacinia pellentesque, massa neque vulputate elit, sed suscipit lorem ligula quis arcu. Sed id sem lorem. Suspendisse a vehicula mi. Etiam varius massa sit amet dui bibendum, nec pulvinar massa porta. Quisque a nunc sit amet neque ultricies feugiat. Etiam ex urna, facilisis vitae pharetra vel, consequat non libero. Maecenas condimentum metus ut mi facilisis, id dignissim tortor blandit. Aliquam tincidunt urna eget nisi maximus, non dignissim ligula dictum.
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non diam commodo, mattis massa ut, lacinia nisl. Fusce eu turpis leo. Proin diam est, sollicitudin ut lectus at, ultricies iaculis ligula. Sed tempus ligula quis velit tempus, eget dapibus eros consectetur. Aliquam vel condimentum est. Duis tempus, leo a maximus cursus, est sem fermentum nunc, eu mattis velit sapien id metus.
+
 </div>
-</div>
+
                     </div>
-                        <div id="chatWrapper" class="col-4 overflow-auto" >
+                        <div  class="col-4 overflow-auto sizea" >
                           <div class="p-3 border bg-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est a purus pretium auctor. Pellentesque placerat elit id gravida tempus. Proin luctus vulputate mauris ut feugiat. Sed interdum posuere quam a mollis. In finibus quis magna quis viverra. Suspendisse non porttitor lacus. Ut et diam aliquet, tincidunt elit at, placerat sapien.
 
 Nulla facilisi. Integer gravida risus vitae nunc tincidunt, non bibendum tortor scelerisque. Mauris sollicitudin tincidunt leo, nec ultrices lacus aliquet a. Proin sed tempus orci. Curabitur et magna purus. Proin sit amet dui quis lectus faucibus tincidunt. Pellentesque eu justo eget quam vulputate placerat ac id massa.
