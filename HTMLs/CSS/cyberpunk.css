@@ -1,48 +1,86 @@
+.offcanvas-btn {
+    left: 391px;
+    visibility: visible;
+    bottom: 50%;
+    transform: rotate(270deg);
+}
+
+/* optional junk to toggle the button text */
+.offcanvas-btn span:last-child,
+.offcanvas.show .offcanvas-btn span:first-child {
+  display: none;
+}
+
+.offcanvas.show .offcanvas-btn span:last-child {
+  display: inline;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+.overflow-auto {
+  max-height: 1024px;
+}
+
+
+.footer-widget {
+    border: 1px solid #444;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
 /* ARTICLE CSS /*
 
  /* INNER TEXT */
- .innertext {
-   font-family: "VT323";
- }
+
+
+
+table, th {
+  border-bottom:1px solid black;
+  text-align: left;
+  margin: 30px;
+}
+
 .abstract {
     font-style: italic;
     font-size: 14px;
 }
 
 .abstractkw {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
 }
-  /*Internal CSS using class name*/
-    .subtitles{font-style: italic;
-       font-weight: bold;
-         font-size: 15px;
-         color: #0a0a0a;
-        display: block;
-        margin-left: 30px;
-      }
-    /*Internal CSS for tables*/ 
-    table, th {
-        border-bottom:1px solid black;
-        text-align: left;
-        margin: 30px;
-      }
 
-    /*Internal CSS for images*/ 
-    .img {max-width: 90%;
-          height: auto;
-          margin: 30px;}
-    .img3 {max-width: 50%;
-          display: block;
-          margin: 30px; }
+.subtitles{font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  color: #0a0a0a;
+  display: block;
+  margin-left: 30px;
+}
+
+
+/*Internal CSS for images*/ 
+.img {max-width: 90%;
+      height: auto;
+      margin: 30px;}
+.img3 {max-width: 50%;
+      display: block;
+      margin: 30px; }
 
 
 /* BODY */
 
 :root {
-  --glitched-duration: 0.9s;
-  --glitched-long-duration: 3s;
+  --effect-duration: 0.9s;
+  --effect-long-duration: 3s;
   --yellow-color: #f9f002;
   --yellow-color-opacity: #f9f00242;
   --orange-color: #ff9800;
@@ -61,14 +99,14 @@
   height:  30vh;
 }
 
-p {
+.pissue {
   font-family:'PT Mono', monospace;
   margin-bottom: 30px;
   margin-top:  30px;
 
 }
 
-h4.nero {
+h4.references {
   background-color: #000A00;
   color: #00B200;
   font-family: "VT323";
@@ -79,10 +117,10 @@ h4.nero {
 }
 /* Titles */
 
-h1.cyberpunk,
-h2.cyberpunk,
-h3.cyberpunk,
-h4.cyberpunk {
+h1.issue,
+h2.issue,
+h3.issue,
+h4.issue {
   font-size: 2rem;
   line-height: 2.2rem;
   font-weight: 200;
@@ -92,28 +130,28 @@ h4.cyberpunk {
 
 }
 
-h2.cyberpunk {
+h2.issue {
   font-size: 1.7rem;
   line-height: 1.9rem;
   font-weight: 300;
 }
 
-h3.cyberpunk {
+h3.issue {
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 500;
 }
 
-h4.cyberpunk {
+h4.issue {
   font-size: 1rem;
   line-height: 1.2rem;
   font-weight: 700;
 }
 
-h1.cyberpunk:before,
-h2.cyberpunk:before,
-h3.cyberpunk:before,
-h4.cyberpunk:before {
+h1.issue:before,
+h2.issue:before,
+h3.issue:before,
+h4.issue:before {
     content: "";
     display: block;
     position: absolute;
@@ -125,37 +163,37 @@ h4.cyberpunk:before {
     clip-path: polygon(0px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 0px 10px);
 }
 
-h1.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 1.4);
+h1.issue.effect {
+  animation-name: h1effect;
+  animation-duration: calc(var(--effect-duration) * 1.4);
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-h2.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 1.7);
+h2.issue.effect {
+  animation-name: h1effect;
+  animation-duration: calc(var(--effect-duration) * 1.7);
   animation-iteration-count: infinite;
   animation-direction: reverse;
   animation-timing-function: linear;
 }
 
-h3.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 1.1);
+h3.issue.effect {
+  animation-name: h1effect;
+  animation-duration: calc(var(--effect-duration) * 1.1);
   animation-iteration-count: infinite;
   animation-direction: reverse;
   animation-timing-function: ease-out;
 }
 
-h4.cyberpunk.glitched {
-  animation-name: h1glitched;
-  animation-duration: calc(var(--glitched-duration) * 2.1);
+h4.issue.effect {
+  animation-name: h1effect;
+  animation-duration: calc(var(--effect-duration) * 2.1);
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes h1glitched {
+@keyframes h1effect {
   0% {
     transform: skew(-20deg);
     left: -4px;
@@ -185,14 +223,14 @@ h4.cyberpunk.glitched {
   }
 }
 
-h1.cyberpunk.glitched:before {
-  animation-name: h1beforeglitched;
-  animation-duration: calc(var(--glitched-duration) * 2);
+h1.issue.effect:before {
+  animation-name: h1beforeeffect;
+  animation-duration: calc(var(--effect-duration) * 2);
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes h1beforeglitched {
+@keyframes h1beforeeffect {
   0% {
     transform: skew(-20deg);
     left: -4px;
@@ -230,18 +268,18 @@ h1.cyberpunk.glitched:before {
   }
 }
 
-h2.cyberpunk:before {
+h2.issue:before {
   clip-path: polygon(0px 5px, 35px 5px, 40px 0px, 85px 0px, 90px 5px, 100% 5px, 100% 6px, 85px 6px, 80px 10px, 20px 10px, 15px 6px, 0px 6px);
 }
 
-h2.cyberpunk.glitched:before {
-  animation-name: h2beforeglitched;
-  animation-duration: calc(var(--glitched-duration) * 2);
+h2.issue.effect:before {
+  animation-name: h2beforeeffect;
+  animation-duration: calc(var(--effect-duration) * 2);
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-@keyframes h2beforeglitched {
+@keyframes h2beforeeffect {
   0% {
     transform: scaleY(1);
   }
@@ -268,30 +306,30 @@ h2.cyberpunk.glitched:before {
   }
 }
 
-h3.cyberpunk:before {
+h3.issue:before {
         clip-path: polygon(0px 5px, 10px 5px, 15px 0px, 40px 0px, 45px 5px, 100% 5px, 100% 6px, 31px 6px, 27px 2px, 15px 2px, 8px 10px, 0px 10px);
 }
 
-h4.cyberpunk:before {
+h4.issue:before {
         clip-path: polygon(0px 3px, 15px 3px, 20px 0px, 80px 0px, 85px 3px, 100% 3px, 100% 4px, 85px 4px, 80px 7px, 20px 7px, 15px 4px, 0px 4px);
 }
 
-h1.cyberpunk:after,
-h2.cyberpunk:after,
-h3.cyberpunk:after,
-h4.cyberpunk:after,
-p.cyberpunk:after {
+h1.issue:after,
+h2.issue:after,
+h3.issue:after,
+h4.issue:after,
+p.issue:after {
   content: "_";
   animation-name: hxafter;
-  animation-duration: var(--glitched-duration);
+  animation-duration: var(--effect-duration);
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-h3.cyberpunk:after,
-h4.cyberpunk:after {
+h3.issue:after,
+h4.issue:after {
   animation-direction: reverse;
-  animation-duration: calc(var(--glitched-duration) / 2);
+  animation-duration: calc(var(--effect-duration) / 2);
 }
 
 @keyframes hxafter {
@@ -317,7 +355,7 @@ hr {
   width: 100%;
   clip-path: polygon(1px 0px, 0px 0px, 0px 0px, 8px 14px, 13px 14px, 22px 7px, 42px 6px, 49px 2px, 100% 2px, 100% 0px, 42px 0px, 35px 5px, 22px 6px, 13px 13px, 9px 13px);
   animation-name: hr;
-  animation-duration: var(--glitched-long-duration);
+  animation-duration: var(--effect-long-duration);
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
 }
@@ -459,7 +497,7 @@ hr {
 
 
 
-.boxo {
+.boxreferences {
     background-color: #000A00;
     color: #00B200;
     margin-left: -30px;
@@ -468,17 +506,15 @@ hr {
     overflow-y: scroll;
 }
 
-ul.boxo li {
+ul.boxreferences li {
     list-style: square;
     font-family: "VT323", monospace;
     padding: 10px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.boxo::-webkit-scrollbar {
+.boxreferences::-webkit-scrollbar {
     display: none;
 }
 
 
-
-</style>
