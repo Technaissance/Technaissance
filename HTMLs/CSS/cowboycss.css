@@ -12,8 +12,10 @@ h3 {
 
 
 .abstract {
+    font-family: arial;
     font-style: italic;
     font-size: 14px;
+    line-height: 25px;
 }
 
 .abstractkw {
@@ -37,9 +39,13 @@ h3 {
       }
 
     /*Internal CSS for images*/ 
-    img {max-width: 90%;
-          height: auto;
-          margin: 30px;}
+  img {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
     .img3 {max-width: 50%;
           display: block;
           margin: 30px; }
@@ -53,7 +59,7 @@ h3 {
   src: url(https://fonts.gstatic.com/s/specialelite/v18/XLYgIZbkc4JPUL5CVArUVL0ntnAOTQ.ttf) format('truetype');
 }
 
-.quotes {
+.quote {
   font-family: 'Special Elite', cursive;
   background: #fffdf5;
   background-color: #D28C3E;
@@ -178,7 +184,7 @@ blockquote {
 }
 }
 
-#main {
+#bodymain {
   zoom: 1;
   background-color: #d28c3d;
   color: #211617;
@@ -186,16 +192,17 @@ blockquote {
   margin: 0 auto;
   font-size: 1.5em;
   line-height: 1.5em;
+  padding: 30px;
 }
 
 
-#main .inner:before, #main .inner:after {
+#bodymain .inner:before, #main .inner:after {
   content: "\0020";
   display: table;
   height: 0;
   overflow: hidden;
 }
-#main .inner:after {
+#bodymain .inner:after {
   clear: both;
 }
 
@@ -256,15 +263,17 @@ body {
   color: white;
 }
 
-#main .inner-content ul {
+.inner-content {padding: 30px ;}
+
+#bodymain .inner-content ul {
   list-style: none;
   padding: 0;
   margin: 1em 0;
 }
-#main .inner-content ul LI {
+#bodymain .inner-content ul LI {
   line-height: 1.5em;
 }
-#main .inner-content ul LI:before {
+#bodymain .inner-content ul LI:before {
   content: " ";
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82015/10-gallon-cowboy-hat.png);
   background-position: center center;
@@ -288,37 +297,44 @@ body {
 
 
 
-.nero {
+.references {
     font-size: 3rem;
     margin-bottom: 0px;
     font-weight: bold;
     color: #000A00;
     background-color: #ffffff;
     font-family: "Lora", serif;
+  padding: 30px;
+  margin-bottom: -30px;
 }
 
-.bibliography {
+.boxreferences {
+    background-color: #ffffff;
+    color: #000A00;
+
+
+    height: 200px;
+    overflow-y: scroll;
     height: 300px;
     overflow-y: scroll;
+    list-style: none;
+    font-family: "Lora", serif;
   }
 
-ul.bibliography {
-  list-style:none;
-  padding-left:0;
-}
 
-ul.bibliography li {
+ul.boxreferences li {
     color: #ffffff;
     font-family: "Lora", serif;
     color: #000A00;
     background-color: #ffffff;
     list-style: none;
+    padding: 10px;
+    font-size: 16px;
 
 }
 
 
-
-ul.bibliography LI:before {
+ul.boxreferences LI:before {
     content: " ";
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/82015/10-gallon-cowboy-hat.png);
     background-position: center center;
@@ -484,9 +500,9 @@ ul.bibliography LI:before {
 }
 
 
-#container {
+#vintage {
   width: 100%;
-  height: 400px;
+  height: 670px;
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
@@ -514,7 +530,7 @@ ul.bibliography LI:before {
 
 }
 
-#container:after {
+#vintage:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -524,7 +540,7 @@ ul.bibliography LI:before {
   mix-blend-mode: color;
   content: " ";
 }
-#container #effects {
+#vintage #effects {
   width: 105%;
   height: 105%;
   margin-top: -20px;
@@ -532,7 +548,7 @@ ul.bibliography LI:before {
   position: absolute;
 
 }
-#container #effects:before {
+#vintage #effects:before {
   content: " ";
   position: absolute;
   top: 0;
@@ -546,7 +562,7 @@ ul.bibliography LI:before {
   -webkit-box-shadow: inset 0 0 10em black;
   box-shadow: inset 0 0 10em black;
 }
-#container #effects:after {
+#vintage #effects:after {
   width: 1px;
   height: 100%;
   background: black;
@@ -560,3 +576,6 @@ ul.bibliography LI:before {
 
 
 
+.pissue{
+  font-size: 20px;
+}
