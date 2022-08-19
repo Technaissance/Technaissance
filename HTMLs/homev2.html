@@ -116,9 +116,9 @@
     Dropdown button
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" id="bt" href="#">Theme 1</a></li>
-    <li><a class="dropdown-item" id="bt2" href="#">Theme 2</a></li>
-    <li><a class="dropdown-item" id="bt3" href="#">Theme 3</a></li>
+    <li> <button class="dropdown-item" type="button" onclick="toggleTheme('CSS/cyberpunk.css')">Theme 1</li>
+    <li> <button class="dropdown-item" type="button" onclick="toggleTheme('CSS/blank.css')">Theme 1</li>
+    <li> <button class="dropdown-item" type="button" onclick="toggleTheme('CSS/cyberpunk.css')">Theme 1</li>
   </ul>
 </div>
 </nav>
@@ -152,20 +152,38 @@
 <container class="m-0">
   <div class="row px-4 mx-2">
     <div class="col-md-12 border">
-      Column
+      <div class="titlemain">
+        <div class="inner-content">
+          
+              <h1 class="issue">UNDERSTANDING AND CREATING ART WITH AI:</h1>
+        </div>
+      </div>
+
     </div>
     <div class="col-md-12 border">
-      Column
+       <div class="titlemain">
+        <div class="inner-content">
+      <h2 class="issue">REVIEW AND OUTLOOK</h2>
+    </div>
+  </div>
     </div>
   </div>
 </container>
 <container class="m-0">
   <div class="row px-4 mx-2 my-3">
     <div class="col-md-5 border">
-      Column
+      <div class="pmain">
+        <div class="inner-content">
+           <p class="ptitle">February 19, 2021</p>
+        </div>
+      </div>
     </div>
     <div class="col-md-3 border">
-      Column
+      <div class="pmain">
+        <div class="inner-content">
+          <p class="ptitle">By Eva Cetinic, James She</p>
+        </div>
+      </div>
     </div>
   </div>
 </container>
@@ -175,23 +193,28 @@
   <div class="row justify-content-between px-4 mx-2 my-3">
     <div class="col-md-8 border">
       <div class="bodymain">
-        <h1 class="issue">UNDERSTANDING AND CREATING ART WITH AI: REVIEW AND OUTLOOK</h1>
-          <p class="pissue">February 19, 2021</p>
-          <p><span class="abstract"> ABSTRACT</span></p>
-          <p ><span class="abstract">Technologies related to artificial intelligence (AI) have a strong impact on the changes of research and creative practices in visual arts. The growing number of research initiatives and creative applications that emerge in the intersection of AI and art, motivates us to examine and discuss the creative and explorative potentials of AI technologies in the context of art. This paper provides an integrated review of two facets of AI and art: 1) AI is used for art analysis and employed on digitized artwork collections; 2) AI is used for creative purposes and generating novel artworks. In the context of AI-related research for art understanding, we present a comprehensive overview of artwork datasets and recent works that address a variety of tasks such as classification, object detection, similarity retrieval, multimodal representations, computational aesthetics, etc. In relation to the role of AI in creating art, we address various practical and theoretical aspects of AI Art and consolidate related works that deal with those topics in detail. Finally, we provide a concise outlook on the future progression and potential impact of AI technologies on our understanding and creation of art. </span></p>
-          <p ><span class="abstractkw">Keywords fine art, deep learning, computer vision, AI Art, generative art, computational creativity</span></p>
-
-        <div class="bodyp">
-          <div class="pi">
+        <div class="inner">
+          <div class="inner-content">
+                        
+            <p><span class="abstract"> ABSTRACT</span></p>
+            
+            <p ><span class="abstract">Technologies related to artificial intelligence (AI) have a strong impact on the changes of research and creative practices in visual arts. The growing number of research initiatives and creative applications that emerge in the intersection of AI and art, motivates us to examine and discuss the creative and explorative potentials of AI technologies in the context of art. This paper provides an integrated review of two facets of AI and art: 1) AI is used for art analysis and employed on digitized artwork collections; 2) AI is used for creative purposes and generating novel artworks. In the context of AI-related research for art understanding, we present a comprehensive overview of artwork datasets and recent works that address a variety of tasks such as classification, object detection, similarity retrieval, multimodal representations, computational aesthetics, etc. In relation to the role of AI in creating art, we address various practical and theoretical aspects of AI Art and consolidate related works that deal with those topics in detail. Finally, we provide a concise outlook on the future progression and potential impact of AI technologies on our understanding and creation of art. </span></p>
+            
+            <p ><span class="abstractkw">Keywords fine art, deep learning, computer vision, AI Art, generative art, computational creativity</span></p>
+          
+          </div>
+        </div>
+        
+        <div class="quote">
             <div class="container">
               <div class="wrap-top">
-                <div id="quote"><span class="blocktext"> Lorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum dones</span></div>
+                 Lorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum donestLorem ipsum dones
               </div>
             </div>
-          </div>
         </div>
 
         <h2 class="issue">1 Introduction</h2>
+        
         <p class="pissue">Recent advances in machine learning have led to an acceleration of interest in research on artificial intelligence (AI). This fostered the exploration of possible applications of AI in various domains and also prompted critical discussions addressing the lack of interpretability, the limits of machine intelligence, potential risks and social challenges. In the exploration of the settings of the “human versus AI” relationship, perhaps the most elusive domain of interest is the creation and understanding of art. Many interesting initiatives are emerging at the intersection of AI and art, however comprehension and appreciation of art is still considered to be an exclusively human capability. Rooted in the idea that the existence and meaning of art is indeed inseparable from human-to-human interaction, the motivation behind this paper is to explore how bringing AI in the loop can foster not only advances in the fields of digital art and art history, but also inspire our perspectives on the future of art.</p>
 
         <p class="pissue">The variety of activities and research initiatives related to “AI and Art” can generally be divided into two categories: 1) AI is used in the process of analyzing existing art; or 2) AI is used in the process of creating new art. In this paper, relevant aspects and contributions of these two categories are discussed, with a particular focus on the relation of AI to visual arts. In recent years, there has been a surge of interest among artists, technologists and researchers in exploring the creative potential of AI technologies. The use of AI in the process of creating visual art was significantly accelerated with the emergence of Generative Adversarial Networks (GAN) [56]. The growing number of artists engaging in using AI technologies and the increasing interest from galleries and auction houses in AI Art, fosters discussions about various practical and theoretical aspects of this new movement. On the other side, the increasing online availability of digitized art collections gives new opportunities to analyze the history of art using AI technologies. In particular, the use of Convolutional Neural Networks (CNN) enabled advanced levels of automation in classifying, categorizing and visualizing large collections of artwork image data. Besides building efficient retrieval platforms, smart recommendation systems and advanced tools for exploring digitized art collections, AI technologies can support new knowledge production in the domain of art history by enabling novel ways of analyzing relations between specific artworks or artistic oeuvres. The growing number of artistic productions, research and applications that emerge in the intersection of AI and art, prompts the need to discuss the creative and explorative potentials of AI technologies in the context of our historical, contemporary and future understanding of art.</p>
@@ -202,8 +225,13 @@
 
         <p class="pissue">Large-scale digitization efforts which took place in the last decades led to a considerable increase of online available art collections. Those art collections enable us to easily explore and enjoy artworks that are located in various museums or art galleries throughout the world. Apart from enabling us to visually inspect various artworks, the availability of large collections of digitized art images triggers new interdisciplinary research perspectives. The physical painting and its digitized counterpart exist in different material modes, yet they encode and communicate the same complex structure of information. Just as the properties of the canvas and the paint often include contextual information that can be of great interest to art historians, the numerical representation of a digitized artwork also includes information of which the potential is not yet fully exploited. The main goal of digitization projects is usually oriented towards building digital repositories to enable easier ways of accessing and exploring collections. Although this is often considered the end goal of many digitization projects, it is important to emphasize that the existence of these collections is only the beginning and necessary prerequisite for applying advanced computational methods and opening new research perspectives. Figure 1 illustrates the process from digitization to quantitative analysis, knowledge discovery and visualization using computational methods. Research results obtained from the final phase of this process are often used to enhance the functionalities of repositories and online collections by adding advanced ways of content exploration.</p>
 
-        <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1a.png" class="img" alt="digital art"><br>
-
+        <div id="vintage">
+          <div id="effects">
+            <div id="over">
+              <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1a.png" class="img" alt="digital art"><br>
+            </div>
+          </div>
+        </div>
         <p><span class="subtitles">Figure 1: Illustration of the process from digitization to advanced computational analysis.</span></p>
 
         <p class="pissue">In the context of digitized art analysis, computational methods are generally used either to adopt a distant viewing or a close reading approach [80]. Close reading implies focusing on specific aspects of one particular work or artistic oeuvre, usually addressing problems such as visual stylometry and computational artist authentication [57, 100, 67, 2]. Most of the studies dedicated to those topics rely on the availability of high-quality digital reproductions of the analyzed artworks and mostly focus on brushstrokes and the texture properties. Distant viewing generally involves analyzing large collections by concentrating on particular features or similarity relations and producing corresponding statistical visualizations. The majority of recent studies concerned with computational analysis of art is exploiting the availability of large digitized collections that include images of various quality, and therefore adopt a distant viewing approach. In the last few years there has been a growing number of research collaborations addressing the application of computer vision and deep learning methods in the domain of digital art history. The most commonly addressed tasks include the problem of automatic classification, object detection, content based and multimodal retrieval, quantitative analysis of different features and concepts, computational aesthetics, etc.</p>
@@ -402,7 +430,13 @@
 
         <p class="pissue">Several important technological advances achieved in the last few years supported the rising interest in AI Art. In the context of computer graphics and computer vision research, over the last decades many rendering and texture synthesis algorithms have been developed. Those algorithms were designed to modify images in various ways, including the application of an “artistic style” to the input image, e.g. painterly or sketched style [60, 64, 39, 55]. However, the use of deep neural networks for the purpose of stylizing photos and creating new images began rather recently and accelerated in the last five years. Figure 2 summarizes some of the most important technological milestones that influenced AI Art production. One of the first methods that gained significant attention was DeepDreams introduced by Mordvintsev et al. [96] in 2015. This method was initially designed to advance the interpretability of deep convolutional neural networks by visualizing patterns that maximize the activation of neurons. Because it produced a rather psychedelic and hallucinatory stylistic effect, the method later became a popular new form of digital art production.</p>
 
-        <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1b.png" class="img" alt="digital art process"><br>
+        <div id="vintage">
+          <div id="effects">
+            <div id="over">
+              <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1b.png" class="img" alt="digital art process"><br>
+            </div>
+          </div>
+        </div>
 
         <p><span class="subtitles">Figure 2: Ilustration of the most important technological milestones that led to the current AI Art production.</span></p>
 
@@ -420,7 +454,13 @@
 
         <p class="pissue">Although the case of the “Portrait of Edmond Belamy” became very popular for various reasons, within the AI Art community many agree that there are other artists whose work can be considered a more representative example of AI Art: “Many artists working in the field point out that Obvious, the collective behind the AI that made the pricey work, was handsomely rewarded for an idea that was neither very original nor very interesting” [102]. However, since the boost of AI Art popularity triggered by Christie’s auction, the number of artists involved in making AI Art is rising worldwide. The fact that AI Art gained momentum in the last two years is reflected in the growing number of online platforms featuring AI Art such as AIArtists.org 1, as well as exhibitions, conferences, competitions and discussion panels dedicated to AI Art. Figure 3 shows several examples of contemporary AI artworks.</p>
 
-        <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1c.png" class="img" alt="digital art construction"><br>
+        <div id="vintage">
+          <div id="effects">
+            <div id="over">
+              <img src="https://technaissance.github.io/Technaissance/Articles/Understanding%20and%20creating%20art%20with%20AI:%20review%20and%20Outlook/article1c.png" class="img" alt="digital art construction"><br>
+            </div>
+          </div>
+        </div>
 
         <p><span class="subtitles">Figure 3: Examples of AI Art: 1) Obvious, Portrait of Belami 2) Mario Klingemann, Memories of Passersby I 3) Sofia Crespo, Neural Zoo 4) Robbie Barrat, Nudes 5) Scot Eaton, Humanity (Fall of the Damned) 6) James She, Keep Running</span></p>
 
@@ -873,14 +913,17 @@
         <!-- Footer -->
       </footer>
 
-      <script>
-    var targetStyle = document.querySelector('#default'),
-        otherStyle = 'CSS/cyberpunk.css';
-
-    document.querySelector('#bt').onclick = function(){
-        targetStyle.href=otherStyle;        
-    };
-
-</script>
+  <script>
+        function toggleTheme(value) {
+  
+            // Obtain the name of stylesheet 
+            // as a parameter and set it 
+            // using href attribute.
+            var sheets = document
+                .getElementsByTagName('link');
+  
+            sheets[0].href = value;
+        }
+    </script>
 </body>
 </html>
