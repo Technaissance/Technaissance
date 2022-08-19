@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
-h2 {
+h2.issue {
   font-family: 'PT Mono', monospace;
-  font-size: 30px;
+  font-size:4vw
 }
 
-h3 {
+h3.issue{
   font-family: 'PT Mono', monospace;
-  font-size: 20px;
+  font-size:2vw
 }
 
 
@@ -39,7 +39,7 @@ h3 {
       }
 
     /*Internal CSS for images*/ 
-  img {
+  .img2 {
   width: 80%;
   position: absolute;
   top: 50%;
@@ -50,7 +50,7 @@ h3 {
           display: block;
           margin: 30px; }
 
-/*BLOCKQUOTE*/ 
+/*quote*/ 
 
 @font-face {
   font-family: 'Special Elite';
@@ -60,68 +60,57 @@ h3 {
 }
 
 .quote {
-  font-family: 'Special Elite', cursive;
-  background: #fffdf5;
-  background-color: #D28C3E;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    font-family: 'Special Elite', cursive;
+    background: #fffdf5;
+    background-color: #D28C3E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.4;
+    position: relative;
+    /* margin: 50px; */
+    padding: 1.5rem;
+    /* padding-right: 74px; */
+    /* padding-left: 74px; */
 }
+.quote:before,
+.quote:after {
+    position: absolute;
+    font-size: 8rem;
+    width: 4rem;
+    height: 4rem;
 
-
-blockquote {
-  font-weight: 100;
-  font-size: 2rem;
-  max-width: 600px;
-  line-height: 1.4;
-  position: relative;
-  margin: 0;
-  padding: 0.5rem;
 }
-blockquote:before,
-blockquote:after {
-  position: absolute;
-  font-size: 8rem;
-  width: 4rem;
-  height: 4rem;
+.quote:before {
+    content: '“';
+    left: -1rem;
+    top: -3rem;
+    padding-top: 20px;
 }
-blockquote:before {
-  content: '“';
-  left: -5rem;
-  top: -2rem;
-}
-blockquote:after {
-  content: '”';
-  right: -5rem;
-  bottom: 1rem;
+.quote:after {
+    content: '”';
+    right: 0rem;
+    bottom: 2rem;
 }
 cite {
   line-height: 3;
   text-align: left;
 }
-/*BLOCKQUOTE*/ 
+/*quote*/ 
 @font-face {
   font-family: "The Dead Saloon";
   src: url(/week-one/library/fonts/thedeadsaloon-Regular.ttf) format("truetype"), url(/week-one/library/fonts/thedeadsaloon-Regular.woff) format("woff");
 }
 
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 24px;
-  line-height: 2.4rem;
-  font-family: "The Dead Saloon", sans-serif;
-  background-color: #b53c4d;
-}
 
 
-blockquote {
+
+
+.quote {
     page-break-inside: avoid;
   }
 
@@ -150,7 +139,12 @@ blockquote {
     height: 388px;
   }
 }
-.background-cover .content h1 {
+ h1.issue {
+  font-family: "The Dead Saloon", sans-serif;
+
+ }
+
+.background-cover .content h1.issue {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -171,7 +165,7 @@ blockquote {
   transition: transform 0.5s ease;
 }
 @media (min-width: 48em) {
-  .background-cover .content h1 {
+  .background-cover .content h1.issue {
     font-size: 4.6875em;
     line-height: 1.28em;
     text-indent: 0px;
@@ -184,25 +178,38 @@ blockquote {
 }
 }
 
-#bodymain {
-  zoom: 1;
-  background-color: #d28c3d;
-  color: #211617;
-  max-width: 960px;
-  margin: 0 auto;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  padding: 30px;
+.bodymain {
+    zoom: 1;
+    background-color: #d28c3d;
+    color: #211617;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 30px;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 24px;
+    line-height: 2.4rem;
+    font-family: "The Dead Saloon", sans-serif;
+    min-height: 260vh;
+    overflow: auto;
+    height: 103vh;
+    margin-top: -50px;
+    margin-bottom: -50px;
+
+  
 }
 
+body{margin: 0px}
 
-#bodymain .inner:before, #main .inner:after {
+.bodymain .inner:before, #main .inner:after {
   content: "\0020";
   display: table;
   height: 0;
   overflow: hidden;
 }
-#bodymain .inner:after {
+.bodymain .inner:after {
   clear: both;
 }
 
@@ -251,9 +258,7 @@ blockquote {
   }
 }
 
-body {
-  font-family: "The Dead Saloon", sans-serif;
-}
+
 
 .background-cover {
   width: 100%;
@@ -304,21 +309,25 @@ body {
     color: #000A00;
     background-color: #ffffff;
     font-family: "Lora", serif;
-  padding: 30px;
-  margin-bottom: -30px;
+    padding: 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+    font-size:4vw
+
 }
 
 .boxreferences {
     background-color: #ffffff;
     color: #000A00;
-
-
     height: 200px;
     overflow-y: scroll;
     height: 300px;
     overflow-y: scroll;
     list-style: none;
     font-family: "Lora", serif;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 
 
@@ -578,4 +587,22 @@ ul.boxreferences LI:before {
 
 .pissue{
   font-size: 20px;
+}
+
+.cowboybgcolor {
+  background-color: #b53c4d;
+  margin-top: 0px;
+}
+
+.cowboybg {
+    font-family: "The Dead Saloon", sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 24px;
+    line-height: 2.4rem;
+    font-family: "The Dead Saloon", sans-serif;
+    background-color: #d28c3d;
+    display: block;
+    margin: 50px;
+
 }
