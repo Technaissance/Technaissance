@@ -14,6 +14,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="CSS/default.css" id="default">
+ <meta name="description" content="Example metadara" id="metades">
 <style>
 .offcanvas-btn {
     left: 391px;
@@ -70,7 +71,7 @@
 </style>
 
 </head>
-<body>
+<body onload="myFunction()">
 
 
 
@@ -202,7 +203,7 @@
                         
             <p><span class="abstract"> ABSTRACT</span></p>
             
-            <p ><span class="abstract">Technologies related to artificial intelligence (AI) have a strong impact on the changes of research and creative practices in visual arts. The growing number of research initiatives and creative applications that emerge in the intersection of AI and art, motivates us to examine and discuss the creative and explorative potentials of AI technologies in the context of art. This paper provides an integrated review of two facets of AI and art: 1) AI is used for art analysis and employed on digitized artwork collections; 2) AI is used for creative purposes and generating novel artworks. In the context of AI-related research for art understanding, we present a comprehensive overview of artwork datasets and recent works that address a variety of tasks such as classification, object detection, similarity retrieval, multimodal representations, computational aesthetics, etc. In relation to the role of AI in creating art, we address various practical and theoretical aspects of AI Art and consolidate related works that deal with those topics in detail. Finally, we provide a concise outlook on the future progression and potential impact of AI technologies on our understanding and creation of art. </span></p>
+            <p ><span class="abstract">Technologies related to artificial <span id="technicalterms"> intelligence (AI)</span> have a strong impact on the changes of research and creative practices in visual arts. The growing number of research initiatives and creative applications that emerge in the intersection of AI and art, motivates us to examine and discuss the creative and explorative potentials of AI technologies in the context of art. This paper provides an integrated review of two facets of AI and art: 1) AI is used for art analysis and employed on digitized artwork collections; 2) AI is used for creative purposes and generating novel artworks. In the context of AI-related research for art understanding, we present a comprehensive overview of artwork datasets and recent works that address a variety of tasks such as classification, object detection, similarity retrieval, multimodal representations, computational aesthetics, etc. In relation to the role of AI in creating art, we address various practical and theoretical aspects of AI Art and consolidate related works that deal with those topics in detail. Finally, we provide a concise outlook on the future progression and potential impact of AI technologies on our understanding and creation of art. </span></p>
             
             <p ><span class="abstractkw">Keywords fine art, deep learning, computer vision, AI Art, generative art, computational creativity</span></p>
           
@@ -221,13 +222,13 @@
         
         <p class="pissue">Recent advances in machine learning have led to an acceleration of interest in research on artificial intelligence (AI). This fostered the exploration of possible applications of AI in various domains and also prompted critical discussions addressing the lack of interpretability, the limits of machine intelligence, potential risks and social challenges. In the exploration of the settings of the “human versus AI” relationship, perhaps the most elusive domain of interest is the creation and understanding of art. Many interesting initiatives are emerging at the intersection of AI and art, however comprehension and appreciation of art is still considered to be an exclusively human capability. Rooted in the idea that the existence and meaning of art is indeed inseparable from human-to-human interaction, the motivation behind this paper is to explore how bringing AI in the loop can foster not only advances in the fields of digital art and art history, but also inspire our perspectives on the future of art.</p>
 
-        <p class="pissue">The variety of activities and research initiatives related to “AI and Art” can generally be divided into two categories: 1) AI is used in the process of analyzing existing art; or 2) AI is used in the process of creating new art. In this paper, relevant aspects and contributions of these two categories are discussed, with a particular focus on the relation of AI to visual arts. In recent years, there has been a surge of interest among artists, technologists and researchers in exploring the creative potential of AI technologies. The use of AI in the process of creating visual art was significantly accelerated with the emergence of Generative Adversarial Networks (GAN) [56]. The growing number of artists engaging in using AI technologies and the increasing interest from galleries and auction houses in AI Art, fosters discussions about various practical and theoretical aspects of this new movement. On the other side, the increasing online availability of digitized art collections gives new opportunities to analyze the history of art using AI technologies. In particular, the use of Convolutional Neural Networks (CNN) enabled advanced levels of automation in classifying, categorizing and visualizing large collections of artwork image data. Besides building efficient retrieval platforms, smart recommendation systems and advanced tools for exploring digitized art collections, AI technologies can support new knowledge production in the domain of art history by enabling novel ways of analyzing relations between specific artworks or artistic oeuvres. The growing number of artistic productions, research and applications that emerge in the intersection of AI and art, prompts the need to discuss the creative and explorative potentials of AI technologies in the context of our historical, contemporary and future understanding of art.</p>
+        <p class="pissue">The variety of activities and research initiatives related to “AI and Art” can generally be divided into two categories: 1) AI is used in the process of analyzing existing art; or 2) AI is used in the process of creating new art. In this paper, relevant aspects and contributions of these two categories are discussed, with a particular focus on the relation of AI to visual arts. In recent years, there has been a surge of interest among artists, technologists and researchers in exploring the creative potential of AI technologies. The use of AI in the process of creating visual art was significantly accelerated with the emergence of Generative Adversarial Networks (GAN) [56]. The growing number of artists engaging in using AI technologies and the increasing interest from galleries and auction houses in AI Art, fosters discussions about various practical and theoretical aspects of this new movement. On the other side, the increasing online availability of digitized art collections gives new opportunities to analyze the history of art using AI technologies. In particular, the use of Convolutional Neural Networks (CNN) enabled advanced levels of automation in classifying, categorizing and visualizing large collections of artwork image data. Besides building efficient retrieval platforms, smart recommendation systems and advanced tools for exploring digitized art collections, AI technologies can support new knowledge production in the domain of art history by enabling novel ways of analyzing relations between specific artworks or artistic oeuvres. The growing number of artistic productions, research and applications that emerge in the intersection of AI and art, prompts the need to discuss the creative and explorative potentials of AI technologies in the conpeople of our historical, contemporary and future understanding of art.</p>
 
         <h2 class="issue">2 Understanding Art with AI</h2> 
 
         <h3 class="issue effect">2.1  Art Collections as Data Sources</h3>
 
-        <p class="pissue">Large-scale digitization efforts which took place in the last decades led to a considerable increase of online available art collections. Those art collections enable us to easily explore and enjoy artworks that are located in various museums or art galleries throughout the world. Apart from enabling us to visually inspect various artworks, the availability of large collections of digitized art images triggers new interdisciplinary research perspectives. The physical painting and its digitized counterpart exist in different material modes, yet they encode and communicate the same complex structure of information. Just as the properties of the canvas and the paint often include contextual information that can be of great interest to art historians, the numerical representation of a digitized artwork also includes information of which the potential is not yet fully exploited. The main goal of digitization projects is usually oriented towards building digital repositories to enable easier ways of accessing and exploring collections. Although this is often considered the end goal of many digitization projects, it is important to emphasize that the existence of these collections is only the beginning and necessary prerequisite for applying advanced computational methods and opening new research perspectives. Figure 1 illustrates the process from digitization to quantitative analysis, knowledge discovery and visualization using computational methods. Research results obtained from the final phase of this process are often used to enhance the functionalities of repositories and online collections by adding advanced ways of content exploration.</p>
+        <p class="pissue">Large-scale digitization efforts which took place in the last decades led to a considerable increase of online available art collections. Those art collections enable us to easily explore and enjoy artworks that are located in various museums or art galleries throughout the <span id="places">world</span>. Apart from enabling us to visually inspect various artworks, the availability of large collections of digitized art images triggers new interdisciplinary research perspectives. The physical painting and its digitized counterpart exist in different material modes, yet they encode and communicate the same complex structure of information. Just as the properties of the canvas and the paint often include contextual information that can be of great interest to art historians, the numerical representation of a digitized artwork also includes information of which the potential is not yet fully exploited. The main goal of digitization projects is usually oriented towards building digital repositories to enable easier ways of accessing and exploring collections. Although this is often considered the end goal of many digitization projects, it is important to emphasize that the existence of these collections is only the beginning and necessary prerequisite for applying advanced computational methods and opening new research perspectives. Figure 1 illustrates the process from digitization to quantitative analysis, knowledge discovery and visualization using computational methods. Research results obtained from the final phase of this process are often used to enhance the functionalities of repositories and online collections by adding advanced ways of content exploration.</p>
 
         <div id="vintage">
           <div id="effects">
@@ -400,11 +401,11 @@
 
         <h3 class="issue effect">2.2  Automated Classification of Artworks</h3>
 
-        <p class="pissue">Automated classification of artworks based on categories such as artist, style or genre has been one of the central challenges of computational art analysis over the last decade. Most of the earlier studies addressed the problem of automatic artist [72, 19], style [109, 110] and genre classification [4] by extracting various hand-crafted image features and employing different machine learning algorithms using those features. In achieving better classification accuracy, momentous progress has been made with the adoption of convolutional neural networks (CNNs). In the beginning, CNNs were first employed as feature extractors. Karayev et al. were the first to utilize layer activations of a CNN trained on ImageNet [35], a large hand-labelled object dataset, as features for artistic style classification [70]. In their work they showed that features extracted from a network trained for a completely different task (object recognition on a natural image dataset) outperformed all other low-level image features on the task of style classification. The dominance of CNN-based features, particularly in combination with other hand-crafted features, was confirmed for artist [34], style [7] and genre classification [20]. Apart from using pre-trained CNNs as just feature extractors, Girshick et al. showed that further improvement of performance for a variety of visual recognition tasks can be achieved by fine-tuning a pre-trained network on the new target dataset [52]. Both CNN feature extraction and fine-tuning represent forms of transfer learning, where knowledge that a model learned on one task is being exploited for a new task. Transfer learning approaches, particularly fine-tuning, have proven to give state-of-the-art results for different artistic datasets and various classification tasks [120, 81, 106, 126, 10, 91]. In order to better understand the transferability of pre-trained models, Cetinic et al. [21] explore how different fine-tuning strategies and domain-specific model initializations influence the classification performance of various art classification tasks and datasets when using the same CNN architecture. Sabatelli et al. [105] analyze the transferability and fine-tuning impact of different CNN architectures and conclude, similarly as Gothier et. al [53] who also perform a transfer learning analysis, that models fine-tuned on art datasets outperform ImageNet pre-trained models when applied on different tasks and dataset from the art domain. A comprehensive overview of the current work related to classification of artworks, as well as an approach towards classifying artworks based on iconographic elements is presented in [94].</p>
+        <p class="pissue">Automated classification of artworks based on categories such as artist, style or genre has been one of the central challenges of computational art analysis over the last decade. Most of the earlier studies addressed the problem of automatic artist [72, 19], style [109, 110] and genre classification [4] by extracting various hand-crafted image features and employing different machine learning algorithms using those features. In achieving better classification accuracy, momentous progress has been made with the adoption of convolutional neural networks (CNNs). In the beginning, CNNs were first employed as feature extractors. Karayev et al. were the first to utilize layer activations of a CNN trained on ImageNet [35], a large hand-labelled object dataset, as features for artistic style classification [70]. In their work they showed that features extracted from a network trained for a completely different task (object recognition on a natural image dataset) outperformed all other low-level image features on the task of style classification. The dominance of CNN-based features, particularly in combination with other hand-crafted features, was confirmed for artist [34], style [7] and genre classification [20]. Apart from using pre-trained CNNs as just feature extractors, Girshick et al. showed that further improvement of performance for a variety of visual recognition tasks can be achieved by fine-tuning a pre-trained network on the new target dataset [52]. Both CNN feature extraction and fine-tuning represent forms of transfer learning, where knowledge that a model learned on one task is being exploited for a new task. Transfer learning approaches, particularly fine-tuning, have proven to give state-of-the-art results for different artistic datasets and various classification tasks [120, 81, 106, 126, 10, 91]. In order to better understand the transferability of pre-trained models, <span class="people">Cetinic</span> et al. [21] explore how different fine-tuning strategies and domain-specific model initializations influence the classification performance of various art classification tasks and datasets when using the same CNN architecture. Sabatelli et al. [105] analyze the transferability and fine-tuning impact of different CNN architectures and conclude, similarly as Gothier et. al [53] who also perform a transfer learning analysis, that models fine-tuned on art datasets outperform ImageNet pre-trained models when applied on different tasks and dataset from the art domain. A comprehensive overview of the current work related to classification of artworks, as well as an approach towards classifying artworks based on iconographic elements is presented in [94].</p>
 
         <h3 class="issue effect">2.3  Object Detection and Similarity Retrieval</h3>
 
-        <p class="pissue">Besides classification, the use of deep neural networks showed promising results in exploring the content of artworks and automatically recognizing objects, faces or other specific motifs in paintings. As one of the pioneering works in this area was, Crowley et al. [30] showed that object classifiers trained using CNN features from natural images can retrieve paintings containing these objects with great success. Later studies addressed the problem of not only retrieving paintings that depict a specific object, but also determining the position of the object in the image [32, 54], as well as detecting content to discover co-occurring patterns in collections [77]. One aspect of content that gained particular attention is the depiction of human faces. Interesting work has been done on the topic of people and face detection in paintings [122, 97, 93, 123, 93], as well as analysis and classification of the detected faces based on gender and other features [118]. Apart from faces, effort has been made to recognize other content-related elements of artworks, such as detecting the pose of characters in paintings [68, 86, 9], recognizing specific characters [85] or detecting materials depicted in paintings [83].</p>
+        <p class="pissue">Besides classification, the use of deep neural networks showed promising results in exploring the content of artworks and automatically recognizing objects, faces or other specific motifs in paintings. As one of the pioneering works in this area was, <span class="people">Crowley</span> et al. [30] showed that object classifiers trained using CNN features from natural images can retrieve paintings containing these objects with great success. Later studies addressed the problem of not only retrieving paintings that depict a specific object, but also determining the position of the object in the image [32, 54], as well as detecting content to discover co-occurring patterns in collections [77]. One aspect of content that gained particular attention is the depiction of human faces. Interesting work has been done on the topic of people and face detection in paintings [122, 97, 93, 123, 93], as well as analysis and classification of the detected faces based on gender and other features [118]. Apart from faces, effort has been made to recognize other content-related elements of artworks, such as detecting the pose of characters in paintings [68, 86, 9], recognizing specific characters [85] or detecting materials depicted in paintings [83].</p>
 
         <p class="pissue">One of the main practical goals for employing computational methods for automated content and style recognition in art images is to build smart retrieval systems that can help organize and analyze large collections of artworks in an efficient way. Many of the existing retrieval systems rely on retrieving images based on their corresponding metadata and textual descriptions. However, with convolutional neural networks, significant progress has been made towards obtaining relevant results with image-based enquiries. The notion of “visual similarity” is often considered a key factor in various retrieval systems. However, in the context of art, “similarity” is a complex term that can include different aspects of content matching (depiction of the same objects or similar iconographic representations) or correspondences that are more related to style such as brushstrokes, color, composition, etc. The application of CNNs has shown promising results in retrieving visually linked images in painting collections [108, 111, 17, 16]. To tackle the complexity of similarity in art, Mao et al. [87] proposed the DeepArt retrieval system that encodes joint representations that can simultaneously capture content and style features. A more detailed discussion of the problem of similarity and applications of computer vision methods for the organization and study of art image collections is given in [79].</p>
 
@@ -454,7 +455,7 @@
 
         <h3 class="issue effect">3.2  The Contemporary AI Art Scene</h3>
 
-        <p class="pissue">The universal rule of triggering attention by controversy has once again proven effective in the case of AI Art. Since October 2018, when the AI artwork “Portrait of Edmond Belamy” produced by the Obvious collective was sold at an auction by Christie’s for US$432,500 [25] there has been an increasing interest for AI Art, but also a growing need to discuss key aspects of this new movement in the contemporary art scene. The case of the “Portrait of Edmond Belamy” particularly provoked the discussion about authorship and ethics. However, other important questions started gaining attention from art historians and artists, as well as AI scientists and developers, such as questions related to novelty, originality and autonomy in AI Art.</p>
+        <p class="pissue">The universal rule of triggering attention by controversy has once again proven effective in the case of AI Art. Since <span id="events">October 2018</span>, when the AI artwork “Portrait of Edmond Belamy” produced by the Obvious collective was sold at an auction by Christie’s for US$432,500 [25] there has been an increasing interest for AI Art, but also a growing need to discuss key aspects of this new movement in the contemporary art scene. The case of the “Portrait of Edmond Belamy” particularly provoked the discussion about authorship and ethics. However, other important questions started gaining attention from art historians and artists, as well as AI scientists and developers, such as questions related to novelty, originality and autonomy in AI Art.</p>
 
         <p class="pissue">Although the case of the “Portrait of Edmond Belamy” became very popular for various reasons, within the AI Art community many agree that there are other artists whose work can be considered a more representative example of AI Art: “Many artists working in the field point out that Obvious, the collective behind the AI that made the pricey work, was handsomely rewarded for an idea that was neither very original nor very interesting” [102]. However, since the boost of AI Art popularity triggered by Christie’s auction, the number of artists involved in making AI Art is rising worldwide. The fact that AI Art gained momentum in the last two years is reflected in the growing number of online platforms featuring AI Art such as AIArtists.org 1, as well as exhibitions, conferences, competitions and discussion panels dedicated to AI Art. Figure 3 shows several examples of contemporary AI artworks.</p>
 
@@ -512,6 +513,8 @@
         <p class="pissue">Current trends indicate that AI technologies will become more relevant in the analysis and production of art. In the last several years many universities have established Digital humanities (DH) master’s and PhD programs to educate new generations of researchers familiar with quantitative and AI-based methods and their application to humanities data. We can expect that this will intensify the methodological shift from traditional towards digital research practices in the humanities, as well as result in a growing number of innovative research projects that apply large scale quantitative methods to study art-related historical questions. From the perspective of computer vision, there are still many practical challenges that need to be solved in order to assist researchers working on cultural digital archives. In particular, those are problems related to annotation standards, advanced object detection and retrieval, cross-depiction, iconographic classification, multi-modal alignment and image understanding. The use of deep neural network models was previously conditioned on the availability of large-scale datasets. By utilizing the concept of transfer learning and label-scarce techniques such as few shot learning, deep neural network models can be applied on smaller-sized dataset and employed for different fine-grained tasks and various image collections. Those kinds of approaches will probably be exploited by many future domain-specific digital art history projects. Besides employing deep learning models for enhancing research practices in art history, it is noteworthy to recognize the potential that tasks and data sources from the art domain have on the development of new computer vision and deep learning techniques. Digitized art collections are data sources of images that usually include rich contextual information related to the historical and technical aspects of their formation, but also represent a source of perceptually intriguing visual information which merges interweaving concepts of content and style. Because they comprise different layers of information, art collections represent a useful data source for addressing various and complex tasks of computational image understanding.</p>
 
         <p class="pissue">In the context of art creation and production, AI technologies are starting to have an ever more important role. Not only in terms of digitally and AI produced art, but also in all the aspects of curation, exhibition and sale of traditional art as well. Having in mind the rapid shift of attention towards online platforms and digital showrooms due to the current global pandemic, the ongoing circumstances contributed to the already rising interest in crypto art and blockchain technologies which have the potential to significantly impact and transform the art market. Regarding the creation of art using AI technologies, in the last few years GAN-based approaches were dominating the AI Art scene. Recently, significant breakthroughs have been achieved in the development of multimodal generative models, e.g. models that can generate images from text. Technological advancement in this direction will probably have significant influence on the production and creation of art. Models that can translate data from different modalities into a joint semantic space represent an interesting tool for artistic exploration because the concept of multimodality is integral to many art forms and has always played an important role in the creative process. Furthermore, it is evident that the increasing use of AI technologies in the creation of art will have significant implications regarding the questions related to authorship, as well as on our human perception of art. With the development of AI models that can generate content which very convincingly imitates human textual, visual or musical creations, many of our traditional, as well as contemporary, theoretical and practical understandings of art might become challenged.</p>
+
+
 
         <h4 class="references"> References</h4>
 
@@ -811,98 +814,92 @@
           <div class="col-md-2 border">
             
       <div class="accordion open" id="accordionExample">
-        <h2>Title</h2>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
+             <h3> Highlighted named entities</h3>
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <p style="font-weight: 900;">People</p>
+<script type="text/javascript">
+var text = [];
+$('.people').each(function(){
+    text.push( $(this).text());
+});
+var myString = text.join(', ');
+document.write(myString)
+
+</script>
+<p style="font-weight: 900;">Places</p>
+    <script>
+   var s = document.getElementById("places").innerHTML;
+   document.write(s);
+</script>
+<p style="font-weight: 900;">Events</p>
+    <script>
+   var s = document.getElementById("events").innerHTML;
+   document.write(s);
+</script>
+<p style="font-weight: 900;">Technical Terms</p>
+    <script>
+   var s = document.getElementById("technicalterms").innerHTML;
+   document.write(s);
+</script>
+
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
+              <h3>Meta-Data</h3>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <p>  <span id="myText"></span></p>
+
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
+              <h3>General Annotation</h3>
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <p style="font-weight: 900;">Quotes</p>
+              <p style="font-weight: 900;">Keywords</p>
             </div>
           </div>
         </div>
-            <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #4
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col my-3 border">
-        <h2>Title</h2>
-        <p class="pissue">column</p>
-      </div>
-
-
-
-
-      <div class="accordion open" id="accordionExample">
-        <h2>Title</h2>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFive">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
+ <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
+              <h3>Annotate article</h3>
             </button>
           </h2>
           <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <label>
+    Annotations:
+    <br>
+    <textarea name="content"></textarea>
+</label>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div class="col my-3 border">
-        <h2>Title</h2>
-        <p class="pissue">column</p>
-      </div>
+
+
+
+
 
     </div>
   </div>
@@ -932,4 +929,12 @@
             sheets[0].href = value;
         }
     </script>
+
+ <script>
+    function myFunction() {
+      var number = document.querySelector("meta[name='description']").getAttribute("content");
+      document.getElementById("myText").innerHTML = number;
+    }
+  </script>
+
 </body>
