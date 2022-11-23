@@ -25,17 +25,17 @@ function swapTheme(csspath) {
     console.log("i get called")
     document.getElementById('choosen').setAttribute('href', csspath);
     // When changing the css (= the historical theme) I also set a key-value in sessionStorage
-    if (csspath == 'CSS/gm.css'){
-        document.getElementById('logo').setAttribute('src','IMG/Group_4.png');
+    if (csspath == 'css/gm.css'){
+        document.getElementById('logo').setAttribute('src','imgs/Group_4.png');
     }
     else if (csspath == '#'){
-        document.getElementById('logo').setAttribute('src','IMG/Group_4W.png');
+        document.getElementById('logo').setAttribute('src','imgs/Group_4W.png');
     }
-    else if (csspath == 'CSS/wb.css'){
-        document.getElementById('logo').setAttribute('src','IMG/Group_4W.png');
+    else if (csspath == 'css/wb.css'){
+        document.getElementById('logo').setAttribute('src','imgs/Group_4W.png');
     }
-    else if (csspath == 'CSS/cowboycss.css'){
-        document.getElementById('logo').setAttribute('src','IMG/Group_4W.png');
+    else if (csspath == 'css/cowboycss.css'){
+        document.getElementById('logo').setAttribute('src','imgs/Group_4W.png');
     }
     localStorage.setItem('href', csspath);
     console.log(localStorage)
@@ -55,20 +55,20 @@ function persi()
     switch (start_style) {
       case '#':
         document.getElementById('choosen').setAttribute('href', '#');
-        document.getElementById('logo').setAttribute('src','IMG/Group_4W.png');
+        document.getElementById('logo').setAttribute('src','imgs/Group_4W.png');
         break;
-      case 'CSS/gm.css':
-        document.getElementById('choosen').setAttribute('href', 'CSS/gm.css');
-        document.getElementById('logo').setAttribute('src','IMG/Group_4.png');
+      case 'css/gm.css':
+        document.getElementById('choosen').setAttribute('href', 'css/gm.css');
+        document.getElementById('logo').setAttribute('src','imgs/Group_4.png');
         break;
-      case 'CSS/cowboycss.css':
-        document.getElementById('choosen').setAttribute('href', 'CSS/cowboycss.css');
+      case 'css/cowboycss.css':
+        document.getElementById('choosen').setAttribute('href', 'css/cowboycss.css');
         break;
-      case 'CSS/cyberpunk.css':
-        document.getElementById('choosen').setAttribute('href', 'CSS/cyberpunk.css');
+      case 'css/cyberpunk.css':
+        document.getElementById('choosen').setAttribute('href', 'css/cyberpunk.css');
         break;
-      case 'CSS/wb.css':
-        document.getElementById('choosen').setAttribute('href', 'CSS/wb.css');
+      case 'css/wb.css':
+        document.getElementById('choosen').setAttribute('href', 'css/wb.css');
         break;
       /*  
       case 'css/todaycss.css':
