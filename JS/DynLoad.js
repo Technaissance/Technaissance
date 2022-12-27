@@ -54,11 +54,11 @@ function persi()
     switch (start_style) {
       case '#':
         document.getElementById('choosen').setAttribute('href', '#');
-        document.getElementById('logo').setAttribute('src','IMGS/Group_4W.png');
+        document.getElementById('logo').setAttribute('src','IMG/Group_4W.png');
         break;
       case 'CSS/gm.css':
         document.getElementById('choosen').setAttribute('href', 'CSS/gm.css');
-        document.getElementById('logo').setAttribute('src','IMGS/Group_4.png');
+        document.getElementById('logo').setAttribute('src','IMG/Group_4.png');
         break;
       case 'CSS/cowboycss.css':
         document.getElementById('choosen').setAttribute('href', 'CSS/cowboycss.css');
