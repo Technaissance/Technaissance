@@ -1,0 +1,1196 @@
+<html>
+  <head>
+  <meta name="description" content="Understanding and Creating Art with AI: Review and Outlook&quot; by Eva Cetinic, James She"/>
+</head>
+<body>
+  <h1 class="title" hidden="hidden">UNDERSTANDING AND CREATING ART WITH AI: REVIEW AND OUTLOOK</h1>
+  <p class="date" hidden="hidden">February 19, 2021</p>
+  <p class="author" hidden="hidden"> Eva Cetinic, James She</p>
+
+    <p class="abstract">ABSTRACT</p>
+<p class="abstract">Technologies related to <span class="technicalterms"> artificial intelligence (AI)</span> have a strong impact on the
+  changes of research and creative practices in visual arts. The growing number of research initiatives and creative
+  applications that emerge in the intersection of <span class="technicalterms">AI</span> and art, motivates us to
+  examine and discuss the creative and explorative potentials of AI technologies in the context of art. This paper
+  provides an integrated review of two facets of AI and art: 1) AI is used for art analysis and employed on digitized
+  artwork collections; 2) AI is used for creative purposes and generating novel artworks. In the context of AI-related
+  research for art understanding, we present a comprehensive overview of artwork datasets and recent works that address
+  a variety of tasks such as classification, object detection, similarity retrieval, multimodal representations, <span
+    class="technicalterms">computational aesthetics</span>, etc. In relation to the role of AI in creating art, we
+  address various practical and theoretical aspects of <span class="technicalterms">AI Art</span> and consolidate
+  related works that deal with those topics in detail. Finally, we provide a concise outlook on the future progression
+  and potential impact of AI technologies on our understanding and creation of art.</p>
+
+<p> <span class="abstract abstractkw">Keywords fine art, deep learning, computer vision, AI Art, generative art, computational
+    creativity</span></p>
+
+<h2 class="issue">1 Introduction</h2>
+
+<p>Recent advances in <span class="technicalterms">machine learning</span> have led to an acceleration of interest in
+research on artificial intelligence (AI). This fostered the exploration of possible applications of AI in various
+domains and also prompted critical discussions addressing the lack of interpretability, the limits of machine
+intelligence, potential risks and social challenges. In the exploration of the settings of the “human versus AI”
+relationship, perhaps the most elusive domain of interest is the creation and understanding of art. Many interesting
+initiatives are emerging at the intersection of AI and art, however comprehension and appreciation of art is still
+considered to be an exclusively human capability. Rooted in the idea that the existence and meaning of art is indeed
+inseparable from human-to-human interaction, the motivation behind this paper is to explore how bringing AI in the loop
+can foster not only advances in the fields of digital art and art history, but also inspire our perspectives on the
+future of art.</p>
+
+<p>The variety of activities and research initiatives related to “AI and Art” can generally be divided
+  into two categories: 1) AI is used in the process of analyzing existing art; or 2) AI is used in the process of
+  creating new art. In this paper, relevant aspects and contributions of these two categories are discussed, with a
+  particular focus on the relation of AI to visual arts. In recent years, there has been a surge of interest among
+  artists, technologists and researchers in exploring the creative potential of AI technologies. The use of AI in the
+  process of creating visual art was significantly accelerated with the emergence of <span
+    class="technicalterms">enerative Adversarial Networks (GAN)</span> [56]. The growing number of artists engaging in
+  using AI technologies and the increasing interest from galleries and auction houses in AI Art, fosters discussions
+  about various practical and theoretical aspects of this new movement. On the other side, the increasing online
+  availability of digitized art collections gives new opportunities to analyze the history of art using AI technologies.
+  In particular, the use of <span class="technicalterms">Convolutional Neural Networks (CNN)</span> enabled advanced
+  levels of automation in classifying, categorizing and visualizing large collections of artwork image data. Besides
+  building efficient retrieval platforms, smart recommendation systems and advanced tools for exploring digitized art
+  collections, AI technologies can support new knowledge production in the domain of art history by enabling novel ways
+  of analyzing relations between specific artworks or artistic oeuvres. The growing number of artistic productions,
+  research and applications that emerge in the intersection of AI and art, prompts the need to discuss the creative and
+  explorative potentials of AI technologies in the conpeople of our historical, contemporary and future understanding of
+  art.</p>
+
+<h2 class="issue">2 Understanding Art with AI</h2>
+
+<h3 class="issue">2.1 Art Collections as Data Sources</h3>
+
+  <p>Large-scale <span class="technicalterms">digitization</span> efforts which took place in the last decades led to a
+    considerable increase of online available art collections. Those art collections enable us to easily explore and
+    enjoy artworks that are located in various museums or art galleries throughout the <span id="places">world</span>.
+    Apart from enabling us to visually inspect various artworks, the availability of large collections of digitized art
+    images triggers new interdisciplinary research perspectives. The physical painting and its digitized counterpart
+    exist in different material modes, yet they encode and communicate the same complex structure of information. Just
+    as the properties of the canvas and the paint often include contextual information that can be of great interest to
+    art historians, the numerical representation of a digitized artwork also includes information of which the potential
+    is not yet fully exploited. The main goal of digitization projects is usually oriented towards building digital
+    repositories to enable easier ways of accessing and exploring collections. Although this is often considered the end
+    goal of many digitization projects, it is important to emphasize that the existence of these collections is only the
+    beginning and necessary prerequisite for applying advanced computational methods and opening new research
+    perspectives. Figure 1 illustrates the process from digitization to quantitative analysis, knowledge discovery and
+    visualization using computational methods. Research results obtained from the final phase of this process are often
+    used to enhance the functionalities of repositories and online collections by adding advanced ways of content
+    exploration.</p>
+
+  <div id="vintage">
+    <div id="effects">
+      <div id="over">
+        <img src="IMG/article1a.png" class="img img2" alt="digital art"><br>
+      </div>
+    </div>
+  </div>
+
+
+
+  <span class="subtitles">Figure 1: Illustration of the process from digitization to advanced
+    computational analysis.</span>
+
+<p>In the context of digitized art analysis, computational methods are generally used either to adopt a distant viewing
+  or a close reading approach [80]. Close reading implies focusing on specific aspects of one particular work or
+  artistic oeuvre, usually addressing problems such as visual stylometry and computational artist authentication [57,
+  100, 67, 2]. Most of the studies dedicated to those topics rely on the availability of high-quality digital
+  reproductions of the analyzed artworks and mostly focus on brushstrokes and the texture properties. Distant viewing
+  generally involves analyzing large collections by concentrating on particular features or similarity relations and
+  producing corresponding statistical visualizations. The majority of recent studies concerned with computational
+  analysis of art is exploiting the availability of large digitized collections that include images of various quality,
+  and therefore adopt a distant viewing approach. In the last few years there has been a growing number of research
+  collaborations addressing the application of computer vision and <span class="technicalterms">deep learning</span>
+  methods in the domain of digital art history. The most commonly addressed tasks include the problem of <span
+    class="technicalterms">automatic classification</span>, object detection, content based and <span
+    class="technicalterms">multimodal retrieval</span>, quantitative analysis of different features and concepts,
+  computational aesthetics, etc.</p>
+
+<p>The availability of large-scale and well-annotated datasets is a necessary requirement for adopting
+  deep learning models for various tasks. In recent years, many museums and galleries published digital online versions
+  of their collections. Since it is difficult to list all the existing <span class="technicalterms">online art</span>
+  collections, this paper focuses only on those collections and datasets that have been most commonly used for computer
+  vision and deep learning research in the last few years. Table 2 contains a list of the most well-known collections of
+  primarily Western art that were often used as sources for creating different task-specific datasets. Also, it includes
+  well-known and novel datasets that have been specifically developed for a particular research task.</p>
+
+  <span id="subtitles" class="subtitles">Table 1: List of artwork datasets associated with their corresponding number of
+    images and tasks for which they are designed or most commonly used. </span>
+
+
+  <div class="table-responsive">
+    <table class="table">
+      <tbody>
+        <tr>
+          <th scope="col">Dataset</th>
+          <th scope="col">Source</th>
+          <th scope="col">Number of images</th>
+          <th scope="col">Task</th>
+        </tr>
+
+        <tr>
+          <td scope="row">Painting-91</td>
+          <td>&lt;[74]</td>
+          <td>4k</td>
+          <td>artist classification</td>
+        </tr>
+        <tr>
+          <td scope="row">Pandora</td>
+          <td>[45]</td>
+          <td>8k</td>
+          <td>style classification</td>
+        </tr>
+        <tr>
+          <td scope="row">Web Gallery of Art</td>
+          <td><a href="http://www.wga.hu/">www.wga.hu</a></td>
+          <td>40k</td>
+          <td>artist, style, periodclassification</td>
+        </tr>
+        <tr>
+          <td scope="row">WikiArt</td>
+          <td><a href="http://www.wikiart.org/">www.wikiart.org</a></td>
+          <td>85k</td>
+          <td>artist, style,genre classification</td>
+        </tr>
+        <tr>
+          <td scope="row">Rijksmuseum Challenge</td>
+          <td>[92]</td>
+          <td>112k</td>
+          <td>artist, material, typeclassification</td>
+        </tr>
+        <tr>
+          <td scope="row">Art500k</td>
+          <td>[87]</td>
+          <td>550k</td>
+          <td> <br>artist, genre, style, event, historical figure retrieval </td>
+        </tr>
+        <tr>
+          <td scope="row">OmniArt</td>
+          <td>[118]</td>
+          <td>2M</td>
+          <td> <br>artist, style, period, type, iconography, color classification / object detection</td>
+        </tr>
+        <tr>
+          <td scope="row">ArtDL</td>
+          <td>[94]</td>
+          <td>42k</td>
+          <td>iconographic classification</td>
+        </tr>
+        <tr>
+          <td scope="row">PRINTART</td>
+          <td>[15]</td>
+          <td>1k</td>
+          <td>object/ pose retrieval</td>
+        </tr>
+        <tr>
+          <td scope="row">Paintings</td>
+          <td>[31]</td>
+          <td>8.6k</td>
+          <td>object retrieval</td>
+        </tr>
+        <tr>
+          <td scope="row">Face Paintings</td>
+          <td>[29]</td>
+          <td>14 k</td>
+          <td>face retrieval</td>
+        </tr>
+        <tr>
+          <td scope="row">Iconart</td>
+          <td>[54]</td>
+          <td>6k</td>
+          <td>iconographic objectdetection</td>
+        </tr>
+        <tr>
+          <td scope="row">VisualLink</td>
+          <td>[108]</td>
+          <td>38.5k</td>
+          <td>visual linkretrieval</td>
+        </tr>
+        <tr>
+          <td scope="row">Brueghel dataset</td>
+          <td>[111]</td>
+          <td>1.6k</td>
+          <td>visual linkretrieval</td>
+        </tr>
+        <tr>
+          <td scope="row">IconClass AI Test Set</td>
+          <td>[99]</td>
+          <td>87k</td>
+          <td> <br>iconographic classification / multimodal tasks</td>
+        </tr>
+        <tr>
+          <td scope="row">SemArt</td>
+          <td>[48]</td>
+          <td>21k</td>
+          <td>multimodal retrieval</td>
+        </tr>
+        <tr>
+          <td scope="row">Artpedia</td>
+          <td>[116]</td>
+          <td>3k</td>
+          <td>multimodal retrieval</td>
+        </tr>
+        <tr>
+          <td scope="row">BibleVSA</td>
+          <td>[8]</td>
+          <td>2.3k</td>
+          <td>multimodal retrieval</td>
+        </tr>
+        <tr>
+          <td scope="row">AQUA</td>
+          <td>[49]</td>
+          <td>21k</td>
+          <td>visual question answering</td>
+        </tr>
+        <tr>
+          <td scope="row">ArtEmis</td>
+          <td>[3]</td>
+          <td>81K</td>
+          <td>multimodal sentiment analysis</td>
+        </tr>
+        <tr>
+          <td scope="row">WikiArt Emotions</td>
+          <td>[95]</td>
+          <td>4.1k</td>
+          <td>sentiment analysis/ emotion classification</td>
+        </tr>
+        <tr>
+          <td scope="row">MART</td>
+          <td>[128]</td>
+          <td>500</td>
+          <td>sentiment analysis</td>
+        </tr>
+        <tr>
+          <td scope="row">JenAesthetic</td>
+          <td>[6]</td>
+          <td>1.6k</td>
+          <td>aesthetics quality assessment</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>The datasets in Table 2 are linked to tasks for which they have been designed or most commonly used. The majority
+    of online art collections include general annotations related to the whole image and are often used for
+    classification or retrieval tasks. Those annotations are mostly provided by art experts and contain information
+    about the artist, style, genre, technique, period, etc. Some specific tasks such as object detection require more
+    detailed annotations of specific image regions. Recently several datasets of images associated with textual
+    descriptions have emerged in order to perform different multimodal tasks. The datasets used for sentiment analysis
+    and aesthetic quality assessment usually contain annotations that were collected from multiple annotators through
+    specific surveys or crowdsourcing platforms.</p>
+
+  <h3 class="issue">2.2 Automated Classification of Artworks</h3>
+
+  <p>Automated classification of artworks based on categories such as artist, style or genre has been one of the central
+    challenges of computational art analysis over the last decade. Most of the earlier studies addressed the problem of
+    automatic artist [72, 19], style [109, 110] and genre classification [4] by extracting various hand-crafted image
+    features and employing different machine learning algorithms using those features. In achieving better
+    classification accuracy, momentous progress has been made with the adoption of <span
+      class="technicalterms">convolutional neural networks (CNNs)</span>. In the beginning, CNNs were first employed as
+    feature extractors. <span class="people">Karayev</span> et al. were the first to utilize layer activations of a CNN
+    trained on ImageNet [35], a large hand-labelled object dataset, as features for artistic style classification [70].
+    In their work they showed that features extracted from a network trained for a completely different task (object
+    recognition on a natural image dataset) outperformed all other low-level image features on the task of style
+    classification. The dominance of CNN-based features, particularly in combination with other hand-crafted features,
+    was confirmed for artist [34], style [7] and genre classification [20]. Apart from using pre-trained CNNs as just
+    feature extractors, <span class="people">Girshick</span> et al. showed that further improvement of performance for a
+    variety of visual recognition tasks can be achieved by fine-tuning a pre-trained network on the new target dataset
+    [52]. Both CNN feature extraction and fine-tuning represent forms of transfer learning, where knowledge that a model
+    learned on one task is being exploited for a new task. Transfer learning approaches, particularly fine-tuning, have
+    proven to give state-of-the-art results for different artistic datasets and various classification tasks [120, 81,
+    106, 126, 10, 91]. In order to better understand the transferability of pre-trained models, <span
+      class="people">Cetinic</span> et al. [21] explore how different fine-tuning strategies and domain-specific model
+    initializations influence the classification performance of various art classification tasks and datasets when using
+    the same CNN architecture. <span class="people">Sabatelli</span> et al. [105] analyze the transferability and
+    fine-tuning impact of different CNN architectures and conclude, similarly as <span class="people">Gothier</span> et.
+    al [53] who also perform a transfer learning analysis, that models fine-tuned on art datasets outperform <span
+      class="technicalterms">ImageNet</span> pre-trained models when applied on different tasks and dataset from the art
+    domain. A comprehensive overview of the current work related to classification of artworks, as well as an approach
+    towards classifying artworks based on iconographic elements is presented in [94].</p>
+
+  <h3 class="issue">2.3 Object Detection and Similarity Retrieval</h3>
+
+  <p>Besides classification, the use of deep neural networks showed promising results in exploring the content of
+    artworks and automatically recognizing objects, faces or other specific motifs in paintings. As one of the
+    pioneering works in this area was, <span class="people">Crowley</span> et al. [30] showed that object classifiers
+    trained using CNN features from natural images can retrieve paintings containing these objects with great success.
+    Later studies addressed the problem of not only retrieving paintings that depict a specific object, but also
+    determining the position of the object in the image [32, 54], as well as detecting content to discover co-occurring
+    patterns in collections [77]. One aspect of content that gained particular attention is the depiction of human
+    faces. Interesting work has been done on the topic of people and face detection in paintings [122, 97, 93, 123, 93],
+    as well as analysis and classification of the detected faces based on gender and other features [118]. Apart from
+    faces, effort has been made to recognize other content-related elements of artworks, such as detecting the pose of
+    characters in paintings [68, 86, 9], recognizing specific characters [85] or detecting materials depicted in
+    paintings [83].</p>
+
+  <p>One of the main practical goals for employing computational methods for automated content and style
+    recognition in art images is to build <span class="technicalterms">smart retrieval systems</span> that can help
+    organize and analyze large collections of artworks in an efficient way. Many of the existing retrieval systems rely
+    on retrieving images based on their corresponding metadata and textual descriptions. However, with convolutional
+    neural networks, significant progress has been made towards obtaining relevant results with image-based enquiries.
+    The notion of “visual similarity” is often considered a key factor in various retrieval systems. However, in the
+    context of art, “similarity” is a complex term that can include different aspects of content matching (depiction of
+    the same objects or similar iconographic representations) or correspondences that are more related to style such as
+    brushstrokes, color, composition, etc. The application of CNNs has shown promising results in retrieving visually
+    linked images in painting collections [108, 111, 17, 16]. To tackle the complexity of similarity in art, <span
+      class="people">Mao</span> et al. [87] proposed the DeepArt retrieval system that encodes joint representations
+    that can simultaneously capture content and style features. A more detailed discussion of the problem of similarity
+    and applications of computer vision methods for the organization and study of art image collections is given in
+    [79].</p>
+
+  <h3 class="issue">2.4 Multimodal Tasks</h3>
+
+  <p>Besides exploring only visual similarities, recently an increased number of studies focused on
+    analyzing both visual and textual modalities of artwork collections. Efforts to map images and their textual
+    descriptions in a joint semantic space have mostly been made in order to create multimodal retrieval systems. In
+    particular, <span class="technicalterms">Garcia</span> and <span class="technicalterms">Vogiatzis</span> [48]
+    introduced the SemArt dataset, a collection of fine-art images associated with textual descriptions, and applied
+    different methods of multi-modal transformation with the goal to map the images and their descriptions in a joint
+    semantic space. <span class="people">Baraldi</span> et al. [8] introduced a new dataset named <span
+      class="technicalterms">BibleVSA</span>, a collection of miniature illustrations and commentary text pairs, to
+    explore supervised and semi-supervised approaches of learning cross-references between textual and visual
+    information in documents. <span class="people">Stefanini</span> et al. [116] presented the <span
+      class="technicalterms">Artpedia</span> dataset where images are annotated with both visual and contextual
+    descriptions and introduced a retrieval model that maps images and sentences in a joint embedding space and
+    discriminates between contextual and visual sentences of the same image.</p>
+
+  <p>Besides retrieval, another topic of interest in the domain of multimodal tasks is visual question
+    answering (VQA). <span class="technicalterms">VQA</span> refers to the problem where given an image and textual
+    question, the task is to provide an accurate textual answer.</p>
+
+  <p> <span class="people">Bongini</span> et al. [13] annotated a subset of the Artpedia dataset with
+    visual and contextual question-answer pairs. They introduced a question classifier that discriminates between visual
+    and contextual questions and a model capable of answering both types of questions. Garcia et al. [49] presented a
+    novel dataset AQUA, which consists of automatically generated visual- and knowledge-based QA pairs, and introduced a
+    two-branch model where the visual and knowledge questions are managed independently. Apart from VAQ, a few recent
+    works addressed the task of image captioning where the goal is to automatically generate accurate textual
+    descriptions of images. <span class="people">Sheng</span> and <span class="people">Moens</span> [112] introduce
+    image captioning datasets referring to ancient Egyptian and Chinese art and employ an encoder-decoder framework for
+    image captioning where the encoder is a CNN and the decoder is a <span class="technicalterms">long short-term memory
+      (LSTM) network</span>. In the context of art history, it would be preferable to generate not only simple
+    descriptions of the image content, but more advanced descriptions that articulate the theme and symbolic
+    associations between objects. A step in this direction was presented in [18] where the image-text pairs from the
+    Iconclass AI Test Set dataset were used to fine-tune a transformer-based vision-language pre-trained model for the
+    task of iconographic image captioning.</p>
+
+  <h3 class="issue">2.5 Knowledge Discovery in Art History</h3>
+
+  <p>Apart from creating practically useful retrieval systems, another important contribution of
+    computational analysis of art is the opportunity to adopt a quantitative approach in studying theoretical concepts
+    relevant for art history. <span class="people">Elgammal</span> et al. [42] showed that internal representation of
+    convolutional neural networks trained for style classification encode discriminative features that are correlated
+    with art historical concepts of style transformation. Later studies expanded this research direction by analyzing
+    the semantic interpretation of deep neural network features in relation to different visual attributes [75] and
+    their employment for quantifying and predicting values of art historically relevant stylistic properties [23]. One
+    of the most interesting aspects of adopting a quantitative approach in analyzing large artistic datasets is the
+    possibility to define high-level features that correspond to abstract notions of understanding art. For example,
+    <span class="people">Deng</span> et al. [36] introduce the notion of “representativity”, that indicates the extent
+    to which a painting is considered typical in the context of an artist’s oeuvre, using deep neural networks to
+    extract style-enhanced image representations. It is necessary to emphasize that there is a wide range of studies
+    related to quantitative analysis of art that do not adopt deep learning based methods, but employ image processing
+    and statistical methods from information theory [76, 114, 82].</p>
+
+  <p>Particularly important for reaching the goal of advanced computational analysis of art is a stronger
+    collaboration between different disciplines, especially computer science and art history. In the context of computer
+    science, the topics related to art history are often addressed on a superficial level and art collections are
+    treated as just another source of image datasets. On the other hand, art historians tend to refrain from embracing
+    computational methods in their research due to practical difficulties, cross-domain knowledge gaps or animosity
+    towards the increasing trend of quantification in humanities research. However, in the recent years a growing number
+    of art history research projects are adopting computational methods and digital art history is becoming an
+    established field [78]. Also, research criteria are becoming more rigorous and computational methods are not being
+    used only because it is fashionable, but because they can provide truly novel methodological extensions.
+    Interdisciplinary research is not only necessary to better understand how computational methods, particularly deep
+    learning techniques, can support research in digital art history, but also how research questions that are relevant
+    in art history can foster new challenges for artificial intelligence. Because of its manifold nature, collections of
+    artworks represent a prolific data source for formulating various complex tasks related to computational image
+    understanding, multimodal analysis, affective computing and computational creativity.</p>
+
+  <h3 class="issue">2.6 Aesthetics and Perception</h3>
+
+   <p>Perhaps the most intriguing, but at the same time the most ambiguous, topic in the context of
+     computational analysis of art is the one related to perception. Different aspects of visual perception have been
+     studied by psychologists for a long time and have in the recent years become an rising subject of interest within
+     the computer vision and deep learning community. In particular, computational aesthetics is a growing field
+     preoccupied with developing computational methods that can predict aesthetic judgments in a similar manner as
+     humans. Developing quantitative methods for analyzing subjective aspects of perception is particularly challenging
+     in the context of art images. One of the major challenges in studying perceptual characteristics of images is the
+     development of large-scale datasets annotated with evaluation scores obtained using experimental surveys. <span
+       class="people">Amirshahi</span> et al. introduced the JenAesthetics dataset [6], a datasets of artworks images
+     labelled with subjective scores of aesthetic evaluation. Several studies have addressed the topic of computational
+     aesthetics in art by analyzing various statistical properties of paintings [59, 107, 73]. <span
+       class="people">Zhao</span> et al. [129] propose a method for CNN-based image composition features and how they
+     can be used for aesthetic prediction in natural and art image datasets. In order to include other aspects of
+     perception, Cetinic et al. [22] used deep learning based quantitative methods to extract features not only related
+     to aesthetic evaluation, but also to the sentiment and the memorability of fine art images. Besides aesthetic
+     evaluation, sentiment analysis is the most commonly addressed task in this domain. <span
+       class="people">Mohammad</span> and <span class="people">Kiritchenko</span> [95] introduced WikiArt Emotions, a
+     dataset of paintings</p>
+
+   <p>that has annotations for various emotions evoked in the observer. <span
+       class="people">Alameda-Pineda</span> et al. [5] introduced an approach to automatically recognize the emotion
+     elicited by abstract paintings using the MART dataset [128], a collection of 500 abstract paintings labelled as
+     evoking positive or negative sentiment. Most recently, <span class="people">Achlioptas</span> et al. [3] introduced
+     <span class="technicalterms">ArtEmis</span>, a large-scale dataset of emotional reactions to visual artwork joined
+     with explanations of these emotions in language, and developed machine learning models for dominant emotion
+     prediction from images or text. Developing computational approaches for quantifying and predicting values of
+     concepts such as aesthetics or sentiment is especially difficult for art images. The importance and originality,
+     and therefore also our perception, of a particular artwork do not only emerge from its visual properties, but
+     greatly depend on the art historical context. For that reason, it is obvious that current approaches are limited
+     because they only take into account visual image features. This also indicates that future research has to aim
+     towards a more holistic approach if we ought to build systems that can achieve a human-like understanding of art.
+   </p>
+
+  <h2 class="issue">3 Creating AI Art</h2>
+
+  <h3 class="issue">3.1 Technological Milestones</h3>
+
+  <p>Several important technological advances achieved in the last few years supported the rising
+    interest in AI Art. In the context of computer graphics and computer vision research, over the last decades many
+    rendering and texture synthesis algorithms have been developed. Those algorithms were designed to modify images in
+    various ways, including the application of an “artistic style” to the input image, e.g. painterly or sketched style
+    [60, 64, 39, 55]. However, the use of deep neural networks for the purpose of stylizing photos and creating new
+    images began rather recently and accelerated in the last five years. Figure 2 summarizes some of the most important
+    technological milestones that influenced AI Art production. One of the first methods that gained significant
+    attention was <span class="technicalterms">DeepDreams</span> introduced by <span class="people">Mordvintsev</span>
+    et al. [96] in 2015. This method was initially designed to advance the interpretability of deep convolutional neural
+    networks by visualizing patterns that maximize the activation of neurons. Because it produced a rather psychedelic
+    and hallucinatory stylistic effect, the method later became a popular new form of digital art production.</p>
+
+
+  <div id="vintage">
+    <div id="effects">
+      <div id="over">
+        <img src="IMG/article1b.png" class="img img2" alt="digital art process"><br>
+      </div>
+    </div>
+  </div>
+
+  <span id="subtitles" class="subtitles">Figure 2: Ilustration of the most important technological milestones that led
+    to
+    the current AI Art production.</span>
+
+  <p>One of the most iconic AI inventions that triggered the rapid use and development of AI technologies
+    for art was <span class="technicalterms">Neural Style Transfer (NST)</span>. This method was introduced in the
+    highly influential work of <span class="people">Gatys</span> et al. [50] that demonstrated the successful use of
+    CNNs in creating stylized images by separating and combining the image “content” and “style”. This breakthrough was
+    followed by many new research contributions and applications, a comprehensive overview of the existing NST
+    techniques and their various applications is given in [69]. Terminology of computer graphics and computer vision
+    suggests that “content” and “style” are understood in a rather straightforward and simple manner. “Content” is
+    associated with recognizable objects and figures that are depicted in an image, while “style” implies an
+    aesthetically pleasing or interesting visual deviation from the photorealistic depiction of content. However, in the
+    context of art history, style is not only associated with mere visual characteristics of lines and brushstrokes, but
+    is often considered a subtle and contextually dependent concept. Furthermore, stylized images produced using NST
+    methods most commonly represent an obvious combination of existing image inputs and not an original and unique
+    artistic creation. NST methods surely represent a very interesting technological contribution in the domain of
+    automated image manipulation. It is therefore understandable that many applications relying on those methods emerged
+    in order to enable end-users an easy and entertaining framework for photo manipulation. Although NST do have the
+    potential to be used in a creative way for digital art production, it is also necessary to keep a critical stance
+    towards the trend of proclaiming everything with a painterly overlay as art. Due to the limitless combinations, it
+    is indeed technically challenging and time-consuming to locate and pair up two matching content and style images
+    that could produce an aesthetic, meaningful and memorable output image as a novel artwork.</p>
+
+  <p>The perhaps most relevant technological innovation that contributed significantly to the current
+    rise of the AI Art movement are <span class="technicalterms">Generative Adversarial Networks (GANs)</span>.
+    Introduced by <span class="people">Goodfellow</span> et al. [56], GANs represent a turning point in the attempt to
+    use machines for generating novel visual content. The key mechanism of a GAN is to train two “competing” models that
+    are usually implemented as neural networks: a generator and a discriminator. The goal of the generator is to capture
+    the distribution of true examples of the input sample and generate realistic images, while the discriminator is
+    trained to classify generated images as fake and the real images from the original sample as real. Designed as a
+    minimax optimization problem, the optimization process ends at a saddle point that is considered a minimum in
+    relation to the generator and a maximum to the discriminator. The implementation of this framework showed impressive
+    results in generating convincing fake variations of realistic images for various types of image content. GAN soon
+    became one of the most important research area in artificial intelligence and many advanced and domain-specific
+    variations of original architecture emerged, e.g. CycleGAN [130], StyleGAN [71] or BigGAN [14].</p>
+
+  <p>To take the GAN technology one step further in its capacity to generate content in a creative way,
+    <span class="people">Elgammal</span> et al. [41] have introduced <span class="technicalterms">AICAN - artificial
+      intelligence creative adversarial network</span>. In their article they argue that if a GAN model is trained on
+    images of paintings it will just learn how to generate images that look like already existing art, and in a similar
+    manner as the Neural Style Transfer method, this will not produce anything truly artistic or novel. In their paper
+    they propose modifications to the optimization criterion to enable the network to generate creative art by
+    maximizing deviation from established styles while staying within the art distribution. Through a series of
+    exhibitions and experiments, authors of the AICAN system showed that people were very often unable to tell the
+    difference between AICAN-generated images and artworks produced by a human artist [40]. Besides the AICAN
+    initiative, in order to generate their digital artwork, many other developers and artists employed GANs with various
+    modifications and specific training settings and it has become the most widely used technology in the current AI Art
+    scene.</p>
+
+  <p>In the meantime, within the AI research community there has been a surge of interest in
+    transformer-based architectures [121] and their successful application to various tasks in different areas, with a
+    particular emphasis on text and multimodal applications. In January <span class="events">2021 OpenAI</span>
+    presented a very advanced neural network called <span class="technicalterms">DALL·E</span> that creates images from
+    text captions for a wide range of concepts expressible in natural language [1]. While there have been many attempts
+    to create text-to-image synthesis systems [103, 125], the newly presented DALL·E results seem very promising and
+    have recently gained a lot of attention. Although this specific model is currently not openly available for use, we
+    assume that advanced text-to-image synthesis models such as this one will represent an important trend in the future
+    of AI Art.</p>
+
+  <h3 class="issue"> 3.2 The Contemporary AI Art Scene</h3>
+
+  <p>The universal rule of triggering attention by controversy has once again proven effective in the
+    case of AI Art. Since <span id="events">October 2018</span>, when the AI artwork “Portrait of Edmond Belamy”
+    produced by the Obvious collective was sold at an auction by Christie’s for US$432,500 [25] there has been an
+    increasing interest for AI Art, but also a growing need to discuss key aspects of this new movement in the
+    contemporary art scene. The case of the “Portrait of Edmond Belamy” particularly provoked the discussion about
+    authorship and ethics. However, other important questions started gaining attention from art historians and artists,
+    as well as AI scientists and developers, such as questions related to novelty, originality and autonomy in AI Art.
+  </p>
+
+  <p>Although the case of the “Portrait of Edmond Belamy” became very popular for various reasons, within
+    the AI Art community many agree that there are other artists whose work can be considered a more representative
+    example of AI Art: “Many artists working in the field point out that Obvious, the collective behind the AI that made
+    the pricey work, was handsomely rewarded for an idea that was neither very original nor very interesting” [102].
+    However, since the boost of AI Art popularity triggered by Christie’s auction, the number of artists involved in
+    making AI Art is rising worldwide. The fact that AI Art gained momentum in the last two years is reflected in the
+    growing number of online platforms featuring AI Art such as AIArtists.org 1, as well as exhibitions, conferences,
+    competitions and discussion panels dedicated to AI Art. Figure 3 shows several examples of contemporary AI artworks.
+  </p>
+
+  <div id="vintage">
+    <div id="effects">
+      <div id="over">
+        <img src="IMG/article1c.png" class="img img2" alt="digital art construction"><br>
+      </div>
+    </div>
+  </div>
+  <span id="subtitles" class="subtitles">Figure 3: Examples of AI Art: 1) Obvious, Portrait of Belami 2) Mario
+    Klingemann, Memories of Passersby I 3) Sofia Crespo, Neural Zoo 4) Robbie Barrat, Nudes 5) Scot Eaton, Humanity
+    (Fall of the Damned) 6) James She, Keep Running</span>
+
+  <p>Although various artworks are labelled as “AI Art”, it is not often obvious what exact AI technologies are used in
+    the production of specific artworks, as many artists do not reveal all details of their creative process. However,
+    because AI Art production is rapidly increasing and gaining attention, it is necessary to understand and discuss all
+    the aspects that play a role in judging the quality of a particular work. A certain level of technical knowledge and
+    skillfulness is currently required in order to participate in the practice. However, applications of AI technologies
+    are rapidly advancing towards more user-friendly and easily operated frameworks. It is therefore difficult to
+    estimate if the value of a particular AI artwork should depend on the technological complexity and innovation
+    involved in its production, or only on the final visual manifestation and contextual novelty.</p>
+
+  <h3 class="issue">3.3 Novelty of AI Art</h3>
+
+  <p>The growing trend of using AI technology in art production, triggers discussions about the fundamental questions
+    regarding the artistic nature of these works and their place in the history of visual arts. With the quest for
+    understanding the dynamics of AI Art, it is necessary to address the issue of novelty of this type of art in the
+    context of art history. Is the 21st century just delivering now technologically possible solutions to ideas
+    conceived way back in the 20th century? The anticipation of the forms that are now coming to life using advanced
+    technology has been articulated a long time ago. To understand the novelty of AI Art in its current form, it is
+    important to acknowledge that the application of computers to arts started with the earliest days of computing. But
+    even before the use of computers, ideas related to uncertainty and the simulation of chance have already been
+    artistically articulated, e.g. the “action paintings” by <span class="people">Jackson Pollock</span> or the “chance
+    collages” by <span class="people">Jean Arp</span>. In order to gain a better understanding of the historical context
+    of AI Art, we refer the reader to an overview of chance-assisted creativity [37] and stochastic process in art
+    [104]. Furthermore, “generative art”, understood as a concept describing the employment of a system with some degree
+    of autonomy as a relevant component in the production of art, has been extensively theoretically and practically
+    explored in the last several decades [47, 12, 89, 38]. Initiatives such as the <span class="events">“The Painting
+      Fool” project</span>, that started in 2006, can be considered predecessors of the current AI Art movement, in the
+    sense that it not only pursued the technological challenges but also tackled thesociological aspect of its goal to
+    build a software that “will one day be taken seriously as a creative artist in its own right” [27]</p>
+
+  <p>Because of the rising attention that AI Art gained in the last few years and the overall “hype” related to
+    everything associated with the acronym “AI”, many scholars discussing AI Art found it necessary to emphasise its
+    historical context. Elgammal [40] reminds us that Harold Cohen created one of the first programs for
+    computer-generated art in 1973. The program is called <span class="technicalterms">AARON</span> and was used to
+    produce drawings that followed a predefined set of rules. <span class="people">Todorov</span> [119] argues that
+    processes resembling what AI currently does when generating art have already been expressed without the use of
+    computers. He mentions the example of the book by Raymond Queneau, Cent Mille Milliards de Poèmes published in 1961,
+    which was structured and printed so that the reader could create 1014 different combinations of poems. A very
+    thorough and comprehensive discussion of AI Art in the context of visual art history is presented by <span
+      class="people">Aaron Hertzmann</span> in his essay “Can computers create art?” [61]. In his article, Hertzmann
+    draws parallels between AI Art and the invention of photography, as well as explores the evolution of collaboration
+    between art and technology in filmmaking, 3D computer animation and procedural artwork.</p>
+
+  <p>Having in mind the historical background, it is understandable to question the originality and
+    novelty of the fundamental principles of AI Art. Nevertheless, the specific technological innovations that emerged
+    in the last few years, did open possibilities for exploring those principles on a different scale. Most of the
+    current AI Art works can be understood as results of sampling the “latent space”. Perhaps the most novel aspect of
+    AI Art is this possibility to venture into that abstract multi-dimensional space of encoded image representations.
+    From the artist’s perspective, the latent space is neither a space of reality nor imagination, but a realm of
+    endless suggestions that emerge from the multi-dimensional interplay of the known and unknown. How one orchestrates
+    the design of this space and what one finds in it, eventually becomes the major task and distinctive “signature” of
+    the artist. In this context, it is important to understand the role of the human in this collaborative process with
+    the machine.</p>
+
+  <h3 class="issue">3.4 Machine Autonomy and the Role of the Artist</h3>
+
+<p>There has been an ongoing debate about the human-computer relationship in the process of creating AI
+  Art. One of the fundamental questions is related to the level of autonomy the computer has in making decisions that
+  can be considered essential for the creative process. Are computational technologies still regarded as mere tools or
+  do they exhibit properties of independent “behaviour”? And is the framing of a specific narrative grounded in the
+  reality of the procedure or in the underlying marketing reasons?</p>
+
+<p><span class="people">J. McCormack</span> et al. [90] discuss the question of autonomy of GANs in
+  relation to the comprehensive study of autonomy in computer art presented in 2010 by <span class="people">Boden</span>
+  [11]. They argue that GANs have a very limited capacity for autonomy because they synthesize images that mimic the
+  latent space of the training data, but do not have any role in choosing the input datasets nor the statistical model
+  that represents the latent space. In this sense, the authors suggest that “GANism is more a process of mimicry than
+  intelligence” and that its capacity for autonomy is not significantly higher than the one of prior generative systems.
+  <span class="people">Mazzone</span> and Elgammal [88] agree that many of the recent GAN produced artworks use AI as a
+  tool, while the creative process is primarily dependent on the artist’s pre- and post-curatorial actions. However,
+  they describe the AICAN system as an “almost autonomous artist” and state that unlike in the case of previous
+  generative art, the process behind AICAN is inherently creative. One of their main arguments for this claim is the
+  fact that they did not perform any curation on the input dataset, but used 80K images of various genres and styles
+  from the Western canon in order to simulate the process of how an artist absorbs art history. Also, the optimization
+  during training of the network was performed so that the final output represents an optimal point between mimicking
+  and deviating from existing styles. Hertzmann on the other site, indicates “that AI algorithms are not autonomous
+  creators and will not be in the foreseeable future. They are still just tools, ready for artists to explore and
+  exploit.” [61]. He claims that systems such as AICAN cannot be compared to human artists because they do not grow or
+  evolve over time. He argues that although it would be rather easy to integrate certain mechanisms of change within
+  current systems, achieving a truly meaningful evolution while at the same time producing art that is relevant to the
+  human audience, is still a very distant scenario. In his recent work “Computers Do Not Make Art, People Do” [62],
+  Hertzmann emphasizes his position by stating that describing AI systems as autonomous artists is irresponsible because
+  it can mislead people into thinking that those systems have human-like attributes such as intelligence and emotions.
+</p>
+
+<h3 class="issue">3.5  Authorship, Copyright and Ethical Issues</h3>
+
+<p>The case of Christie’s Belamy auction revealed many issues regarding the questions of authorship and
+  copyright, as well as raised general discussions on the ethical considerations that have to be taken into account
+  during production, promotion and sale of an AI artwork. In the case of the aforementioned auction, the artwork was
+  presented as being autonomously produced by an AI system, yet the authors that created that system, nor the author of
+  the code that was used to run the network, did not receive any formal acknowledgement. When an AI artworks gets sold
+  for such an unexpectedly large price, who holds the right to profit from the sale becomes a very relevant question and
+  triggers many discussions. <span class="people">McCormack</span> et al. [90] provide a detailed overview of the
+  problematic aspects of the “Portrait of Edmond Belamy” regarding authorship, authenticity and other important aspects
+  of AI Art. Epstein et al. [43] use the “Portrait of Edmond Belamy” case to explore how anthropomorphization of an AI
+  system influences the perception of humans involved in the creation process. Stephensen [117] discusses the
+  implication that the Belamy case has on the philosophical understanding of creativity. <span
+    class="people">Colton</span> et al. [28] discuss how human understanding of different notions of authenticity can be
+  used to address computational authenticity.</p>
+
+<p>Despite the ongoing debates, most of the recent examples of sold AI artworks indicate that currently
+  the authorship rights are attributed to the artist who produced the artwork using AI techniques, regardless of the
+  narrative surrounding the creation process, e.g. the fact that the artwork was labelled as being made by an AI. While
+  the idea that developers of a computational model are entitled to authorship rights can perhaps be dismissed in the
+  same way in which it would be absurd to give credits for artistic photographs to the inventor of the camera, the
+  question of data sources is a more complex one. Because part of the training data for AI Art generation using GANs
+  could include copyrighted images, the final output would in that case involve someone else’s artistic contributions.
+  This could of course be hardly noticeable in the final work, but still require an acknowledgement from an ethical
+  perspective. To have a complete insight in all the possible contributions would require the disclosure of all the
+  phases in the creative process. This is particularly relevant considering the current rising interest in purchasing AI
+  Art which triggers possibilities of novel types of forgeries, e.g presenting images produced manually with image
+  editing softwares as AI artworks. However, exposing all steps of their creative process is not something artists are
+  really keen to do, precisely because specific procedural choices constitute the basis for originality and uniqueness
+  of an AI artwork. In a comprehensive analysis of the issue of copyrights of artworks produced by creative robots,
+  x<span class="people">Yanisky-Ravid</span> and <span class="people">Velez-Hernandez</span> [127] argue that
+  confronting the challenges of the autonomous and automated content production calls for a reassessment of the meaning
+  of originality. Several other recent articles indicate that copyright infringement in AI Artworks is becoming a
+  relevant topic that needs to be systematically addressed [51, 44, 58].</p>
+
+<p>Another important aspect of AI Art, as a growing subfield of digital art, is that it is bringing
+  relevant changes to the contemporary art market. There is a rising trend to shift traditional art enterprises to
+  corresponding online versions by establishing online galleries and online auctions. Furthermore, the very nature of
+  digital artworks requires different approaches to ownership transactions than in the case of traditional physical
+  artworks. In the last few years a new artistic movement emerged called CryptoArt which led to a great expansion of the
+  so-called crypto art market which is based on the use of blockchain technology. Artworks are cryptographically
+  registered with a token on a <span class="technicalterms">blockchain</span> which allows them to be safely traded from
+  one collector to another using crypto-currencies. <span class="people">Franceschet</span> et al. [46] present a
+  detailed discussion on CryptoArt that includes viewpoints from artists, collectors, galleries, art scholars and data
+  scientists involved in the system. <span class="people">Sidorova</span> [113] addresses the issue of digitalization of
+  the contemporary art market and analyzes how cryptocurrency, blockchain, and artificial intelligence have the
+  potential to contribute to the further development of online art trade.</p>
+
+  <h3 class="issue">3.6 Perception of AI Art</h3>
+
+  <p>One of the major arguments for labelling generative AI systems as creative was the fact that the work they produced
+    was indistinguishable from human-made art and perceived as surprising, interesting or aesthetically pleasing by a
+    larger number of people. For example, the authors of the AICAN system performed a sort of visual Turing test to
+    explore if people can tell the difference between AICAN- and human-made art [41]. They conducted an experiment in
+    which the mixed AICAN works with contemporary artworks shown at the <span class="events">Art Basel 2016</span> art
+    fair. The outcome showed that 75% of the time, people involved in the study thought that AICAN generated images were
+    produced by human artists. However, Hong and <span class="people">Curran</span> [66] argue that the study conducted
+    by Elgammal and colleagues used fewer than 20 participants and asked the participants directly if a work was created
+    by humans or machines which might have introduced bias. <span class="people">Hong</span> and Curran conduct their
+    own experiment to study the perception of AI artworks which involved 288 participants. The results from their survey
+    experiment show clear differences in evaluation between human-created artworks and AI-created artworks, with
+    human-created artworks being rated significantly higher in properties such as “composition,” “degree of expression,”
+    and “aesthetic value.” The authors conclude that the results of their study indicate that AI Art has yet to pass the
+    Turing test for art. However, even if AI systems can, or will in the future, produce convincing artworks that
+    resemble human-made art, that does not necessarily imply that the system itself should be perceived as truly
+    autonomous or creative. In a detailed discussion on machine produced art, <span class="people">Ch’ng</span> [24]
+    reflects on his own experience of an exhibition of artificially generated artworks by expressing his fascination
+    with the “illusion of consciousness depicted in these artworks”. Regardless of the current differences in framing
+    the underlying process as advanced imitation or autonomous creativity, studying attitudes towards AI Art is an
+    important novel research direction that can have strong implications on our general understanding of creativity. For
+    example, an recent study by <span class="people">Wu</span> et al. [124] examined the explicit and implicit
+    perceptions of AI-generated poems and paintings in the <span class="places">U.S.</span> and <span
+      class="places">China</span>. The results of this study suggest that participants from the U.S. were more critical
+    of the AI- than the human-generated content, both explicitly and implicitly. Chinese subjects were generally more
+    positive about the AI-generated content, although they also appreciated human-authored content more than
+    AI-generated. Previous studies also confirmed a negative bias in perception of AI-generated content in relation to
+    human-made content [65, 101]. Besides exploring human perception of AI Art, another topic of interest are visual
+    characteristics of AI Art in the context of art history. Hertzmann introduces the concepts of visual indeterminacy
+    as a specific stylistic property of AI Art created using GANs [63]. <span class="people">Srinivasan</span> and <span
+      class="people">Uchino</span> [115] explore the biases in the generative art AI pipeline from the perspective of
+    art history and also discuss the socio-cultural impacts of these biases.</p>
+
+  <h2 class="issue">4 Conclusion and Future Outlook</h2>
+
+  <p>Current trends indicate that AI technologies will become more relevant in the analysis and production of art. In
+    the last several years many universities have established <span class="technicalterms">Digital humanities</span>
+    (DH) master’s and PhD programs to educate new generations of researchers familiar with quantitative and AI-based
+    methods and their application to humanities data. We can expect that this will intensify the methodological shift
+    from traditional towards digital research practices in the humanities, as well as result in a growing number of
+    innovative research projects that apply large scale quantitative methods to study art-related historical questions.
+    From the perspective of computer vision, there are still many practical challenges that need to be solved in order
+    to assist researchers working on cultural digital archives. In particular, those are problems related to annotation
+    standards, advanced object detection and retrieval, cross-depiction, iconographic classification, multi-modal
+    alignment and image understanding. The use of deep neural network models was previously conditioned on the
+    availability of large-scale datasets. By utilizing the concept of transfer learning and label-scarce techniques such
+    as few shot learning, deep neural network models can be applied on smaller-sized dataset and employed for different
+    fine-grained tasks and various image collections. Those kinds of approaches will probably be exploited by many
+    future domain-specific digital art history projects. Besides employing deep learning models for enhancing research
+    practices in art history, it is noteworthy to recognize the potential that tasks and data sources from the art
+    domain have on the development of new computer vision and deep learning techniques. Digitized art collections are
+    data sources of images that usually include rich contextual information related to the historical and technical
+    aspects of their formation, but also represent a source of perceptually intriguing visual information which merges
+    interweaving concepts of content and style. Because they comprise different layers of information, art collections
+    represent a useful data source for addressing various and complex tasks of computational image understanding.</p>
+
+  <p>In the context of art creation and production, AI technologies are starting to have an ever more
+    important role. Not only in terms of digitally and AI produced art, but also in all the aspects of curation,
+    exhibition and sale of traditional art as well. Having in mind the rapid shift of attention towards online platforms
+    and digital showrooms due to the current global pandemic, the ongoing circumstances contributed to the already
+    rising interest in crypto art and blockchain technologies which have the potential to significantly impact and
+    transform the art market. Regarding the creation of art using AI technologies, in the last few years GAN-based
+    approaches were dominating the AI Art scene. Recently, significant breakthroughs have been achieved in the
+    development of multimodal generative models, e.g. models that can generate images from text. Technological
+    advancement in this direction will probably have significant influence on the production and creation of art. Models
+    that can translate data from different modalities into a joint semantic space represent an interesting tool for
+    artistic exploration because the concept of multimodality is integral to many art forms and has always played an
+    important role in the creative process. Furthermore, it is evident that the increasing use of AI technologies in the
+    creation of art will have significant implications regarding the questions related to authorship, as well as on our
+    human perception of art. With the development of AI models that can generate content which very convincingly
+    imitates human textual, visual or musical creations, many of our traditional, as well as contemporary, theoretical
+    and practical understandings of art might become challenged.</p>
+
+  <h4 class="nero">References</h4>
+
+  <ul class="boxo">
+    <li>[1] A. RAMESH, M. PAVLOV, G. G., AND GRAY, S. Dall·e: Creating images from text., 2021.</li>
+
+    <li>[2] ABRY, P., WENDT, H., AND JAFFARD, S. When van gogh meets mandelbrot: Multifractal classification of
+      painting’s texture. Signal Processing 93, 3 (2013), 554–572.</li>
+
+    <li>[3] ACHLIOPTAS, P., OVSJANIKOV, M., HAYDAROV, K., ELHOSEINY, M., AND GUIBAS, L. Artemis: Affective language for
+      visual art. arXiv preprint arXiv:2101.07396 (2021).</li>
+
+    <li>[4] AGARWAL, S., KARNICK, H., PANT, N., AND PATEL, U. Genre and style based painting classification. In</li>
+
+    <li>2015 IEEE Winter Conference on Applications of Computer Vision (WACV) (2015), IEEE, pp. 588–594.</li>
+
+    <li>[5] ALAMEDA-PINEDA, X., RICCI, E., YAN, Y., AND SEBE, N. Recognizing emotions from abstract paintings using
+      non-linear matrix completion. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition
+      (2016), pp. 5240–5248.</li>
+
+    <li>[6] AMIRSHAHI, S. A., HAYN-LEICHSENRING, G. U., DENZLER, J., AND REDIES, C. Jenaesthetics subjective dataset:
+      analyzing paintings by subjective scores. In European Conference on Computer Vision (2014), Springer, pp. 3–19.
+    </li>
+
+    <li>[7] BAR, Y., LEVY, N., AND WOLF, L. Classification of artistic styles using binarized features derived from a
+      deep neural network. In Computer Vision - ECCV 2014 Workshops - Zurich, Switzerland, September 6-7 and 12, 2014,
+      Proceedings, Part I (2014), pp. 71–84.</li>
+
+    <li>[8] BARALDI, L., CORNIA, M., GRANA, C., AND CUCCHIARA, R. Aligning text and document illustrations: towards
+      visually explainable digital humanities. In 2018 24th International Conference on Pattern Recognition (ICPR)
+      (2018), IEEE, pp. 1097–1102.</li>
+
+    <li>[9] BELL, P., AND IMPETT, L. Ikonographie und interaktion. computergestützte analyse von posen in bildern der
+      heilsgeschichte. Das Mittelalter 24, 1 (2019), 31–53.</li>
+
+    <li>[10] BIANCO, S., MAZZINI, D., NAPOLETANO, P., AND SCHETTINI, R. Multitask painting categorization by deep
+      multibranch neural network. Expert Systems with Applications 135 (2019), 90–101.</li>
+
+    <li>[11] BODEN, M. A. Creativity and art: Three roads to surprise. Oxford University Press, 2010.</li>
+
+    <li>[12] BODEN, M. A., AND EDMONDS, E. A. What is generative art? Digital Creativity 20, 1-2 (2009), 21–46.</li>
+
+    <li>[13] BONGINI, P., BECATTINI, F., BAGDANOV, A. D., AND DEL BIMBO, A. Visual question answering for cultural
+      heritage. arXiv preprint arXiv:2003.09853 (2020).</li>
+
+    <li>[14] BROCK, A., DONAHUE, J., AND SIMONYAN, K. Large scale gan training for high fidelity natural image
+      synthesis. arXiv preprint arXiv:1809.11096 (2018).</li>
+
+    <li>[15] CARNEIRO, G., DA SILVA, N. P., DEL BUE, A., AND COSTEIRA, J. P. Artistic image classification: An analysis
+      on the printart database. In European conference on computer vision (2012), Springer, pp. 143–157.</li>
+
+    <li>[16] CASTELLANO, G., LELLA, E., AND VESSIO, G. Visual link retrieval and knowledge discovery in painting
+      datasets. Multimedia Tools and Applications (2020), 1–18.</li>
+
+    <li>[17] CASTELLANO, G., AND VESSIO, G. Towards a tool for visual link retrieval and knowledge discovery in painting
+      datasets. In Italian Research Conference on Digital Libraries (2020), Springer, pp. 105–110.</li>
+
+    <li>[18] CETINIC, E. Iconographic image captioning for artworks, 2021.</li>
+
+    <li>[19] CETINIC, E., AND GRGIC, S. Automated painter recognition based on image feature extraction. In 2013 55th
+      International Symposium ELMAR (2013), IEEE, pp. 19–22.</li>
+
+    <li>[20] CETINIC, E., AND GRGIC, S. Genre classification of paintings. In 2016 International Symposium ELMAR, 2016
+      (2016), IEEE, pp. 201–204.</li>
+
+    <li>[21] CETINIC, E., LIPIC, T., AND GRGIC, S. Fine-tuning convolutional neural networks for fine art
+      classification.</li>
+
+    <li>Expert Systems with Applications 114 (2018), 107–118.</li>
+
+    <li>[22] CETINIC, E., LIPIC, T., AND GRGIC, S. A deep learning perspective on beauty, sentiment, and remembrance of
+      art. IEEE Access 7 (2019), 73694–73710.</li>
+
+    <li>[23] CETINIC, E., LIPIC, T., AND GRGIC, S. Learning the principles of art history with convolutional neural
+      networks. Pattern Recognition Letters 129 (2020), 56–62.</li>
+
+    <li>[24] CH’NG, E. Art by computing machinery: Is machine art acceptable in the artworld? ACM Transactions on
+      Multimedia Computing, Communications, and Applications (TOMM) 15, 2s (2019), 1–17.</li>
+
+    <li>[25] CHRISTIE’S. Is artificial intelligence set to become art’s next medium?, 2018.</li>
+
+    <li>[26] COECKELBERGH, M. Can machines create art? Philosophy & Technology 30, 3 (2017), 285–303.</li>
+
+    <li>[27] COLTON, S. The painting fool: Stories from building an automated painter. In Computers and creativity.
+      Springer, 2012, pp. 3–38.</li>
+
+    <li>[28] COLTON, S., PEASE, A., AND SAUNDERS, R. Issues of authenticity in autonomously creative systems. In</li>
+
+    <li>Proceedings of the Ninth International Conference on Computational Creativity (2018).</li>
+
+    <li>[29] CROWLEY, E. J., PARKHI, O. M., AND ZISSERMAN, A. Face painting: querying art with photos.</li>
+
+    <li>[30] CROWLEY, E. J., AND ZISSERMAN, A. In search of art. In European Conference on Computer Vision (2014),
+      Springer, pp. 54–70.</li>
+
+    <li>[31] CROWLEY, E. J., AND ZISSERMAN, A. The state of the art: Object retrieval in paintings using discriminative
+      regions.</li>
+
+    <li>[32] CROWLEY, E. J., AND ZISSERMAN, A. The art of detection. In European Conference on Computer Vision</li>
+
+    <li>(2016), Springer, pp. 721–737.</li>
+
+    <li>[33] DANIELE, A., AND SONG, Y.-Z. Ai+ art= human. In Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics,
+      and Society (2019), pp. 155–161.</li>
+
+    <li>[34] DAVID, O. E., AND NETANYAHU, N. S. Deeppainter: Painter classification using deep convolutional autoen-
+      coders. In Artificial Neural Networks and Machine Learning - ICANN 2016 - 25th International Conference on
+      Artificial Neural Networks, Barcelona, Spain, September 6-9, 2016, Proceedings, Part II (2016), Springer, pp.
+      20–28.</li>
+
+    <li>[35] DENG, J., DONG, W., SOCHER, R., LI, L.-J., LI, K., AND FEI-FEI, L. Imagenet: A large-scale hierarchical
+      image database. In Computer Vision and Pattern Recognition, 2009. CVPR 2009. IEEE Conference on (2009), IEEE, pp.
+      248–255.</li>
+
+    <li>[36] DENG, Y., TANG, F., DONG, W., MA, C., HUANG, F., DEUSSEN, O., AND XU, C. Exploring the representa- tivity
+      of art paintings. IEEE Transactions on Multimedia (2020).</li>
+
+    <li>[37] DORIN, A. Chance and complexity: stochastic and generative processes in art and creativity. In Proceedings
+      of the Virtual Reality International Conference: Laval Virtual (2013), pp. 1–8.</li>
+
+    <li>[38] DORIN, A., MCCABE, J., MCCORMACK, J., MONRO, G., AND WHITELAW, M. A framework for understand- ing
+      generative art. Digital Creativity 23, 3-4 (2012), 239–259.</li>
+
+    <li>[39] EFROS, A. A., AND FREEMAN, W. T. Image quilting for texture synthesis and transfer. In Proceedings of the
+      28th annual conference on Computer graphics and interactive techniques (2001), pp. 341–346.</li>
+
+    <li>[40] ELGAMMAL, A. Ai is blurring the definition of artist: Advanced algorithms are using machine learning to
+      create art autonomously. American Scientist 107, 1 (2019), 18–22.</li>
+
+    <li>[41] ELGAMMAL, A., LIU, B., ELHOSEINY, M., AND MAZZONE, M. Can: Creative adversarial networks, generating" art"
+      by learning about styles and deviating from style norms. arXiv preprint arXiv:1706.07068 (2017).</li>
+
+    <li>[42] ELGAMMAL, A., LIU, B., KIM, D., ELHOSEINY, M., AND MAZZONE, M. The shape of art history in the eyes of the
+      machine. In 32nd AAAI Conference on Artificial Intelligence, AAAI 2018 (2018), AAAI press, pp. 2183–2191.</li>
+
+    <li>[43] EPSTEIN, Z., LEVINE, S., RAND, D. G., AND RAHWAN, I. Who gets credit for ai-generated art? Iscience 23, 9
+      (2020), 101515.</li>
+
+    <li>[44] ESHRAGHIAN, J. K. Human ownership of artificial creativity. Nature Machine Intelligence 2, 3 (2020),
+      157–160.</li>
+
+    <li>[45] FLOREA, C., CONDOROVICI, R., VERTAN, C., BUTNARU, R., FLOREA, L., AND VR NCEANU, R. Pandora: Description of
+      a painting database for art movement recognition with baselines and perspectives. In 2016 24th European Signal
+      Processing Conference (EUSIPCO) (2016), IEEE, pp. 918–922.</li>
+
+    <li>[46] FRANCESCHET, M., COLAVIZZA, G., SMITH, T., FINUCANE, B., OSTACHOWSKI, M. L., SCALET, S., PERKINS, J.,
+      MORGAN, J., AND HERNÁNDEZ, S. Crypto art: A decentralized view. Leonardo (2020), 1–8.</li>
+
+    <li>[47] GALANTER, P. What is generative art? complexity theory as a context for art theory. In In GA2003–6th
+      Generative Art Conference (2003), Citeseer.</li>
+
+    <li>[48] GARCIA, N., AND VOGIATZIS, G. How to read paintings: semantic art understanding with multi-modal retrieval.
+      In Computer Vision - ECCV 2018 Workshops - Munich, Germany, September 8-14, 2018, Proceedings, Part II (2018),
+      vol. 11130 of Lecture Notes in Computer Science, Springer, pp. 676–691.</li>
+
+    <li>[49] GARCIA, N., YE, C., LIU, Z., HU, Q., OTANI, M., CHU, C., NAKASHIMA, Y., AND MITAMURA, T. A dataset and
+      baselines for visual question answering on art. In European Conference on Computer Vision (2020), Springer, pp.
+      92–108.</li>
+
+    <li>[50] GATYS, L. A., ECKER, A. S., AND BETHGE, M. Image style transfer using convolutional neural networks. In
+    </li>
+
+    <li>Proceedings of the IEEE conference on computer vision and pattern recognition (2016), pp. 2414–2423.</li>
+
+    <li>[51] GILLOTTE, J. L. Copyright infringement in ai-generated artworks. UC Davis L. Rev. 53 (2019), 2655.</li>
+
+    <li>[52] GIRSHICK, R., DONAHUE, J., DARRELL, T., AND MALIK, J. Rich feature hierarchies for accurate object
+      detection and semantic segmentation. In Proceedings of the IEEE conference on computer vision and pattern
+      recognition (2014), pp. 580–587.</li>
+
+    <li>[53] GONTHIER, N., GOUSSEAU, Y., AND LADJAL, S. An analysis of the transfer learning of convolutional neural
+      networks for artistic images. arXiv preprint arXiv:2011.02727 (2020).</li>
+
+    <li>[54] GONTHIER, N., GOUSSEAU, Y., LADJAL, S., AND BONFAIT, O. Weakly supervised object detection in artworks. In
+      Proceedings of the European Conference on Computer Vision (ECCV) (2018), pp. 0–0.</li>
+
+    <li>[55] GOOCH, B., AND GOOCH, A. Non-photorealistic rendering. CRC Press, 2001.</li>
+
+    <li>[56] GOODFELLOW, I., POUGET-ABADIE, J., MIRZA, M., XU, B., WARDE-FARLEY, D., OZAIR, S., COURVILLE, A., AND
+      BENGIO, Y. Generative adversarial nets. Advances in neural information processing systems 27 (2014), 2672–2680.
+    </li>
+
+    <li>[57] GRAHAM, D. J., HUGHES, J. M., LEDER, H., AND ROCKMORE, D. N. Statistics, vision, and the analysis of
+      artistic style. Wiley Interdisciplinary Reviews: Computational Statistics 4, 2 (2012), 115–123.</li>
+
+    <li>[58] GUADAMUZ, A. Do androids dream of electric copyright? comparative analysis of originality in artificial
+      intelligence generated works. Intellectual property quarterly (2017).</li>
+
+    <li>[59] HAYN-LEICHSENRING, G. U., LEHMANN, T., AND REDIES, C. Subjective ratings of beauty and aesthetics: cor-
+      relations with statistical image properties in western oil paintings. i-Perception 8, 3 (2017), 2041669517715474.
+    </li>
+
+    <li>[60] HERTZMANN, A. Painterly rendering with curved brush strokes of multiple sizes. In Proceedings of the 25th
+      annual conference on Computer graphics and interactive techniques (1998), pp. 453–460.</li>
+
+    <li>[61] HERTZMANN, A. Can computers create art? In Arts (2018), vol. 7, Multidisciplinary Digital Publishing
+      Institute, p. 18.</li>
+
+    <li>[62] HERTZMANN, A. Computers do not make art, people do. Communications of the ACM 63, 5 (2020), 45–48.</li>
+
+    <li>[63] HERTZMANN, A. Visual indeterminacy in gan art. Leonardo 53, 4 (2020), 424–428.</li>
+
+    <li>[64] HERTZMANN, A., JACOBS, C. E., OLIVER, N., CURLESS, B., AND SALESIN, D. H. Image analogies. In</li>
+
+    <li>Proceedings of the 28th annual conference on Computer graphics and interactive techniques (2001), pp. 327–340.
+    </li>
+
+    <li>[65] HONG, J.-W. Bias in perception of art produced by artificial intelligence. In International Conference on
+      Human-Computer Interaction (2018), Springer, pp. 290–303.</li>
+
+    <li>[66] HONG, J.-W., AND CURRAN, N. M. Artificial intelligence, artists, and art: attitudes toward artwork produced
+      by humans vs. artificial intelligence. ACM Transactions on Multimedia Computing, Communications, and Applications
+      (TOMM) 15, 2s (2019), 1–16.</li>
+
+    <li>[67] JACOBSEN, C. R., AND NIELSEN, M. Stylometry of paintings using hidden markov modelling of contourlet
+      transforms. Signal Processing 93, 3 (2013), 579–591.</li>
+
+    <li>[68] JENICEK, T., AND CHUM, O. Linking art through human poses. In 2019 International Conference on Document
+      Analysis and Recognition (ICDAR) (2019), IEEE, pp. 1338–1345.</li>
+
+    <li>[69] JING, Y., YANG, Y., FENG, Z., YE, J., YU, Y., AND SONG, M. Neural style transfer: A review. IEEE
+      transactions on visualization and computer graphics (2019).</li>
+
+    <li>[70] KARAYEV, S., TRENTACOSTE, M., HAN, H., AGARWALA, A., DARRELL, T., HERTZMANN, A., AND WINNEMOELLER, H.
+      Recognizing image style. In British Machine Vision Conference, BMVC 2014, Nottingham, UK, September 1-5, 2014
+      (2014), BMVA Press.</li>
+
+    <li>[71] KARRAS, T., LAINE, S., AND AILA, T. A style-based generator architecture for generative adversarial
+      networks. In Proceedings of the IEEE conference on computer vision and pattern recognition (2019), pp. 4401–4410.
+    </li>
+
+    <li>[72] KEREN, D. Painter identification using local features and naive bayes. In 16th International Conference on
+      Pattern Recognition, ICPR 2002, Quebec, Canada, August 11-15, 2002. (2002), vol. 2, pp. 474–477.</li>
+
+    <li>[73] KHALILI, A., AND BOUCHACHIA, H. An information theory approach to aesthetic assessment of visual patterns.
+    </li>
+
+    <li>Entropy 23, 2 (2021), 153.</li>
+
+    <li>[74] KHAN, F. S., BEIGPOUR, S., VAN DE WEIJER, J., AND FELSBERG, M. Painting-91: a large scale database for
+      computational painting categorization. Machine vision and applications 25, 6 (2014), 1385–1397.</li>
+
+    <li>[75] KIM, D., LIU, B., ELGAMMAL, A., AND MAZZONE, M. Finding principal semantics of style in art. In 2018 IEEE
+      12th International Conference on Semantic Computing (ICSC), IEEE, pp. 156–163.</li>
+
+    <li>[76] KIM, D., SON, S.-W., AND JEONG, H. Large-scale quantitative analysis of painting arts. Scientific reports 4
+    </li>
+
+    <li>(2014), 7370.</li>
+
+    <li>[77] KIM, D., XU, J., ELGAMMAL, A., AND MAZZONE, M. Computational analysis of content in fine art paintings. In
+      ICCC (2019), pp. 33–40.</li>
+
+    <li>[78] KLINKE, H. The digital transformation of art history. In The Routledge Companion to Digital Humanities and
+      Art History. Routledge, 2020, pp. 32–42.</li>
+
+    <li>[79] LANG, S., AND OMMER, B. Attesting similarity: Supporting the organization and study of art image
+      collections with computer vision. Digital Scholarship in the Humanities 33, 4 (2018), 845–856.</li>
+
+    <li>[80] LANG, S., AND OMMER, B. Reflecting on how artworks are processed and analyzed by computer vision:
+      Supplementary material. In Proceedings of the European Conference on Computer Vision (ECCV) (2018), pp. 0–0.</li>
+
+    <li>[81] LECOUTRE, A., NÉGREVERGNE, B., AND YGER, F. Recognizing art style automatically in painting with deep
+      learning. In Proceedings of The 9th Asian Conference on Machine Learning, ACML 2017, Seoul, Korea, November 15-17,
+      2017. (2017), pp. 327–342.</li>
+
+    <li>[82] LEE, B., SEO, M. K., KIM, D., SHIN, I.-S., SCHICH, M., JEONG, H., AND HAN, S. K. Dissecting landscape art
+      history with information theory. Proceedings of the National Academy of Sciences 117, 43 (2020), 26580–26590.</li>
+
+    <li>[83] LIN, H., VAN ZUIJLEN, M., WIJNTJES, M. W., PONT, S. C., AND BALA, K. Insights from a large-scale database
+      of material depictions in paintings. arXiv preprint arXiv:2011.12276 (2020).</li>
+
+    <li>[84] LLANO, M. T., D’INVERNO, M., YEE-KING, M., MCCORMACK, J., ILSAR, A., PEASE, A., AND COLTON,</li>
+
+    <li>S. Explainable computational creativity. In Proc. ICCC (2020).</li>
+
+    <li>[85] MADHU, P., KOSTI, R., MÜHRENBERG, L., BELL, P., MAIER, A., AND CHRISTLEIN, V. Recognizing charac- ters in
+      art history using deep learning. In Proceedings of the 1st Workshop on Structuring and Understanding of Multimedia
+      heritAge Contents (2019), pp. 15–22.</li>
+
+    <li>[86] MADHU, P., MARQUART, T., KOSTI, R., BELL, P., MAIER, A., AND CHRISTLEIN, V. Understanding compositional
+      structures in art historical images using pose and gaze priors. In European Conference on Computer Vision (2020),
+      Springer, pp. 109–125.</li>
+
+    <li>[87] MAO, H., CHEUNG, M., AND SHE, J. Deepart: Learning joint representations of visual arts. In Proceedings of
+      the 25th ACM international conference on Multimedia (2017), pp. 1183–1191.</li>
+
+    <li>[88] MAZZONE, M., AND ELGAMMAL, A. Art, creativity, and the potential of artificial intelligence. In Arts
+      (2019), vol. 8, Multidisciplinary Digital Publishing Institute, p. 26.</li>
+
+    <li>[89] MCCORMACK, J., BOWN, O., DORIN, A., MCCABE, J., MONRO, G., AND WHITELAW, M. Ten questions concerning
+      generative computer art. Leonardo 47, 2 (2014), 135–141.</li>
+
+    <li>[90] MCCORMACK, J., GIFFORD, T., AND HUTCHINGS, P. Autonomy, authenticity, authorship and intention in computer
+      generated art. In International Conference on Computational Intelligence in Music, Sound, Art and Design (Part of
+      EvoStar) (2019), Springer, pp. 35–50.</li>
+
+    <li>[91] MENIS-MASTROMICHALAKIS, O., SOFOU, N., AND STAMOU, G. Deep ensemble art style recognition. In</li>
+
+    <li>2020 International Joint Conference on Neural Networks (IJCNN) (2020), IEEE, pp. 1–8.</li>
+
+    <li>[92] MENSINK, T., AND VAN GEMERT, J. The rijksmuseum challenge: Museum-centered visual recognition. In</li>
+
+    <li>Proceedings of International Conference on Multimedia Retrieval (2014), pp. 451–454.</li>
+
+    <li>[93] MERMET, A., KITAMOTO, A., SUZUKI, C., AND TAKAGISHI, A. Face detection on pre-modern japanese artworks
+      using r-cnn and image patching for semi-automatic annotation. In Proceedings of the 2nd Workshop on Structuring
+      and Understanding of Multimedia heritAge Contents (2020), pp. 23–31.</li>
+
+    <li>[94] MILANI, F., AND FRATERNALI, P. A data set and a convolutional model for iconography classification in
+      paintings. arXiv preprint arXiv:2010.11697 (2020).</li>
+
+    <li>[95] MOHAMMAD, S., AND KIRITCHENKO, S. Wikiart emotions: An annotated dataset of emotions evoked by art. In
+      Proceedings of the eleventh international conference on language resources and evaluation (LREC 2018) (2018).</li>
+
+    <li>[96] MORDVINTSEV, A., OLAH, C., AND TYKA, M. Inceptionism: Going deeper into neural networks, june 2015.</li>
+
+    <li>URL http://googleresearch. blogspot. com/2015/06/inceptionism-going-deeper-into-neural. html (2015).</li>
+
+    <li>[97] MZOUGHI, O., BIGAND, A., AND RENAUD, C. Face detection in painting using deep convolutional neural
+      networks. In International Conference on Advanced Concepts for Intelligent Vision Systems (2018), Springer, pp.
+      333–341.</li>
+
+    <li>[98] NOTARO, A. State-of-the-art: Ai through the (artificial) artist’s eye. In EVA London 2020: Electronic
+      Visualisation and the Arts (2020), pp. 322–328.</li>
+
+    <li>[99] POSTHUMUS, E. Brill iconclass ai test set, 2020.</li>
+
+    <li>[100] QI, H., AND HUGHES, S. A new method for visual stylometry on impressionist paintings. In 2011 IEEE
+      International Conference on Acoustics, Speech and Signal Processing (ICASSP) (2011), IEEE, pp. 2036–2039.</li>
+
+    <li>[101] RAGOT, M., MARTIN, N., AND COJEAN, S. Ai-generated vs. human artworks. a perception bias towards
+      artificial intelligence? In Extended abstracts of the 2020 CHI conference on human factors in computing systems
+      (2020), pp. 1–10.</li>
+
+    <li>[102] REA, N. Has artificial intelligence brought us the next great art movement? here are 9 pioneering artists
+      who are exploring ai’s creative potential., 2018.</li>
+
+    <li>[103] REED, S., AKATA, Z., YAN, X., LOGESWARAN, L., SCHIELE, B., AND LEE, H. Generative adversarial text to
+      image synthesis. In International Conference on Machine Learning (2016), PMLR, pp. 1060–1069.</li>
+
+    <li>[104] RISSET, J. Stochastic processes in music and art. In Stochastic Processes in Quantum Theory and
+      Statistical Physics. Springer, 1982, pp. 281–288.</li>
+
+    <li>[105] SABATELLI, M., KESTEMONT, M., DAELEMANS, W., AND GEURTS, P. Deep transfer learning for art classification
+      problems. In Proceedings of the European Conference on Computer Vision (ECCV) Workshops (2018), pp. 0–0.</li>
+
+    <li>[106] SANDOVAL, C., PIROGOVA, E., AND LECH, M. Two-stage deep learning approach to the classification of
+      fine-art paintings. IEEE Access 7 (2019), 41770–41781.</li>
+
+    <li>[107] SARGENTIS, G., DIMITRIADIS, P., KOUTSOYIANNIS, D., ET AL. Aesthetical issues of leonardo da vinci’s and
+      pablo picasso’s paintings with stochastic evaluation. Heritage 3, 2 (2020), 283–305.</li>
+
+    <li>[108] SEGUIN, B., STRIOLO, C., KAPLAN, F., ET AL. Visual link retrieval in a database of paintings. In European
+      Conference on Computer Vision (2016), Springer, pp. 753–767.</li>
+
+    <li>[109] SHAMIR, L., MACURA, T., ORLOV, N., ECKLEY, D. M., AND GOLDBERG, I. G. Impressionism, expression- ism,
+      surrealism: Automated recognition of painters and schools of art. ACM Transactions on Applied Perception (TAP) 7,
+      2 (2010), 8.</li>
+
+    <li>[110] SHAMIR, L., AND TARAKHOVSKY, J. A. Computer analysis of art. J. Comput. Cult. Herit. (JOCCH) 5, 2 (Aug.
+      2012), 7:1–7:11.</li>
+
+    <li>[111] SHEN, X., EFROS, A. A., AND AUBRY, M. Discovering visual patterns in art collections with spatially-
+      consistent feature learning. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition
+      (2019), pp. 9278–9287.</li>
+
+    <li>[112] SHENG, S., AND MOENS, M.-F. Generating captions for images of ancient artworks. In Proceedings of the 27th
+      ACM International Conference on Multimedia (2019), pp. 2478–2486.</li>
+
+    <li>[113] SIDOROVA, E. The cyber turn of the contemporary art market. In Arts (2019), vol. 8, Multidisciplinary
+      Digital Publishing Institute, p. 84.</li>
+
+    <li>[114] SIGAKI, H. Y., PERC, M., AND RIBEIRO, H. V. History of art paintings through the lens of entropy and
+      complexity. Proceedings of the National Academy of Sciences 115, 37 (2018), E8585–E8594.</li>
+
+    <li>[115] SRINIVASAN, R., AND UCHINO, K. Biases in generative art—a causal look from the lens of art history. arXiv
+      preprint arXiv:2010.13266 (2020).</li>
+
+    <li>[116] STEFANINI, M., CORNIA, M., BARALDI, L., CORSINI, M., AND CUCCHIARA, R. Artpedia: A new visual- semantic
+      dataset with visual and contextual sentences in the artistic domain. In International Conference on Image Analysis
+      and Processing (2019), Springer, pp. 729–740.</li>
+
+    <li>[117] STEPHENSEN, J. L. Towards a philosophy of post-creative practices?–reading obvious’ "portrait of edmond de
+      belamy". Politics of the Machine Beirut 2019 2 (2019), 21–30.</li>
+
+    <li>[118] STREZOSKI, G., AND WORRING, M. Omniart: a large-scale artistic benchmark. ACM Transactions on Multimedia
+      Computing, Communications, and Applications (TOMM) 14, 4 (2018), 1–21.</li>
+
+    <li>[119] TODOROV, P. A game of dice: Machine learning and the question concerning art. arXiv preprint
+      arXiv:1904.01957 (2019).</li>
+
+    <li>[120] VAN NOORD, N., AND POSTMA, E. Learning scale-variant and scale-invariant features for deep image
+      classification. Pattern Recognition 61 (2017), 583–592.</li>
+
+    <li>[121] VASWANI, A., SHAZEER, N., PARMAR, N., USZKOREIT, J., JONES, L., GOMEZ, A. N., KAISER, L., AND</li>
+
+    <li>POLOSUKHIN, I. Attention is all you need. arXiv preprint arXiv:1706.03762 (2017).</li>
+
+    <li>[122] WECHSLER, H., AND TOOR, A. S. Modern art challenges face detection. Pattern Recognition Letters 126</li>
+
+    <li>(2019), 3–10.</li>
+
+    <li>[123] WESTLAKE, N., CAI, H., AND HALL, P. Detecting people in artwork with cnns. In European Conference on
+      Computer Vision (2016), Springer, pp. 825–841.</li>
+
+    <li>[124] WU, Y., MOU, Y., LI, Z., AND XU, K. Investigating american and chinese subjects’ explicit and implicit
+      perceptions of ai-generated artistic work. Computers in Human Behavior 104 (2020), 106186.</li>
+
+    <li>[125] XU, T., ZHANG, P., HUANG, Q., ZHANG, H., GAN, Z., HUANG, X., AND HE, X. Attngan: Fine-grained text to
+      image generation with attentional generative adversarial networks. In Proceedings of the IEEE conference on
+      computer vision and pattern recognition (2018), pp. 1316–1324.</li>
+
+    <li>[126] YANG, H., AND MIN, K. Classification of basic artistic media based on a deep convolutional approach. The
+      Visual Computer 36, 3 (2020), 559–578.</li>
+
+    <li>[127] YANISKY-RAVID, S., AND VELEZ-HERNANDEZ, L. A. Copyrightability of artworks produced by creative robots and
+      originality: the formality-objective model. Minn. JL Sci. & Tech. 19 (2018), 1.</li>
+
+    <li>[128] YANULEVSKAYA, V., UIJLINGS, J., BRUNI, E., SARTORI, A., ZAMBONI, E., BACCI, F., MELCHER, D., AND SEBE, N.
+      In the eye of the beholder: employing statistical analysis and eye tracking for analyzing abstract paintings. In
+      Proceedings of the 20th ACM international conference on multimedia (2012), pp. 349–358.</li>
+
+    <li>[129] ZHAO, L., SHANG, M., GAO, F., LI, R., HUANG, F., AND YU, J. Representation learning of image composition
+      for aesthetic prediction. Computer Vision and Image Understanding 199 (2020), 103024.</li>
+
+    <li>[130] ZHU, J.-Y., PARK, T., ISOLA, P., AND EFROS, A. A. Unpaired image-to-image translation using cycle-
+      consistent adversarial networks. In Proceedings of the IEEE international conference on computer vision (2017),
+      pp. 2223–2232.</li>
+  </ul>
+</body>
+
+</html>
