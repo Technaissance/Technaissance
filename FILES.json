@@ -1,14 +1,14 @@
 [
 	{
-		"label": "Issue 1",
+		"label": "Article 1",
 		"url": "articles/article1.html"
 	},
 	{
-		"label": "Issue 2",
+		"label": "Article 2",
 		"url": "articles/article2.html"
 	},
 	{
-		"label": "Issue 3",
+		"label": "Article 3",
 		"url": "articles/article3.html"
 	}
 ]
