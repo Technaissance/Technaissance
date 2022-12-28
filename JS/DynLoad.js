@@ -9,16 +9,17 @@ String.prototype.tpl = function(o)
     console.log(r)
 
     for (var i in o) { 
+        //console.log(i) //this is URL first time and Label the second time
         r = r.replace(new RegExp("\\$"+i, 'g'),o[i])  
-        console.log(o[i])  //this is the name of the label
-        console.log(r)
+        //console.log(o[i])  //this is the name of the label
+        //console.log(r)
     } 
-    console.log(r)
+    //console.log(r)
     return r 
 }
-
-var listItemTpl = `<li><button class="dropdown-item nav__link" type="button" href='#' onclick='load("$url")'>$label
-</button></li>`
+var listItemTpl = `load("$url")`
+//var listItemTpl = `<button class="dropdown-item nav__link" type="button" href='#' onclick='load("$url")'>$label</button>`
+//var listItemTpl = `<li><button class="dropdown-item nav__link" type="button" href='#' onclick='load("$url")'>$label</button></li>`
 
 function swapTheme(csspath) {
     //console.log("i get called")
@@ -90,11 +91,28 @@ function main() {
         method: 'GET',
         url: 'FILES.json',
         success: function(f) {
-            console.log(f)
+            //console.log(f)
             for (var i=0; i<f.length; i++) {
-                $('#list').append(listItemTpl.tpl({url:f[i].url, label: f[i].label}))
-                console.log("some")
+                $('#list').append(listItemTpl.tpl({url:f[i].url}))
+                //console.log("some")
             }	
+            for (var i=0; i<f.length; i++){
+                var elementDiv = document.getElementById(i)
+                console.log(elementDiv)
+                
+                var button = document.createElement("button");
+                button.setAttribute("type", "button");
+                var data = listItemTpl.tpl({url:f[i].url, label: f[i].label})
+                button.setAttribute('onclick', data)
+                //button.addEventListener("click", load)
+                  
+                // Set the content of the button
+                button.innerHTML = "Read This Article";
+
+                // Add the button to the document
+                elementDiv.appendChild(button);
+                console.log(i)
+            }
         },
         error: function() {
             alert('No document to show')
@@ -226,12 +244,12 @@ function load(file) {
             addFromLocalStorage()
             $('#title').html($('#file h1')) */
 
-            // Get the element with an id of "heading"
-            var element = document.getElementById("heading");
+            // Get the element with an id of "heading" - need to add "author" & "date published"
+            var element = document.getElementById("heading"); //heading
 
             // Get the content of the element
             var content = element.innerHTML;
-
+            console.log(content);
             // Output the content to the inner HTML
             var elements = document.getElementById("TITLE");
 
