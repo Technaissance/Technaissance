@@ -1,314 +1,297 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Technaissance</title>
-    <link rel="icon" type="image/x-icon" href="IMG/Group_4W.png">
-    <!-- THIS IS THE STYLE FOR THE SIDE MENU -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/base.css" id="default" type="text/css">
-    <link rel="stylesheet" href="#" id="choosen" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet"> 
+<head>
+  <title>Documentation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-      
-      .offcanvas-btn {
-        left: 391px;
-        visibility: visible;
-        bottom: 50%;
-        transform: rotate(270deg);
-      }
+  <!-- This script got from frontendfreecode.com -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900">
 
-      /* optional junk to toggle the button text */
-      .offcanvas-btn span:last-child,
-      .offcanvas.show .offcanvas-btn span:first-child {
-        display: none;
-      }
+  <!-- THIS IS THE STYLE FOR THE SIDE MENU -->
+  <!-- Bootstrap core CSS -->
 
-      .offcanvas.show .offcanvas-btn span:last-child {
-        display: inline;
-      }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/blankcss.css" id="default">
+  <link rel="stylesheet" href="#" id="choosen">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&amp;display=swap'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=VT323&amp;display=swap'>
+
+  <style>
+    .sticky-offset {
+      top: 56px;
+    }
+
+    .offcanvas-btn {
+      left: 390px;
+      visibility: visible;
+      bottom: 50%;
+      transform: rotate(270deg);
+    }
+
+    /* optional junk to toggle the button text */
+    .offcanvas-btn span:last-child,
+    .offcanvas.show .offcanvas-btn span:first-child {
+      display: none;
+    }
+
+    .offcanvas.show .offcanvas-btn span:last-child {
+      display: inline;
+    }
+
+    .bg-light {
+      --bs-bg-opacity: 1;
+      background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    }
+
+    .navbar {
+      margin-bottom: 20px;
+    }
+
+    .overflow-auto {
+      max-height: 1024px;
+    }
 
 
-      .navbar {
-        margin-bottom: 20px;
-      }
+    .footer-widget {
+      border: 1px solid #444;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
 
-      .overflow-auto {
-        max-height: 1024px;
-      }
-    </style>
-  </head>
-  <body class="d-flex flex-column h-100">
-   <!-- SIDE MENU -->
-   <div class="offcanvas offcanvas-start" data-bs-scroll="true" id="demo">
+    .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .vertical-center {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(0%, -50%);
+      -webkit-transform: translate(0%, -50%);
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <!-- SIDE MENU CODE HERE -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" id="demo">
     <button class="btn btn-primary offcanvas-btn position-absolute mt-2" type="button" data-bs-toggle="offcanvas"
       data-bs-target="#demo">
-      <span class="poffcanvasbutton">Open</span>
-      <span class="poffcanvasbutton">Close</span>
+      <span>Open</span>
+      <span>Close</span>
     </button>
 
     <div class="offcanvas-header pad-offcanvas nav-section cardextra">
-      <h1 class="offcanvas-title">FULL MENU</h1>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      <h1 class="offcanvas-title">MENU</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
-    <div class="offcanvas-body pad-offcanvas card-body  nav-section cardextra">
-      <p class="pmd">Some text lorem ipsum.</p>
+    <div class="offcanvas-body pad-offcanvas card-body nav-section cardextra">
+      <p>Some text lorem ipsum.</p>
       <ul id="menu-primary">
         <li><a href="issue.html">Published Issues</a></li>
         <li><a href="documentation.html">Theme Documentation</a></li>
         <li><a href="team.html">About Team</a></li>
         <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </div>
+
   <!-- FIXED NAVBAR -->
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top appheader">
-        <ul class=" col-xs-4 navbar-nav mx-auto">
-            <li class="nav-item active">
-                <a class="navbar-brand" href="index.html"><img
-                    src="IMG/Group_4W.png" alt="" width="26" height="24"
-                    class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top appheader" aria-label="Third navbar example">
+
+    <div class="container-fluid ">
+      <div class="p-1 flex-fill bd-highlight">
+        <a class="navbar-brand " href="home.html"><img
+            src="IMG/Group_4.png" alt="" width="30" height="24"
+            class="d-inline-block align-text-top">
+          TECHnaissance</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+        aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+
+
+        <div class="p-1 flex-fill bd-highlight">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                aria-expanded="false">Select Issue</a>
+              <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
+                <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = 'issue.html'">Issue
+                    No. 1
+                </li>
+                <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 2
+                </li>
+                <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 3
+                </li>
+              </ul>
             </li>
-        </ul>
-        <div class="dropdown col-xs-4 navbar-nav mx-auto">
-            <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <!--CLASS = btn btn-secondary dropdown-toggle-->
-            Select Issue
-            </button>
-            <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
-              <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = 'issue.html'">Issue No. 1</li>
-              <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 2</li>
-              <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 3</li>
-            </ul>
+          </ul>
         </div>
-        <div class="dropdown col-xs-4 navbar-nav mx-auto">
-            <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <!--CLASS = btn btn-secondary dropdown-toggle-->
-            Select Theme
-            </button>
-            <ul class="dropdown-menu card-body nav-section cardextra" aria-labelledby="dropdownMenuButton1">
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric Minimalism</li>
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web Brutalism</li>
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
-            </ul>
+
+        <div class="p-1 flex-fill bd-highlight ">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                aria-expanded="false">Select Theme</a>
+              <ul class="dropdown-menu card-body shadow nav-section cardextra cardpad" aria-labelledby="dropdown03">
+                <li> <button class="dropdown-item nav__link" type="button"
+                    onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
+                <li> <button class="dropdown-item nav__link" type="button"
+                    onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
+                <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric
+                    Minimalism</li>
+                <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web
+                    Brutalism</li>
+                <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </nav>
-</header>
-    <!--MAIN CONTENT-->
-      <div class="container-fluid px-5 py-5" name="main">
-        <div class="row" name="spacer2"></div>
-        <div class="row border">
-          <h2 class="issue">Documentation</h2>
-        </div> 
-        <div class="row" name="spacer2"></div>
-        <div class="row border flex-container ">
-          <div class="col border cowboybgcolor" name="wide" style="height: 76vh; overflow-y: scroll; ">
 
-            <section>
-              <h3 class="issue">What Is Technaissance About?</h3>
-              <p>
-                About the project, its aim <span style="color:red">[NEED TO WRITE]</span>
-              </p>
-            </section>
-            <hr>
-            <section>
-              <h3 class="issue">Text Markup Methodology</h3>
-              <p>
-                The structure of the three selected article reflects a hierarchical form, composed of nested HTML elements, tags and a attributes. I added classes and specific id to better shape the diffent styles according to the elements of the page. Some complex characters and diacritical symbols have been repleaced by their respective marks to assure a correct reading by the HTML language. I also semantically marked up the article, in order to create a filtering feature for highlighting meaningful elements in respect to the central issue. With this purpose, I individuated mention persons, places, events, institution or companies, general concepts and different types of aggression perpetuated by policeman, mental disorders and ethnic group. Each element was therefore assigned to one or more classes, and detectable by the attribute "about", which we used to collect all elements of the same class and value, linking them to the checkboxes of our metadata panel to guarantee an efficient search.<br><span style="color:red">[stolen from other project, NEED TO WRITE OUR OWN]</span>
-              </p>
-            </section>
-            <hr>
+      </div>
+    </div>
+  </nav>
 
-            <div class="row" name="spacer2"></div>
-            <div class="row" name="spacer2"></div>
 
-            <article>
-              <section>
-                <h3 class="issue">Documentation Of Theme One</h3>
-                <p>
-                  JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide pragrammatic control over them.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue">Theme History</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue">Inspirtation Sources</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue">Mood-Board For Theme</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-                <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80" href="https://in.pinterest.com/manusrivastava/brutalist/"></a>
-              </section>
-              <section>
-                <h5 class="issue">Design System</h5>
-                <p>
-                  JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-                </p>
-                <h6 class="issue">Typographic Families</h6>
-                <p>FONT FAMILIES</p>
-                <p>HEADERS AND THEIR WEIGHTS</p>
-                <P>PARAGRAPH TYPES</P>
+  <main class="flex-shrink-0">
+    <!-- MAIN CONTENT -->
+    <!--SCROLLABLE GRID-->
+    <div class="container-fluid px-5 py-5">
+      <div class="row px-5" name="spacer2"></div>
+      <div class="row gx-3 gy-3 px-4">
 
-                <h6 class="issue">Color Styles</h6>
-                <p>Primary<br>
-                  Secondary<br>
-                  Gradients<br>
-                  Opacity<br>
-                  Tints<br>
-                  Shades<br>
-                </p>
+        <div class="col-sm-8">
+          <div class="card mb-4 box-shadow h-100 shadow">
+            <div class="card-body card-bg">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example"
+                tabindex="0">
+                <h2 id="list-item-1" class="issue">Item 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <h2 id="list-item-2" class="issue">Item 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <h2 id="list-item-3" class="issue">Item 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <h2 id="list-item-4" class="issue">Item 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <h6 class="issue">Shape Styles</h6>
-                <P>
-                  Shape Styles</span>
-                  Border<br>
-                  State styles<br>
-                  Patterns<br>
-                </P>
+        <div class="col-sm-4">
+          <div class="card mb-4 box-shadow sticky-top sticky-offset">
+            <div class="card-body card-bg">
+              <!--  overflow-auto-->
 
-                <h6 class="issue">Effect Styles</h6>
-                <P>
-                  Shadows<br>
-                  blurs<br>
-                  Image manipulation<br>
-                </P>
-
-                <h6 class="issue">Logo Styles</h6>
-                <h6 class="issue">Cursor Styles</h6>
-                <h6 class="issue">Icons Styles</h6>
-                <h6 class="issue">Notification/Alert Styles</h6>
-              </section>
-              <hr>
-            </article>
-
-            <div class="row" name="spacer2"></div>
-            <div class="row" name="spacer2"></div>
-
-            <article>
-              <section>
-                <h3 class="issue">Documentation Of Theme Two</h3>
-                <p>
-                  JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide pragrammatic control over them.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue">Theme History</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue">Inspirtation Sources</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue">Mood-Board For Theme</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-                <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80" href="https://in.pinterest.com/manusrivastava/brutalist/"></a>
-              </section>
-              <section>
-                <h5 class="issue">Design System</h5>
-                <p>
-                  JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-                </p>
-                <h6 class="issue">Typographic Families</h6>
-                <p>FONT FAMILIES</p>
-                <p>HEADERS AND THEIR WEIGHTS</p>
-                <P>PARAGRAPH TYPES</P>
-
-                <h6 class="issue">Color Styles</h6>
-                <p>Primary<br>
-                  Secondary<br>
-                  Gradients<br>
-                  Opacity<br>
-                  Tints<br>
-                  Shades<br>
-                </p>
-
-                <h6 class="issue">Shape Styles</h6>
-                <P>
-                  Shape Styles</span>
-                  Border<br>
-                  State styles<br>
-                  Patterns<br>
-                </P>
-
-                <h6 class="issue">Effect Styles</h6>
-                <P>
-                  Shadows<br>
-                  blurs<br>
-                  Image manipulation<br>
-                </P>
-
-                <h6 class="issue">Logo Styles</h6>
-                <h6 class="issue">Cursor Styles</h6>
-                <h6 class="issue">Icons Styles</h6>
-                <h6 class="issue">Notification/Alert Styles</h6>
-              </section>
-              <hr>
-            </article>
-
-            <div class="row" name="spacer2"></div>
-            <div class="row" name="spacer2"></div>
-
-            <article>
-              
-            </article>
-            
+              <div class=" pad card cardextra  ">
+                <!--  <img src="..." class="card-img-top" alt="..."> -->
+                <div class="pad card-body shadow nav-section cardextra sticky-top">
+                  <div id="list-example" class="list-group cardextra">
+                    <a class=" nav__link" href="#list-item-1">Item 1</a>
+                    <a class=" nav__link " href="#list-item-2">Item 2</a>
+                    <a class="nav__link " href="#list-item-3">Item 3</a>
+                    <a class="nav__link" href="#list-item-4">Item 4</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-    </main>
-    <!-- FOOTER CODE HERE -->
-    <footer class="footer mt-auto py-3  text-center">
-      <div>
-        <span class="pmd">Made with <span class="heart">♥</span> remotely from Anywhere</span>
-        <span style='color:red;margin-right:1.25em; display:inline-block;' class="pmd">&nbsp;</span>
-        <span class="pmd">&copy; 2022 CC BY 4.0.</span>
-      </div>
-    </footer>
-  </body>
-  <!-- SCRIPTS HERE -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-  <script src="JS/DynLoad.js">
-  </script>
-  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+    </div>
+  </main>
+
+  <!-- FOOTER CODE HERE -->
+  <footer class="footer mt-auto py-3  text-center">
+    <div>
+      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+      <span style='color:red;margin-right:1.25em; display:inline-block;'>&nbsp;</span>
+      <span>&copy; 2022 CC BY 4.0.</span>
+    </div>
+  </footer>
+</body>
+<!-- SCRIPTS HERE -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="JS/DynLoad.js"></script>
+
 </html>
