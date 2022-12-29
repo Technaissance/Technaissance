@@ -40,12 +40,14 @@ border: 0;
     background: rgb(255, 255, 255);
     visibility: hidden;
   }
+  /*Hero Page Article Container*/
   .cardBanner {
     border: 1px solid #000000;
     width: 500px;
     height: inherit;
     background: rgb(255, 255, 255);
   }
+  /*Issue Container*/
   .cardBannerS {
     flex: 0 0 auto;
     margin-right: 16px;
@@ -54,6 +56,18 @@ border: 0;
     height: 16rem;
     background: rgb(255, 255, 255);
     background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAVklEQVQYV2NkYGAwBuKzQAwDUkDGMyjnPyOSBDITrgiXApBisCKQggYoBgliWAdSgGInkG+C5KYGmBUgRU+BGMaHm4TsBmST4NaBFPxH0glSlIbkJgYAOoYQot9ebmkAAAAASUVORK5CYII=)repeat;
+    /*
+    border-radius: 71% 29% 82% 18% / 24% 76% 24% 76%;
+    */
+  }
+  .cardBannerSS {
+    flex: 0 0 auto;
+    margin-right: 16px;
+    /*border: 2px solid #000000; */
+    width: 400px;
+    height: 16rem;
+    /*background: rgb(255, 255, 255); */
+    /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAVklEQVQYV2NkYGAwBuKzQAwDUkDGMyjnPyOSBDITrgiXApBisCKQggYoBgliWAdSgGInkG+C5KYGmBUgRU+BGMaHm4TsBmST4NaBFPxH0glSlIbkJgYAOoYQot9ebmkAAAAASUVORK5CYII=)repeat;*/
     /*
     border-radius: 71% 29% 82% 18% / 24% 76% 24% 76%;
     */
@@ -90,12 +104,16 @@ border: 0;
 
 /*Main content styles-HOME*/
 
-
+.marginCC{
+  margin-left: 7rem;
+  margin-right:auto;
+}
 /*
   .row[name=anchored]{
     height: 80vh;
   }
 */
+
 
 /*Main content styles-TEAMS*/
 .col[name=mem1]{
