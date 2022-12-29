@@ -64,7 +64,7 @@ border: 0;
     flex: 0 0 auto;
     margin-right: 16px;
     /*border: 2px solid #000000; */
-    width: 400px;
+    width: inherit;
     height: 16rem;
     /*background: rgb(255, 255, 255); */
     /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAVklEQVQYV2NkYGAwBuKzQAwDUkDGMyjnPyOSBDITrgiXApBisCKQggYoBgliWAdSgGInkG+C5KYGmBUgRU+BGMaHm4TsBmST4NaBFPxH0glSlIbkJgYAOoYQot9ebmkAAAAASUVORK5CYII=)repeat;*/
