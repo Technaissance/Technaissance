@@ -28,17 +28,33 @@ body{
     vertical-align: baseline !important;
   }
 
-  #dropdownMenuButton1 {
+  ul > li{
     width: 25vw;
     border-left-width: .5px !important;
     border-right-width: .5px !important;
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
     border-style: dashed !important;
     border-color: rgb(255, 255, 255) !important;
-    font-size: 26pt;
+  }
+
+  ul > li > a{
+    font-size: 2vw;
     color: rgba(32, 185, 18, 1) !important;
     /*text-shadow: 10px 10px 20px 0px rgba(196, 196, 196, 0.75);*/
     text-shadow: 2px 2px 20px rgb(255, 255, 255);
   }
+  /*
+  #dropdown1 {
+    width: 25vw !important;
+    border-left-width: .5px !important;
+    border-right-width: .5px !important;
+    border-style: dashed !important;
+    border-color: rgb(255, 255, 255) !important;
+    font-size: 2vw;
+    color: rgba(32, 185, 18, 1) !important;
+    text-shadow: 2px 2px 20px rgb(255, 255, 255);
+  } */
   
    .active{
     width: 25vw;
@@ -206,10 +222,16 @@ body{
     .active a{
       font-size: 12pt;
     }
+    ul > li > a{
+      font-size: 12pt;
+    }
   }
 
   @media (min-width: 1600px) {
     .active a{
+      font-size: 26pt;
+    }
+    ul > li > a{
       font-size: 26pt;
     }
   }
