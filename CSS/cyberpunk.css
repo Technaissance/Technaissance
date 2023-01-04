@@ -1,4 +1,12 @@
+.container-fluid[name=main] {
+  padding-left: 2rem !important; 
+  padding-right: 0.5rem !important; 
 
+}
+
+.metapadding{
+  padding-left: 30px;
+}
      /* HORIZONTAL SCROLL */
      @media (min-width: 576px) {
       .card-group.card-group-scroll {
@@ -11,7 +19,23 @@
 
 
   /* END HORIZONTAL SCROLL */
-    
+  
+  .cardBannerS {
+    flex: 0 0 auto;
+    margin-right: 16px;
+    /* border: 2px solid #000000; */
+    width: 500px;
+    height: auto;
+    /* background: rgb(255, 255, 255); */
+     background: url(https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png)repeat;
+    /* border-radius: 71% 29% 82% 18% / 24% 76% 24% 76%; */
+}
+
+.dynbutton
+{
+  padding: .5rem 1rem;
+}
+
   .accordion-button.collapsed::after, .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   }
@@ -206,7 +230,7 @@ a{color:#2be4ea}
 
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav {
   color: var(--colors-secondary--500) !important;
 }
 
@@ -577,7 +601,8 @@ h4.issue {
   position: relative;
   padding-bottom: 15px;
   font-family: "Advent Pro", arial;
-  color:#000
+  color:#000;
+  padding: 30px;
 
 }
 
@@ -601,6 +626,10 @@ h3.issue {
 
 }
 
+.nav-link{
+  color:#2BE4EA !important;
+}
+
 h4.issue {
   font-size: 1rem;
   line-height: 1.2rem;
@@ -609,17 +638,21 @@ h4.issue {
 }
 
 h5.issue {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   line-height: 1.2rem;
   font-weight: 700;
   color: #000;
+  font-family: "Advent Pro", arial;
+
 }
 
 h6.issue {
-  font-size: 0.6remrem;
+  font-size: 0.6rem;
   line-height: 1.2rem;
   font-weight: 700;
   color:black;
+  font-family: "Advent Pro", arial;
+
 }
 
 h4.nero {
@@ -632,7 +665,6 @@ h4.nero {
   padding: 30px;
 }
 
-h1.issue:before,
 h2.issue:before,
 h3.issue:before,
 h4.issue:before {
@@ -823,6 +855,8 @@ h1.issue:after,
 h2.issue:after,
 h3.issue:after,
 h4.issue:after,
+h5.issue:after,
+h6.issue:after,
 p.issue:after {
   content: "_";
   animation-name: hxafter;

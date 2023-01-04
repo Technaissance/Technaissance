@@ -1,5 +1,30 @@
 /* This is the style sheet for GEOMETRIC MINIMALISM theme */
 
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+.nav-link{
+  color: #6d6d6d !important;
+}
+
+
+
+
+
+
+
+.cardBannerS {
+  flex: 0 0 auto;
+  margin-right: 16px;
+  /* border: 2px solid #000000; */
+  width: 500px;
+  height: auto;
+  /* background: rgb(255, 255, 255); */
+  background: url(https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png)repeat;
+  /* border-radius: 71% 29% 82% 18% / 24% 76% 24% 76%; */
+}
+
 html{
     scroll-behavior: smooth;
   }

@@ -5,6 +5,198 @@ html{
   }
   
 body{
-    background-color:#0c2334;
+    background-color:#000000;
+  }
+
+  @font-face {
+    font-family: 'BlueScreen';
+    src: url('https://raw.githubusercontent.com/Technaissance/Technaissance/main/BlueScreenPersonalUseRegular-0W1M9.ttf') format('truetype');
+  }
+  
+  .navbar{
+    font-family: 'BlueScreen', sans-serif;
+  }
+  
+
+  /*Navbar style*/
+  .bg-dark{
+    background-color:rgba(0,0,0,1) !important;
+  }
+  .align-text-top{
+    vertical-align: baseline !important;
+  }
+
+  #dropdownMenuButton1 {
+    width: 25vw;
+    border-left-width: .5px !important;
+    border-right-width: .5px !important;
+    border-style: dashed !important;
+    border-color: rgb(255, 255, 255) !important;
+    font-size: 26pt;
+    color: rgba(32, 185, 18, 1) !important;
+    /*text-shadow: 10px 10px 20px 0px rgba(196, 196, 196, 0.75);*/
+    text-shadow: 2px 2px 20px rgb(255, 255, 255);
+  }
+  
+   .active{
+    width: 25vw;
+    border-left-width: .5px !important;
+    border-right-width: .5px !important;
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
+    border-style: dashed !important;
+    border-color: rgb(255, 255, 255) !important;
+  }
+  .active a{
+    font-size: 26pt;
+    color: rgba(32, 185, 18, 1) !important;
+    /*text-shadow: 10px 10px 20px 0px rgba(196, 196, 196, 0.75);*/
+    text-shadow: 2px 2px 20px rgb(255, 255, 255);
+  }
+
+  .active a img{
+    margin-right: 10px;
+  }
+
+  .row[name=spacer2]{
+    position: relative;
+    top: 1em;
+    border-style: dashed;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: .5px !important;
+    border-bottom-width: 0px !important;
+    border-color: rgb(255, 255, 255);
+
+    /*border: 1px solid rgb(0, 0, 0); */
+  }
+
+  .row[name=spacer3]{
+    position: relative;
+    top: 1em;
+    border-style: dashed;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: .5px !important;
+    border-bottom-width: 0px !important;
+    border-color: rgb(255, 255, 255);
+  }
+
+  .row > .issue{
+    background-color: rgba(32, 185, 18, 1);
+    margin-bottom: 0%;
+    font-family: 'BlueScreen';
+    font-size: 26pt;
+    color: rgb(0, 0, 0) !important;
+    text-shadow: 2px 2px 20px rgb(40, 40, 40);
+}
+
+  /*Side Menu Styles*/
+  .btn{ 
+    height: 50px;
+    font-size: 1.35rem;
+    cursor: pointer;
+    border: 3px solid black;
+    background: linear-gradient(to right, black 50%, white 0%);
+    background-repeat: repeat;
+    background-size: 200%;
+    background-position: 100% 0;
+    box-shadow: 0.4rem 0.4rem 0 rgb(72, 72, 72);
+    transition: all 0.3s;
+    color: #000000;
+    font-family: 'BlueScreen';
+    font-size: 16pt;
+    color: rgba(32, 185, 18, 1) !important;
+    /*text-shadow: 10px 10px 20px 0px rgba(196, 196, 196, 0.75);*/
+    text-shadow: 2px 2px 20px rgb(255, 255, 255);
+}
+
+  /*scrolling wrapper home page*/
+  .col-sm-4{
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: 0.5px !important;
+    border-bottom-width: 0.5px !important;
+    border-style: dashed !important;
+    border-color: rgb(255, 255, 255) !important;
+  }
+
+
+  /*Side Space Container*/
+  .cardBanner {
+    flex: 0 0 auto;
+    margin-right: 16px;
+    /*border: 2px solid #000000; */
+    width: 25vw;
+    height: inherit;
+    background: rgb(0, 0, 0);
+    border-right-width: 0.5px ;
+    border-left-width: 0.5px;
+    border-top-width:0px;
+    border-right-width: 0.0px;
+    border-style: dashed !important;
+    border-color: rgb(255, 255, 255) !important;
+    /*
+    border-radius: 71% 29% 82% 18% / 24% 76% 24% 76%;
+    */
+  }
+
+  .mask{
+    width: 25vw;
+    height: 75vh;
+    background-color: rgb(175, 175, 175);
+    mask-image: url("https://raw.githubusercontent.com/Technaissance/Technaissance/main/IMG/Union.svg");
+    mask-repeat: no-repeat;
+   /* mask-position: center;*/
+    mask-size: contain;
+    /*mask-size:contain;*/
+    margin-top: 4em;
+}
+
+.top{
+  box-sizing:border-box;
+  margin: 1rem;
+  margin-bottom: 0%;
+  margin-top: 4em;/*7vh;*/
+  width:93%;
+  background-color: grey;
+  border:2px solid red;
+}
+.mid{
+  box-sizing:border-box;
+  width:93%;
+  margin-left: 1em;
+  margin-right:1em;
+  height: 36vh;
+  background-color: white;
+  border:2px solid red;
+}
+.bott{
+  box-sizing:border-box;
+  width:93%;
+  border:2px solid red;
+  height: 22vh;
+  margin-left: 1em;
+  margin-right:1em;
+}
+
+  #TITLE{
+    background-color: rgba(32, 185, 18, 1);
+  }
+
+  /*Footer styles*/
+  footer{
+    margin-left: 7rem;
+    margin-right: 7rem;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: .5px !important;
+    border-bottom-width: 0px !important;
+    border-style: dashed !important;
+    border-color: rgb(217, 217, 217) !important;
+  }
+  footer .pmd{
+    color: rgba(217, 217, 217);
+    font-size: 20px;
   }
   
