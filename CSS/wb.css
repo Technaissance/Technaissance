@@ -1,5 +1,11 @@
 /* This is the style sheet for WEB BRUTALISM theme */
 
+@font-face {
+  font-family: 'BlueScreen';
+  src: url('https://raw.githubusercontent.com/Technaissance/Technaissance/main/BlueScreenPersonalUseRegular-0W1M9.ttf') format('truetype');
+}
+
+
 html{
     scroll-behavior: smooth;
   }
@@ -8,10 +14,6 @@ body{
     background-color:#000000;
   }
 
-  @font-face {
-    font-family: 'BlueScreen';
-    src: url('https://raw.githubusercontent.com/Technaissance/Technaissance/main/BlueScreenPersonalUseRegular-0W1M9.ttf') format('truetype');
-  }
   
   .navbar{
     font-family: 'BlueScreen', sans-serif;
@@ -48,7 +50,7 @@ body{
     border-color: rgb(255, 255, 255) !important;
   }
   .active a{
-    font-size: 26pt;
+    font-size: 2vw;
     color: rgba(32, 185, 18, 1) !important;
     /*text-shadow: 10px 10px 20px 0px rgba(196, 196, 196, 0.75);*/
     text-shadow: 2px 2px 20px rgb(255, 255, 255);
@@ -200,3 +202,14 @@ body{
     font-size: 20px;
   }
   
+  @media (max-width: 768px) {
+    .active a{
+      font-size: 12pt;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .active a{
+      font-size: 26pt;
+    }
+  }
