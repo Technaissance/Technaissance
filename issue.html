@@ -46,6 +46,15 @@
         max-height: 1024px;
       }
     </style>
+
+      <!-- SCRIPTS HERE -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="JS/DynLoad.js">
+  </script>
+
   </head>
   <body class="d-flex flex-column h-100">
     <!-- SIDE MENU -->
@@ -72,40 +81,63 @@
     </div>
     <!-- FIXED NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top appheader">
-          <ul class=" col-xs-4 navbar-nav marginCC">
-              <li class="nav-item active">
-                  <a class="navbar-brand" href="index.html"><img
-                      src="IMG/Group_4W.png" alt="" width="26" height="24"
-                      class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
-              </li>
-          </ul>
-          <div class="dropdown col-xs-4 navbar-nav mx-auto">
-              <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <!--CLASS = btn btn-secondary dropdown-toggle-->
-              Select Issue
-              </button>
-              <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
-                <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = 'issue.html'">Issue No. 1</li>
-                <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 2</li>
-                <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 3</li>
+      
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top appheader" aria-label="Third navbar example">
+
+        <div class="container-fluid ">
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse " id="navbarsExample03">
+            <div class="p-1 flex-fill bd-highlight ">
+            <ul class=" col-xs-4 navbar-nav mx-auto justify-content-md-center">
+                  <li class="nav-item active">
+                      <a class="navbar-brand" href="index.html"><img
+                          src="IMG/Group_4.png" alt="" width="26" height="24"
+                          class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
+                  </li>
               </ul>
-          </div>
-          <div class="dropdown col-xs-4 navbar-nav mx-auto">
-              <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <!--CLASS = btn btn-secondary dropdown-toggle-->
-              Select Theme
-              </button>
-              <ul class="dropdown-menu card-body nav-section cardextra" aria-labelledby="dropdownMenuButton1">
-              <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
-              <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
-              <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric Minimalism</li>
-              <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web Brutalism</li>
-              <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
+            </div>
+    
+            <div class="p-1 flex-fill bd-highlight">
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle nav-link"  id="dropdown1" href="#" data-bs-toggle="dropdown"
+                    aria-expanded="false">Select Issue</a>
+                    <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
+                      <li> <button class="dropdown-item nav__link" type="button" value="article1">Issue No. 1</li>
+                      <li> <button class="dropdown-item nav__link" type="button" value="article2">Issue No. 2</li>
+                      <li> <button class="dropdown-item nav__link" type="button" value="article3">Issue No. 3</li>
+                    </ul>
+                </li>
               </ul>
+            </div>
+    
+            <div class="p-1 flex-fill bd-highlight ">
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle nav-link" id="dropdownMenuButton2" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                    aria-expanded="false">Select Theme</a>
+                  <ul class="dropdown-menu card-body shadow nav-section cardextra cardpad" aria-labelledby="dropdown03">
+                    <li> <button class="dropdown-item nav__link" type="button"
+                        onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
+                    <li> <button class="dropdown-item nav__link" type="button"
+                        onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
+                    <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric
+                        Minimalism</li>
+                    <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web
+                        Brutalism</li>
+                    <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+    
           </div>
+        </div>
       </nav>
   </header>
     <main>
@@ -116,16 +148,46 @@
         <div class="row" name="wrapper">
           <!--static column-->
           <div class="col-sm-5">
-            <div class="cardBannerSS"><h2>Scroll through the articles</h2>
+            <div class="cardBannerSS"><h2 class="issue">Scroll through the articles</h2>
               <p> articles in this issue --></p>
             </div>
           </div>
           <!--scrollwrapper column-->
           <div class="col-sm-7">
             <div class="scrolling-wrapper-flexbox">
-              <div class="cardBannerS" id="0"><h2>Artcl-1</h2> </div>
-              <div class="cardBannerS" id="1"><h2>Artcl-2</h2></div>
-              <div class="cardBannerS" id="2"><h2>Artcl-3</h2></div>
+
+
+
+              <div class="card mb-3 cardBannerS shadow">
+                <img src="IMG/article1c.png" class="card-img-top img-fluid"
+                  alt="...">
+                <div class="card-body">
+                  <h5 class="issue">Article 1</h5>
+                  <p class="card-text">UNDERSTANDING AND CREATING ART WITH AI: REVIEW AND OUTLOOK</p>
+                  <button id="button1" class="dynbutton cardextra">Article 1</button>
+                </div>
+              </div>
+            <div class="card mb-3 cardBannerS shadow">
+              <img src="IMG/thumb1.jpg" class="card-img-top img-fluid"
+                alt="...">
+              <div class="card-body">
+                <h5 class="issue">Article 2</h5>
+                <p class="card-text">ARTIFICIAL INTELLIGENCE AND THE ARTS: TOWARD COMPUTATIONAL CREATIVITY</p>
+                <button id="button2" class="dynbutton cardextra">Article 2</button>
+
+              </div>
+            </div>
+            <div class="card mb-3 cardBannerS shadow">
+              <img src="IMG/thumb2.jpg" class="card-img-top img-fluid"
+                alt="...">
+              <div class="card-body">
+                <h5 class="issue">Article 3</h5>
+                <p class="card-text">THE PAST, PRESENT, AND FUTURE OF AI ART </p> <br>
+                <button id="button3" class="dynbutton cardextra">Article 3</button>
+
+              </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -138,13 +200,13 @@
             <div class="cowboybg">
               <div> 
                 <div class="row">
-                  <h3 id="TITLE"></h3>
+                  <h1 id="heading" class="issue metapadding"></h1>
                 </div> 
                 <div class="row" name="spacer3"></div>
 
                 <div class="row">
                   <div class="flex-column">
-                    <p id="author"></p>
+                    <p id="author" class="metapadding"></p>
                   </div>
                   <div class="flex-column">
                     <p id="date"></p>
@@ -163,7 +225,7 @@
           <!--CONTENT SECTION-->
           <div class="col cowboybgcolor" name="wide">
             <div class="cowboybg">
-              <div class="bodymain">
+              <div class="bodymain" id="article">
                 <div id="file"></div>
               </div>
             </div>
@@ -183,19 +245,18 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p style="font-weight: 900;"><a class="pmd" id="btn1" href="#">People </a></p>
-                        <span class="caret"></span>
+                    <div id="checkboxContainer" class="pmd">
 
-                    <p id="peoplemd" class="pmd"></p>
-                    
-                    <p style="font-weight: 900;"><a class="pmd" id="btn2" href="#">Places </a></p>
-                    <p id="placesmd" class="pmd"></p>
-                    
-                    <p style="font-weight: 900;"><a class="pmd" id="btn3" href="#">Events </a></p>
-                    <p id="eventsmd" class="pmd"></p>
-                    
-                    <p style="font-weight: 900;"><a class="pmd" id="btn4" href="#">Technical Terms </a></p>
-                    <p id="technicaltermsmd" class="pmd"></p>
+                      <input type="checkbox" id="technicalterms" onclick="updateList(this)">
+                      <label for="technicalterms" style="font-size: 1.3rem">Technical terms</label>
+                      <br>
+                      <input type="checkbox" id="events" onclick="updateList(this)">
+                      <label for="events" style="font-size: 1.3rem">Events</label>
+                      <br>
+                      <input type="checkbox" id="people" onclick="updateList(this)">
+                      <label for="people" style="font-size: 1.3rem">People</label>
+                    </div>
+                    <div id="listContainer"></div>
                   </div>
                 </div>
               </div>
@@ -259,79 +320,9 @@
       </div>
     </footer>
   </body>
-  <!-- SCRIPTS HERE -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-  <script src="JS/DynLoad.js">
-  </script>
 
-<script>
-  setInterval(function(){
- var text = [];
- $('.places').each(function(){
-     text.push( $(this).text());
- });
- var myString = text.join(', ');
- $('#placesmd').text(myString);},300);
- </script>
 
-<script>
-  setInterval(function(){
- var text = [];
- $('.technicalterms').each(function(){
-     text.push( $(this).text());
- });
- var myString = text.join(', ');
- $('#technicaltermsmd').text(myString);},300);
- </script>
+<!-- add class styling to javascript buttons in wrapper -->
 
-<script>
-  setInterval(function(){
- var text = [];
- $('.people').each(function(){
-     text.push( $(this).text());
- });
- var myString = text.join(', ');
- $('#peoplemd').text(myString);},300);
- </script>
-
-<script>
-  setInterval(function(){
- var text = [];
- $('.events').each(function(){
-     text.push( $(this).text());
- });
- var myString = text.join(', ');
- $('#eventsmd').text(myString);},300);
- </script>
-
-<script>
-  setInterval(function(){
- var text = [];
- $('.date').each(function(){
-     text.push( $(this).text());
- });
- var myString = text.join(', ');
- $('#date').text(myString);},300);
- </script>
-
-<script>
-  setInterval(function(){
- var text = [];
- $('.author').each(function(){
-     text.push( $(this).text());
- });
- var myString = text.join(', ');
- $('#author').text(myString);},300);
- </script>
-
-<script>
-  setInterval( function myFunction() {
-    var number = document.querySelector("meta[name='description']").getAttribute("content");
-    document.getElementById("metamd").innerHTML = number;
-  }, 300);
-</script>
 
 </html>

@@ -85,11 +85,12 @@
             <!--CLASS = btn btn-secondary dropdown-toggle-->
             Select Issue
             </button>
-            <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
-              <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = 'issue.html'">Issue No. 1</li>
-              <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 2</li>
-              <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 3</li>
+            <ul id="navbarDropdown" class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
+              <li> <button class="dropdown-item nav__link" type="button" data-article="article1">Issue No. 1</li>
+              <li> <button class="dropdown-item nav__link" type="button" data-article="article2">Issue No. 2</li>
+              <li> <button class="dropdown-item nav__link" type="button" data-article="article3">Issue No. 3</li>
             </ul>
+            
         </div>
         <div class="dropdown col-xs-4 navbar-nav mx-auto">
             <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -146,4 +147,40 @@
   </script>
   <script src="JS/DynLoad.js">
   </script>
-</html>
+  <script>
+// Navbar dropdown
+document.getElementById('navbarDropdown').addEventListener('click', function (event) {
+  // Get the selected article
+  var selectedArticle = event.target.dataset.article;
+
+  // Redirect the user to the original page with the selected article as a query string parameter
+  window.location.href = '/issue.html?article=' + selectedArticle;
+});
+
+// Original page
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the value of the "article" query string parameter
+  var urlParams = new URLSearchParams(window.location.search);
+  var selectedArticle = urlParams.get('article');
+
+  // Load the selected article
+  loadArticle(selectedArticle);
+});
+
+function loadArticle(article) {
+  // Create an XMLHttpRequest object
+  var xhttp = new XMLHttpRequest();
+
+  // Specify the function to be called when the response is received
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      // Insert the contents of the HTML file into the page
+      document.getElementById('article').innerHTML = this.responseText;
+    }
+  };
+
+  // Open the HTML file and send the request
+  xhttp.open('GET', 'articles/' + article + '.html', true);
+  xhttp.send();
+}
+</script>
