@@ -6,7 +6,7 @@
 	</head>
 
 <body>
-	<h1 class="title" hidden="hidden" id="heading">The Past, Present, and Future of AI Art </h1>
+	<h1 class="heading" hidden="hidden" id="title">THE PAST, PRESENT, AND FUTURE OF AI ART </h1>
 	<p class="date" hidden="hidden">Jun 18, 2019</p>
 	<p class="author" hidden="hidden"> Fabian Offert</p>
 
@@ -429,3 +429,26 @@
 		interpretable machine learning techniques, with a focus on feature visualization. Other research interests
 		include digital art history, and the preservation of computer art. Find him online or on Twitter.</p>
 </body>
+<script>
+
+	function assignIDs() {
+	  let technicalTerms = document.getElementsByClassName('technicalterms');
+	  let events = document.getElementsByClassName('events');
+	  let people = document.getElementsByClassName('people');
+	
+	  for (let i = 0; i < technicalTerms.length; i++) {
+		technicalTerms[i].id = 'technicalterm-' + i;
+	  }
+	
+	  for (let i = 0; i < events.length; i++) {
+		events[i].id = 'event-' + i;
+	  }
+	
+	  for (let i = 0; i < people.length; i++) {
+		people[i].id = 'person-' + i;
+	  }
+	}
+	
+	assignIDs();
+	</script>
+	</html>

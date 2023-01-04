@@ -7,7 +7,7 @@
 
 <body>
 
-	<h1 class="title" hidden="hidden" id="heading">ARTIFICIAL INTELLIGENCE AND THE ARTS: TOWARD COMPUTATIONAL CREATIVITY</h1>
+	<h1 class="heading" hidden="hidden" id="title">ARTIFICIAL INTELLIGENCE AND THE ARTS: TOWARD COMPUTATIONAL CREATIVITY</h1>
 	<p class="date" hidden="hidden">2016</p>
 	<p class="author" hidden="hidden"> Ramón López de Mántaras</p>
 
@@ -819,3 +819,26 @@
 			socio-cognitive systems.” In Proceedings of the First International Workshop on the Multiagent Foundations
 			of Social Computing, AAMAS-2014. Paris, France.</li>
 </body>
+<script>
+
+	function assignIDs() {
+	  let technicalTerms = document.getElementsByClassName('technicalterms');
+	  let events = document.getElementsByClassName('events');
+	  let people = document.getElementsByClassName('people');
+	
+	  for (let i = 0; i < technicalTerms.length; i++) {
+		technicalTerms[i].id = 'technicalterm-' + i;
+	  }
+	
+	  for (let i = 0; i < events.length; i++) {
+		events[i].id = 'event-' + i;
+	  }
+	
+	  for (let i = 0; i < people.length; i++) {
+		people[i].id = 'person-' + i;
+	  }
+	}
+	
+	assignIDs();
+	</script>
+	</html>
