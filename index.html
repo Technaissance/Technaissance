@@ -51,42 +51,26 @@
   <body class="d-flex flex-column h-100">
     <!-- FIXED NAVBAR -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top appheader">
-            <ul class=" col-xs-4 navbar-nav marginCC">
-                <li class="nav-item active">
-                    <a class="navbar-brand" href="index.html"><img
-                        src="IMG/Group_4W.png" alt="" width="26" height="24"
-                        class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
-                </li>
-            </ul>
-            <div class="dropdown col-xs-4 navbar-nav mx-auto">
-                <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <!--CLASS = btn btn-secondary dropdown-toggle-->
-                Select Issue
-                </button>
-                <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
-                  <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = 'issue.html'">Issue No. 1</li>
-                  <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 2</li>
-                  <li> <button class="dropdown-item nav__link" type="button" onclick="location.href = '#'">Issue No. 3</li>
-                </ul>
+      
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top appheader" aria-label="Third navbar example">
+
+        <div class="container-fluid ">
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse " id="navbarsExample03">
+            <div class="p-1 flex-fill bd-highlight ">
+            <ul class=" col-xs-4 navbar-nav mx-auto justify-content-md-center">
+                  <li class="nav-item active">
+                      <a class="navbar-brand" href="index.html"><img
+                          src="IMG/Group_4.png" alt="" width="26" height="24"
+                          class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
+                  </li>
+              </ul>
             </div>
-            <div class="dropdown col-xs-4 navbar-nav mx-auto">
-                <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <!--CLASS = btn btn-secondary dropdown-toggle-->
-                Select Theme
-                </button>
-                <ul class="dropdown-menu card-body nav-section cardextra" aria-labelledby="dropdownMenuButton1">
-                <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
-                <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
-                <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric Minimalism</li>
-                <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web Brutalism</li>
-                <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
     <main class="flex-shrink-0">
       <!--  SIDE MENU DIV -->
