@@ -43,6 +43,7 @@ body{
     color: rgba(32, 185, 18, 1) !important;
     /*text-shadow: 10px 10px 20px 0px rgba(196, 196, 196, 0.75);*/
     text-shadow: 2px 2px 20px rgb(255, 255, 255);
+    text-align:center;
   }
   /*
   #dropdown1 {
