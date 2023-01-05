@@ -47,6 +47,7 @@ function persi()
         break;
       case 'CSS/wb.css':
         document.getElementById('choosen').setAttribute('href', 'CSS/wb.css');
+        document.getElementById('logo').setAttribute('src','IMG/Group_4W.png');
         break;
       /*  
       case 'css/todaycss.css':
