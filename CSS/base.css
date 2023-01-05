@@ -85,6 +85,7 @@ border: 0;
     height: 100%;
     width: 100%;
     -webkit-overflow-scrolling: touch;
+    padding: 1.5rem;
   }
  .scrolling-wrapper-flexbox::-webkit-scrollbar {
     display: none;
