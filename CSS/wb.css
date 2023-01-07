@@ -10,14 +10,16 @@
   src: url('https://raw.githubusercontent.com/Technaissance/Technaissance/main/CascadiaCode.ttf') format('truetype');
 }
 
+
+
 html{
     scroll-behavior: smooth;
   }
   
 body{
     background-color:#000000;
+    color: rgb(248, 242, 233) !important;
     font-family: 'CascadiaCode';
-    color: rgb(248, 242, 233);
   }
 
   
@@ -49,8 +51,9 @@ body{
     color: rgba(32, 185, 18, 1) !important;
     /*text-shadow: 10px 10px 20px 0px rgba(196, 196, 196, 0.75);*/
     text-shadow: 2px 2px 20px rgb(255, 255, 255);
-    text-align:center;
+    text-align: center;
   }
+
   /*
   #dropdown1 {
     width: 25vw !important;
@@ -71,6 +74,7 @@ body{
     border-bottom-width: 0px !important;
     border-style: dashed !important;
     border-color: rgb(255, 255, 255) !important;
+    text-align: center;
   }
   .active a{
     font-size: 2vw;
@@ -81,19 +85,6 @@ body{
 
   .active a img{
     margin-right: 10px;
-  }
-
-  .row[name=spacer2]{
-    position: relative;
-    top: 1em;
-    border-style: dashed;
-    border-left-width: 0px !important;
-    border-right-width: 0px !important;
-    border-top-width: .5px !important;
-    border-bottom-width: 0px !important;
-    border-color: rgb(255, 255, 255);
-
-    /*border: 1px solid rgb(0, 0, 0); */
   }
 
   .row[name=spacer3]{
@@ -137,7 +128,7 @@ body{
 }
 
   /*scrolling wrapper home page*/
-  .col-sm-4{
+  .row[name=wrapper]{
     border-left-width: 0px !important;
     border-right-width: 0px !important;
     border-top-width: 0.5px !important;
@@ -146,7 +137,9 @@ body{
     border-color: rgb(255, 255, 255) !important;
   }
 
-
+  .container[name=cover]{
+    filter: grayscale(90%);
+  }  
   /*Side Space Container*/
   .cardBanner {
     flex: 0 0 auto;
@@ -204,6 +197,17 @@ body{
   margin-left: 1em;
   margin-right:1em;
 }
+  .row[name=wrapper] > .col-sm-4{
+    padding-left: calc(var(--bs-gutter-x) * 3);
+  }
+
+
+  /*Scrolling wrapper issue styles*/
+
+  .cowboybgcolor{
+    padding-left: calc(var(--bs-gutter-x) * 3);
+    padding-right: calc(var(--bs-gutter-x) * 3);
+  }
 
   #TITLE{
     background-color: rgba(32, 185, 18, 1);
