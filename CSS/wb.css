@@ -152,8 +152,7 @@ body{
     border-right-width: 0.5px ;
     border-left-width: 0.5px;
     border-top-width:0px;
-    border-bottom-width:0.5px !important;
-    border-right-width: 0.0px;
+    border-bottom-width:0px !important;
     border-style: dashed !important;
     border-color: rgb(255, 255, 255) !important;
     /*
