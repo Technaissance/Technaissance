@@ -105,6 +105,7 @@ body{
     font-size: 26pt;
     color: rgb(0, 0, 0) !important;
     text-shadow: 2px 2px 20px rgb(40, 40, 40);
+    padding-left: calc(var(--bs-gutter-x) * 3);
 }
 
   /*Side Menu Styles*/
@@ -212,6 +213,19 @@ body{
   #TITLE{
     background-color: rgba(32, 185, 18, 1);
   }
+  #nav{
+    list-style-type: none;
+  }
+  /*Documentation styles*/
+  #nav > li >a{
+    font-size: 16pt;
+    color: rgb(255, 255, 255)!important;
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+
+
 
   /*Footer styles*/
   footer{
