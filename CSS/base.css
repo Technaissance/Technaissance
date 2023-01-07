@@ -62,7 +62,7 @@ border: 0;
     width: 500px;
     height: 16rem;
     background: rgb(255, 255, 255);
-    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAVklEQVQYV2NkYGAwBuKzQAwDUkDGMyjnPyOSBDITrgiXApBisCKQggYoBgliWAdSgGInkG+C5KYGmBUgRU+BGMaHm4TsBmST4NaBFPxH0glSlIbkJgYAOoYQot9ebmkAAAAASUVORK5CYII=)repeat;
+    /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAVklEQVQYV2NkYGAwBuKzQAwDUkDGMyjnPyOSBDITrgiXApBisCKQggYoBgliWAdSgGInkG+C5KYGmBUgRU+BGMaHm4TsBmST4NaBFPxH0glSlIbkJgYAOoYQot9ebmkAAAAASUVORK5CYII=)repeat;*/
     /*
     border-radius: 71% 29% 82% 18% / 24% 76% 24% 76%;
     */
@@ -145,7 +145,12 @@ border: 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-     margin-top:1.5rem;
+    margin-top:1.5rem;
+
+}
+
+.cardBannerSS > .issue{
+  margin-top: 2em;
 }
 
 .container-fluid[name=main]{
@@ -156,7 +161,7 @@ border: 0;
     margin: 0% !important;
     z-index: 2;
     
-    color:rgb(3, 45, 182);
+    /*color:rgb(3, 45, 182);*/
   }
 
 .col-sm-12{
@@ -165,7 +170,7 @@ border: 0;
 }
 
 .sticky-offset {
-  top: 96px;
+  top: 96px;/*56px;*/
 }
 
 /*Footer styles*/
@@ -181,7 +186,7 @@ footer{
 
 /* MEDIA QUERIES */
  
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   .col[name=wide] {
     flex: 0 0 auto;
     width: 100%;
@@ -196,7 +201,7 @@ footer{
   }
 } 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 960px){
   .col[name=wide] {
     flex: 0 0 auto;
     width: 69%;
