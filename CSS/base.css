@@ -135,7 +135,7 @@ border: 0;
 
 .container[name=cover]{
     /*border: 2px solid black; */
-    height: 80vh;
+    height: 75vh;
 
     color:rgba(255, 255, 255, 0);
     -webkit-text-stroke-width: 2px;
@@ -145,6 +145,7 @@ border: 0;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+     margin-top:1.5rem;
 }
 
 .container-fluid[name=main]{
