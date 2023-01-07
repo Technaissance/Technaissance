@@ -5,6 +5,10 @@
   src: url('https://raw.githubusercontent.com/Technaissance/Technaissance/main/BlueScreenPersonalUseRegular-0W1M9.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('https://raw.githubusercontent.com/Technaissance/Technaissance/main/CascadiaCode.ttf') format('truetype');
+}
 
 html{
     scroll-behavior: smooth;
@@ -12,6 +16,8 @@ html{
   
 body{
     background-color:#000000;
+    font-family: 'CascadiaCode';
+    color: rgb(248, 242, 233);
   }
 
   
