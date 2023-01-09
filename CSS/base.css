@@ -125,13 +125,20 @@ border: 0;
 
 /*Main content styles-TEAMS*/
 .col[name=mem1]{
-  height: 70vh;
+  height: 67vh;
 }
 
+/* Team photo styles*/
 .photo{
   width: 100%;
-  height: 40vh ;
+  height: 38vh ;
 }
+.photo > img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 
 .container[name=cover]{
     /*border: 2px solid black; */
