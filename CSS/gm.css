@@ -86,7 +86,7 @@ border-radius: 12px;
 }
 
 .img-fluid{
-  width: 100% !important;
+  width: 95% !important;
   margin: 1vw;
   object-fit: cover;
 }
