@@ -207,10 +207,6 @@ footer{
     flex: 0 0 auto;
     width: 100%;
   }
-  .container-fluid[name=main]{
-    padding-left: 4rem !important;
-    padding-right: 2rem !important;
-  }
 } 
 
 @media screen and (min-width: 960px){
