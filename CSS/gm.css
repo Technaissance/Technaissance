@@ -187,6 +187,10 @@ border-radius: 12px;
   .mS{
     padding-right: 10%;
   }
+  .cowboybgcolor{
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
 }
 
 @media screen and (min-width: 960px) {
