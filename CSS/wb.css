@@ -212,6 +212,11 @@ body{
     padding-left: calc(var(--bs-gutter-x) * 3);
     padding-right: calc(var(--bs-gutter-x) * 3);
   }
+  
+  .msPadding{
+    padding-left: calc(var(--bs-gutter-x) * 0);
+    padding-right: calc(var(--bs-gutter-x) * 0);
+  }
 
   #TITLE{
     background-color: rgba(32, 185, 18, 1);
