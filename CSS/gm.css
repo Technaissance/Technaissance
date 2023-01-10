@@ -86,7 +86,8 @@ border-radius: 12px;
 }
 
 .img-fluid{
-  width: 95% !important;
+  width: 94% !important;
+  height: 50%;
   margin: 1vw;
   object-fit: cover;
 }
@@ -120,6 +121,13 @@ border-radius: 12px;
   padding-left: calc(var(--bs-gutter-x) * 3);
 }
 
+.cardbody-2{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 94%;
+  height: 4rem;
+}
 
 .cowboybgcolor{
   padding-left: calc(var(--bs-gutter-x) * 3);
@@ -132,6 +140,11 @@ border-radius: 12px;
 
 #dropdownMenuButton1{
   color: rgb(109, 109, 109) !important;
+}
+
+.row > .issue{
+  padding-left: calc(var(--bs-gutter-x) * 3);
+  margin-top: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -153,4 +166,19 @@ border-radius: 12px;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
+}
+
+@media (max-width: 960px) {
+  .col[name=mem1] > p{
+    font-size: calc(0.5rem + 0.3vw);
+  }
+  .photo{
+    height: 32vh;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .col[name=mem1] > p{
+    font-size: calc(0.5rem + 0.3vw);
+  }
 }
