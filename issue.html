@@ -1,176 +1,177 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Technaissance</title>
-    <link rel="icon" type="image/x-icon" href="IMG/Group_4W.png">
-    <!-- THIS IS THE STYLE FOR THE SIDE MENU -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/base.css" id="default" type="text/css">
-    <link rel="stylesheet" href="#" id="choosen" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technaissance</title>
+  <link rel="icon" type="image/x-icon" href="IMG/Group_4W.png">
+  <!-- THIS IS THE STYLE FOR THE SIDE MENU -->
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/base.css" id="default" type="text/css">
+  <link rel="stylesheet" href="#" id="choosen" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-      .offcanvas-btn {
-        left: 391px;
-        visibility: visible;
-        bottom: 50%;
-        transform: rotate(270deg);
-      }
+    .offcanvas-btn {
+      left: 391px;
+      visibility: visible;
+      bottom: 50%;
+      transform: rotate(270deg);
+    }
 
-      /* optional junk to toggle the button text */
-      .offcanvas-btn span:last-child,
-      .offcanvas.show .offcanvas-btn span:first-child {
-        display: none;
-      }
+    /* optional junk to toggle the button text */
+    .offcanvas-btn span:last-child,
+    .offcanvas.show .offcanvas-btn span:first-child {
+      display: none;
+    }
 
-      .offcanvas.show .offcanvas-btn span:last-child {
-        display: inline;
-      }
+    .offcanvas.show .offcanvas-btn span:last-child {
+      display: inline;
+    }
 
 
-      .navbar {
-        margin-bottom: 20px;
-      }
+    .navbar {
+      margin-bottom: 20px;
+    }
 
-      .overflow-auto {
-        max-height: 1024px;
-      }
-    </style>
+    .overflow-auto {
+      max-height: 1024px;
+    }
+  </style>
 
-      <!-- SCRIPTS HERE -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+  <!-- SCRIPTS HERE -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <script src="JS/DynLoad.js">
   </script>
 
-  </head>
-  <body class="d-flex flex-column h-100">
-    <!-- SIDE MENU -->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" id="demo">
-      <button class="btn btn-primary offcanvas-btn position-absolute mt-2" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#demo">
-        <span class="poffcanvasbutton">Open</span>
-        <span class="poffcanvasbutton">Close</span>
-      </button>
+</head>
 
-      <div class="offcanvas-header pad-offcanvas nav-section cardextra">
-        <h1 class="offcanvas-title">FULL MENU</h1>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body pad-offcanvas card-body  nav-section cardextra">
-        <p class="pmd">Some text lorem ipsum.</p>
-        <ul id="menu-primary">
-          <li><a href="issue.html">Published Issues</a></li>
-          <li><a href="documentation.html">Theme Documentation</a></li>
-          <li><a href="team.html">About Team</a></li>
-          <li><a href="disclaimer.html">Disclaimer</a></li>
-        </ul>
-      </div>
+<body class="d-flex flex-column h-100">
+  <!-- SIDE MENU -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" id="demo">
+    <button class="btn btn-primary offcanvas-btn position-absolute mt-2" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#demo">
+      <span class="poffcanvasbutton">Open</span>
+      <span class="poffcanvasbutton">Close</span>
+    </button>
+
+    <div class="offcanvas-header pad-offcanvas nav-section cardextra">
+      <h1 class="offcanvas-title">FULL MENU</h1>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
-    <!-- FIXED NAVBAR -->
-    <header>
-      
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top appheader" aria-label="Third navbar example">
+    <div class="offcanvas-body pad-offcanvas card-body  nav-section cardextra">
+      <p class="pmd">Navigate the website</p>
+      <ul id="menu-primary">
+        <li><a href="issue.html">Published Issues</a></li>
+        <li><a href="documentation.html">Theme Documentation</a></li>
+        <li><a href="team.html">About Team</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- FIXED NAVBAR -->
+  <header>
 
-        <div class="container-fluid ">
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
-            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse " id="navbarsExample03">
-            <div class="p-1 flex-fill bd-highlight ">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top appheader" aria-label="Third navbar example">
+
+      <div class="container-fluid ">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+          aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarsExample03">
+          <div class="p-1 flex-fill bd-highlight ">
             <ul class=" col-xs-4 navbar-nav mx-auto justify-content-md-center">
-                  <li class="nav-item active">
-                      <a class="navbar-brand" href="index.html"><img
-                          src="IMG/Group_4.png" alt="" width="26" height="24"
-                          class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
-                  </li>
-              </ul>
-            </div>
-    
-            <div class="p-1 flex-fill bd-highlight">
-              <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
-                <li class="nav-item dropdown">
-                  <a class="dropdown-toggle nav-link"  id="dropdown1" href="#" data-bs-toggle="dropdown"
-                    aria-expanded="false">Select Issue</a>
-                    <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
-                      <li> <button class="dropdown-item nav__link" type="button" value="article1">Issue No. 1</li>
-                      <li> <button class="dropdown-item nav__link" type="button" value="article2">Issue No. 2</li>
-                      <li> <button class="dropdown-item nav__link" type="button" value="article3">Issue No. 3</li>
-                    </ul>
-                </li>
-              </ul>
-            </div>
-    
-            <div class="p-1 flex-fill bd-highlight ">
-              <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
-                <li class="nav-item dropdown">
-                  <a class="dropdown-toggle nav-link" id="dropdownMenuButton2" href="#" id="dropdown03" data-bs-toggle="dropdown"
-                    aria-expanded="false">Select Theme</a>
-                  <ul class="dropdown-menu card-body shadow nav-section cardextra cardpad" aria-labelledby="dropdown03">
-                    <li> <button class="dropdown-item nav__link" type="button"
-                        onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
-                    <li> <button class="dropdown-item nav__link" type="button"
-                        onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
-                    <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric
-                        Minimalism</li>
-                    <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web
-                        Brutalism</li>
-                    <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-    
+              <li class="nav-item active">
+                <a class="navbar-brand" href="index.html"><img src="IMG/Group_4.png" alt="" width="26" height="24"
+                    class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-1 flex-fill bd-highlight">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" id="dropdown1" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">Select Issue</a>
+                <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
+                  <li> <button class="dropdown-item nav__link" type="button" value="article1"><a href="issue.html">Issue No. I</a></li>
+                  <li> <button class="dropdown-item nav__link" type="button" value="article2">Issue No. II</li>
+                  <li> <button class="dropdown-item nav__link" type="button" value="article3">Issue No. III</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-1 flex-fill bd-highlight ">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" id="dropdownMenuButton2" href="#" id="dropdown03"
+                  data-bs-toggle="dropdown" aria-expanded="false">Select Theme</a>
+                <ul class="dropdown-menu card-body shadow nav-section cardextra cardpad" aria-labelledby="dropdown03">
+                  <li> <button class="dropdown-item nav__link" type="button"
+                      onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
+                  <li> <button class="dropdown-item nav__link" type="button"
+                      onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
+                  <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric
+                      Minimalism</li>
+                  <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web
+                      Brutalism</li>
+                  <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container-fluid px-5 py-5" name="main">
+
+
+      <div class="row" name="spacer2"></div>
+      <div class="row" name="wrapper">
+        <!--static column-->
+        <div class="col-sm-4">
+          <div class="cardBannerSS">
+            <h2 class="issue">Scroll through the articles</h2>
+            <p> articles in this issue --></p>
           </div>
         </div>
-      </nav>
-  </header>
-    <main>
-      <div class="container-fluid px-5 py-5" name="main">
-
-
-        <div class="row" name="spacer2"></div>
-        <div class="row" name="wrapper">
-          <!--static column-->
-          <div class="col-sm-4">
-            <div class="cardBannerSS"><h2 class="issue">Scroll through the articles</h2>
-              <p> articles in this issue --></p>
-            </div>
-          </div>
-          <!--scrollwrapper column-->
-          <div class="col-sm-8">
-            <div class="scrolling-wrapper-flexbox">
+        <!--scrollwrapper column-->
+        <div class="col-sm-8">
+          <div class="scrolling-wrapper-flexbox">
 
 
 
-              <div class="card mb-3 cardBannerS shadow">
-                <img src="IMG/article1c.png" class="card-img-top img-fluid"
-                  alt="...">
-                <div class="card-body cardbody-2">
-                  <h5 class="issue">Article 1</h5>
-                  <p class="card-text">UNDERSTANDING AND CREATING ART WITH AI: REVIEW AND OUTLOOK</p>
-                  <button id="button1" class="dynbutton cardextra">Article 1</button>
-                </div>
-              </div>
             <div class="card mb-3 cardBannerS shadow">
-              <img src="IMG/thumb1.jpg" class="card-img-top img-fluid"
-                alt="...">
-              <div class="card-body cardbody-2">
+              <img src="IMG/article1c.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="issue">Article 1</h5>
+                <p class="card-text">UNDERSTANDING AND CREATING ART WITH AI: REVIEW AND OUTLOOK</p>
+                <button id="button1" class="dynbutton cardextra">Article 1</button>
+              </div>
+            </div>
+            <div class="card mb-3 cardBannerS shadow">
+              <img src="IMG/thumb1.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
                 <h5 class="issue">Article 2</h5>
                 <p class="card-text">ARTIFICIAL INTELLIGENCE AND THE ARTS: TOWARD COMPUTATIONAL CREATIVITY</p>
                 <button id="button2" class="dynbutton cardextra">Article 2</button>
@@ -178,9 +179,8 @@
               </div>
             </div>
             <div class="card mb-3 cardBannerS shadow">
-              <img src="IMG/thumb2.jpg" class="card-img-top img-fluid"
-                alt="...">
-              <div class="card-body cardbody-2">
+              <img src="IMG/thumb2.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
                 <h5 class="issue">Article 3</h5>
                 <p class="card-text">THE PAST, PRESENT, AND FUTURE OF AI ART </p> <br>
                 <button id="button3" class="dynbutton cardextra">Article 3</button>
@@ -188,120 +188,132 @@
               </div>
             </div>
 
+          </div>
+        </div>
+      </div>
+      <div class="row" name="spacer2"></div>
+
+
+      <div class="row flex-container ">
+
+        <div class="col cowboybgcolor" name="wide">
+          <div class="cowboybg">
+            <div>
+              <div class="row">
+                <h1 id="heading" class="issue metapadding"></h1>
+              </div>
+              <div class="row" name="spacer3"></div>
+
+              <div class="row">
+                <div class="flex-column">
+                  <p id="author" class="metapadding"></p>
+                </div>
+                <div class="flex-column">
+                  <p id="date"></p>
+                </div>
+              </div>
+              <div class="row" name="spacer3"></div>
+
             </div>
           </div>
         </div>
-        <div class="row" name="spacer2"></div>
 
-      
-        <div class="row flex-container ">
 
-          <div class="col cowboybgcolor" name="wide">
-            <div class="cowboybg">
-              <div> 
-                <div class="row">
-                  <h1 id="heading" class="issue metapadding"></h1>
-                </div> 
-                <div class="row" name="spacer3"></div>
+        <div class="col" name="narrow">
+        </div>
 
-                <div class="row">
-                  <div class="flex-column">
-                    <p id="author" class="metapadding"></p>
-                  </div>
-                  <div class="flex-column">
-                    <p id="date"></p>
-                  </div>
-                </div>
-                <div class="row" name="spacer3"></div>
-
-              </div>
+        <!--CONTENT SECTION-->
+        <div class="col cowboybgcolor" name="wide">
+          <div class="cowboybg">
+            <div class="bodymain" id="article">
+              <div id="file"></div>
             </div>
           </div>
+        </div>
 
+        <!--METADATA SECTION-->
+        <div class="col" name="narrow">
+          <div class="accordion open sticky-top sticky-offset cardextra overflow-auto" id="accordionExample">
+            <div class="accordion-item cardextra card-body">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button card-body nav-section cardextra" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h3> Highlighted named entities</h3>
+                </button>
+              </h2>
 
-          <div class="col" name="narrow">
-          </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div id="checkboxContainer" class="pmd">
 
-          <!--CONTENT SECTION-->
-          <div class="col cowboybgcolor" name="wide">
-            <div class="cowboybg">
-              <div class="bodymain" id="article">
-                <div id="file"></div>
+                    <input type="checkbox" id="technicalterms" onclick="updateList(this)">
+                    <label for="technicalterms" style="font-size: 1.3rem">Technical terms</label>
+                    <br>
+                    <input type="checkbox" id="events" onclick="updateList(this)">
+                    <label for="events" style="font-size: 1.3rem">Events</label>
+                    <br>
+                    <input type="checkbox" id="people" onclick="updateList(this)">
+                    <label for="people" style="font-size: 1.3rem">People</label>
+                  </div>
+                  <div id="listContainer"></div>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!--METADATA SECTION-->
-          <div class="col" name="narrow">
-            <div class="accordion open sticky-top sticky-offset cardextra overflow-auto" id="accordionExample">
-              <div class="accordion-item cardextra card-body">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button card-body nav-section cardextra" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <h3> Highlighted named entities</h3>
-                  </button>
-                </h2>
-
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <div id="checkboxContainer" class="pmd">
-
-                      <input type="checkbox" id="technicalterms" onclick="updateList(this)">
-                      <label for="technicalterms" style="font-size: 1.3rem">Technical terms</label>
-                      <br>
-                      <input type="checkbox" id="events" onclick="updateList(this)">
-                      <label for="events" style="font-size: 1.3rem">Events</label>
-                      <br>
-                      <input type="checkbox" id="people" onclick="updateList(this)">
-                      <label for="people" style="font-size: 1.3rem">People</label>
-                    </div>
-                    <div id="listContainer"></div>
+            <div class="accordion-item cardextra card-body">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed card-body nav-section cardextra" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <h3>Meta-Data</h3>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse card-body" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p id="metamd" class="pmd"></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item cardextra card-body">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed card-body nav-section cardextra" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  <h3>General Annotation</h3>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div id="checkbox-container" class="pmd">
+                    <input type="checkbox" id="quotes-checkbox" name="highlight-type" value="quotes">
+                    <label for="quotes-checkbox" style="font-size: 1.3rem">Quotes </label><br>
+                    <input type="checkbox" id="keywords-checkbox" name="highlight-type" value="keywords">
+                    <label for="keywords-checkbox" style="font-size: 1.3rem"> keywords </label>
+                    <div id="list-container"></div>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item cardextra card-body">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed card-body nav-section cardextra" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><h3>Meta-Data</h3>
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse card-body" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p id="metamd" class="pmd"></p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item cardextra card-body">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed card-body nav-section cardextra" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h3>General Annotation</h3>
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p style="font-weight: 900;"><a class="pmd" id="btn3" href="#">Quotes </a></p>
-                    <p style="font-weight: 900;"><a class="pmd" id="btn3" href="#">Keywords </a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item cardextra card-body">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed card-body nav-section cardextra" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
-                    <h3>Annotate article</h3>
-                  </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                  data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <label class="pmd">
-                      Annotations:
-                      <br>
-                      <textarea name="content"></textarea>
-                    </label>
+            </div>
+            <div class="accordion-item cardextra card-body">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed card-body nav-section cardextra" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <h3>Annotate article</h3>
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>
+                    <textarea id="textbox"></textarea>
+                    <br>
+                    <button class="cardextra dynbutton" onclick="addToList()">Annotate</button>
+                    <button class="cardextra dynbutton" onclick="clearList()">Clear list</button>
+                    <br>
+                    <ul id="list"></ul>
                   </div>
                 </div>
               </div>
@@ -310,19 +322,442 @@
 
         </div>
       </div>
-    </main>
-    <!-- FOOTER CODE HERE -->
-    <footer class="footer mt-auto py-3  text-center">
-      <div>
-        <span class="pmd">Made with <span class="heart">♥</span> remotely from Anywhere</span>
-        <span style='color:red;margin-right:1.25em; display:inline-block;' class="pmd">&nbsp;</span>
-        <span class="pmd">&copy; 2022 CC BY 4.0.</span>
-      </div>
-    </footer>
-  </body>
+  </main>
+  <!-- FOOTER CODE HERE -->
+  <footer class="footer mt-auto py-3  text-center">
+    <div>
+      <span class="pmd">Made with <span class="heart">♥</span> remotely from Anywhere</span>
+      <span style='color:red;margin-right:1.25em; display:inline-block;' class="pmd">&nbsp;</span>
+      <span class="pmd">&copy; 2022 CC BY 4.0.</span>
+    </div>
+  </footer>
+</body>
 
 
 <!-- add class styling to javascript buttons in wrapper -->
+
+<script>
+      // KW AND QUOTES LIST ELEMENTS
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    const selectedArticle = localStorage.getItem("clickedButton");
+    if (selectedArticle) loadArticle(selectedArticle.replace(".html", ""))
+  });
+</script>
+<script>
+  function addToList() {
+    // Get the value of the textbox
+    const text = document.getElementById('textbox').value;
+
+    // Create a new list item
+    const li = document.createElement('li');
+    li.innerText = text;
+
+    // Add the list item to the list
+    const ul = document.getElementById('list');
+    ul.appendChild(li);
+
+    // Clear the textbox
+    document.getElementById('textbox').value = '';
+  }
+
+  function clearList() {
+    // Clear all of the list items from the list
+    const ul = document.getElementById('list');
+    ul.innerHTML = '';
+  }
+</script>
+
+
+
+
+
+
+
+
+<script>
+   // QUOTES AND KEYWORD CHECKBOX LIST AND HIGHLIGHTNING
+  const checkboxContainer = document.getElementById('checkbox-container');
+  let previousHighlightedElement;
+
+  checkboxContainer.addEventListener('change', (event) => {
+    // Get the selected checkbox
+    const selectedCheckbox = event.target;
+
+    // Get all checkboxes
+    const checkboxes = checkboxContainer.querySelectorAll('input[type="checkbox"]');
+
+    // Uncheck all checkboxes except the selected one
+    checkboxes.forEach((checkbox) => {
+      if (checkbox !== selectedCheckbox) {
+        checkbox.checked = false;
+      }
+    });
+
+    // Get all the words with class "quotes" or "keywords" based on selected checkbox
+    let words;
+    if (selectedCheckbox.value === 'quotes') {
+      words = document.querySelectorAll('.quotes');
+    } else {
+      words = document.querySelectorAll('.keywords');
+    }
+
+    // delete any existing list items
+    let existingList = document.getElementById('list-container');
+    if (existingList) existingList.innerHTML = '';
+
+    // delete any existing highlight
+    if (previousHighlightedElement) previousHighlightedElement.style.backgroundColor = 'initial';
+
+    // create list container
+    let list = document.createElement('ul');
+    list.id = "list-container";
+
+    // iterate and create list elements
+    words.forEach(el => {
+      let li = document.createElement('li');
+      li.innerText = el.innerText;
+      li.addEventListener('click', (e) => {
+        // scrolling to the element
+        el.scrollIntoView();
+        // highlight element
+        if (previousHighlightedElement) previousHighlightedElement.style.backgroundColor = 'initial';
+        el.style.backgroundColor = 'green';
+        previousHighlightedElement = el;
+      });
+      list.appendChild(li);
+    });
+
+    // append the list to the div
+    document.getElementById('list-container').appendChild(list);
+  });
+</script>
+<script>
+  // CHECKBOX METADATA SCRIPT 
+
+// Get all the checkboxes
+const checkboxes = document.querySelectorAll('#checkboxContainer input[type="checkbox"]');
+
+// Add the change event listener to each checkbox
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', function() {
+    if (!this.checked) {
+        updateList(null);
+    }
+  });
+});
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('.dropdown-item');
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', function () {
+        // get the selected article
+        var selectedArticle = this.value;
+
+        // create an XMLHttpRequest object
+        var xhttp = new XMLHttpRequest();
+
+        // specify the function to be called when the response is received
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            // insert the contents of the HTML file into the page
+            document.getElementById('article').innerHTML = this.responseText;
+            const checkboxes = document.querySelectorAll('#checkboxContainer input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+              checkbox.checked = false;
+            });
+            document.getElementById('listContainer').innerHTML = '';
+          }
+        };
+
+        // open the HTML file and send the request
+        xhttp.open('GET', 'articles/' + selectedArticle + '.html', true);
+        xhttp.send();
+      });
+    }
+  });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Add event listeners to the buttons
+    document.getElementById('button1').addEventListener('click', function () {
+      loadArticle('article1');
+    });
+    document.getElementById('button2').addEventListener('click', function () {
+      loadArticle('article2');
+    });
+    document.getElementById('button3').addEventListener('click', function () {
+      loadArticle('article3');
+    });
+  });
+  function loadArticle(article) {
+  // create an XMLHttpRequest object
+  var xhttp = new XMLHttpRequest();
+
+  // specify the function to be called when the response is received
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      // insert the contents of the HTML file into the page
+      document.getElementById('article').innerHTML = this.responseText;
+    }
+  };
+
+  // open the HTML file and send the request
+  xhttp.open('GET', 'articles/' + article + '.html', true);
+  xhttp.send();
+}
+  
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the buttons
+  var button1 = document.getElementById('button1');
+  var button2 = document.getElementById('button2');
+  var button3 = document.getElementById('button3');
+
+  // Add the click event listener to button1
+  button1.addEventListener('click', function () {
+    // Clear the checkboxes and the list elements
+    clearCheckboxesAndList();
+
+    // Get the selected article
+    var selectedArticle = this.dataset.article;
+
+    // Create an XMLHttpRequest object
+    var xhttp = new XMLHttpRequest();
+
+    // Specify the function to be called when the response is received
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        // Insert the contents of the HTML file into the page
+        document.getElementById('article').innerHTML = this.responseText;
+      }
+    };
+
+    // Open the HTML file and send the request
+    xhttp.open('GET', 'articles/' + selectedArticle + '.html', true);
+    xhttp.send();
+  });
+
+  // Add the click event listener to button2
+  button2.addEventListener('click', function () {
+    // Clear the checkboxes and the list elements
+    clearCheckboxesAndList();
+
+    // Get the selected article
+    var selectedArticle = this.dataset.article;
+
+    // Create an XMLHttpRequest object
+    var xhttp = new XMLHttpRequest();
+
+    // Specify the function to be called when the response is received
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        // Insert the contents of the HTML file into the page
+        document.getElementById('article').innerHTML = this.responseText;
+      }
+    };
+
+    // Open the HTML file and send the request
+    xhttp.open('GET', 'articles/' + selectedArticle + '.html', true);
+    xhttp.send();
+  });
+
+  // Add the click event listener to button3
+  button3.addEventListener('click', function () {
+    // Clear the checkboxes and the list elements
+    clearCheckboxesAndList();
+
+    // Get the selected article
+    var selectedArticle = this.dataset.article;
+
+    // Create an XMLHttpRequest object
+    var xhttp = new XMLHttpRequest();
+
+    // Specify the function to be called when the response is received
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        // Insert the contents of the HTML file into the page
+        document.getElementById('article').innerHTML = this.responseText;
+      }
+    };
+
+    // Open the HTML file and send the request
+    xhttp.open('GET', 'articles/' + selectedArticle + '.html', true);
+    xhttp.send();
+  }
+  )})
+
+  function clearCheckboxesAndList() {
+  // Uncheck all the checkboxes
+  const checkboxes = document.querySelectorAll('#checkboxContainer input[type="checkbox"]');
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = false;
+  });
+
+  // Clear the list
+  document.getElementById('listContainer').innerHTML = '';
+}
+
+
+
+function updateList(selectedCheckbox) {
+  // Clear the list
+  document.getElementById('listContainer').innerHTML = '';
+
+  // Get all the checkboxes
+  const checkboxes = document.querySelectorAll('#checkboxContainer input[type="checkbox"]');
+
+  // Uncheck all the checkboxes except the one that was selected
+  checkboxes.forEach(checkbox => {
+    if (checkbox !== selectedCheckbox) {
+      checkbox.checked = false;
+    }
+  });
+  // If the selectedCheckbox is null then it will remove the highlight class from all elements
+  if(selectedCheckbox === null) {
+    document.querySelectorAll('.highlight').forEach(element => {
+      element.classList.remove('highlight');
+    });
+  }
+  // Get all the checked checkboxes
+  const checkedBoxes = document.querySelectorAll('#checkboxContainer input:checked');
+  let classes = [];
+  checkedBoxes.forEach(box => {
+    classes.push(box.id);
+  });
+
+  // If no checkboxes are checked, return
+  if (classes.length === 0) {
+    return;
+  }
+
+  // Get all the elements with the selected classes
+  const elements = document.querySelectorAll(classes.map(className => '.' + className).join(','));
+  elements.forEach(element => {
+    // Create a new list item for each element
+    const item = document.createElement('li');
+    item.innerHTML = element.innerHTML;
+    item.onclick = () => {
+      // Remove the "highlighted" class from all the elements
+      const highlighted = document.querySelectorAll('.highlighted');
+      highlighted.forEach(el => {
+        el.classList.remove('highlighted');
+        el.style.backgroundColor = '';
+      });
+
+      // Highlight the element and navigate to it when the list item is clicked
+      element.style.backgroundColor = 'green';
+      element.classList.add('highlighted');
+      window.location.href = '#' + element.id;
+    };
+    document.getElementById('listContainer').appendChild(item);
+  });
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the value of the "article" query string parameter
+    var urlParams = new URLSearchParams(window.location.search);
+    var selectedArticle = urlParams.get('article');
+
+    // Load the selected article
+    loadArticle(selectedArticle);
+  });
+
+  function loadArticle(article) {
+    // Create an XMLHttpRequest object
+    var xhttp = new XMLHttpRequest();
+
+    // Specify the function to be called when the response is received
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        // Insert the contents of the HTML file into the page
+        document.getElementById('article').innerHTML = this.responseText;
+      }
+    };
+
+    // Open the HTML file and send the request
+    xhttp.open('GET', 'articles/' + article + '.html', true);
+    xhttp.send();
+  }
+
+
+  setInterval(function(){
+ var text = [];
+ $('.heading').each(function(){
+     text.push( $(this).text());
+ });
+ var myString = text.join(', ');
+ $('#heading').text(myString);},300);
+
+  setInterval(function(){
+ var text = [];
+ $('.date').each(function(){
+     text.push( $(this).text());
+ });
+ var myString = text.join(', ');
+ $('#date').text(myString);},300);
+
+  setInterval(function(){
+ var text = [];
+ $('.author').each(function(){
+     text.push( $(this).text());
+ });
+ var myString = text.join(', ');
+ $('#author').text(myString);},300);
+
+  setInterval( function myFunction() {
+    var number = document.querySelector("meta[name='description']").getAttribute("content");
+    document.getElementById("metamd").innerHTML = number;
+  }, 300);
+
+
+
+
+    // DROPDOWN TO LOADED ARTICLE FROM OTHER PAGES SCRIPT
+// Navbar dropdown
+document.getElementById('navbarDropdown').addEventListener('click', function (event) {
+    // Get the selected article
+    var selectedArticle = event.target.dataset.article;
+  
+    // Redirect the user to the original page with the selected article as a query string parameter
+    window.location.href = '/issue.html?article=' + selectedArticle;
+  });
+  
+  // Original page
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get the value of the "article" query string parameter
+    var urlParams = new URLSearchParams(window.location.search);
+    var selectedArticle = urlParams.get('article');
+  
+    // Load the selected article
+    loadArticle(selectedArticle);
+  });
+  
+  function loadArticle(article) {
+    // Create an XMLHttpRequest object
+    var xhttp = new XMLHttpRequest();
+  
+    // Specify the function to be called when the response is received
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        // Insert the contents of the HTML file into the page
+        document.getElementById('article').innerHTML = this.responseText;
+      }
+    };
+  
+    // Open the HTML file and send the request
+    xhttp.open('GET', 'articles/' + article + '.html', true);
+    xhttp.send();
+  }
+
+
+  //HOME BUTTONS CARDS TO ARTICLES SCRIPT
+
+
+
+</script>
 
 
 </html>
