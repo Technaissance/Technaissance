@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Technaissance</title>
-    <link rel="icon" type="image/x-icon" href="IMG/Group_4W.png">
-    <!-- THIS IS THE STYLE FOR THE SIDE MENU -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/base.css" id="default" type="text/css">
-    <link rel="stylesheet" href="#" id="choosen" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technaissance</title>
+  <link rel="icon" type="image/x-icon" href="IMG/Group_4W.png">
+  <!-- THIS IS THE STYLE FOR THE SIDE MENU -->
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/base.css" id="default" type="text/css">
+  <link rel="stylesheet" href="#" id="choosen" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
 
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-      
-      .offcanvas-btn {
-        left: 391px;
-        visibility: visible;
-        bottom: 50%;
-        transform: rotate(270deg);
-      }
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
-      /* optional junk to toggle the button text */
-      .offcanvas-btn span:last-child,
-      .offcanvas.show .offcanvas-btn span:first-child {
-        display: none;
-      }
+    .offcanvas-btn {
+      left: 391px;
+      visibility: visible;
+      bottom: 50%;
+      transform: rotate(270deg);
+    }
 
-      .offcanvas.show .offcanvas-btn span:last-child {
-        display: inline;
-      }
+    /* optional junk to toggle the button text */
+    .offcanvas-btn span:last-child,
+    .offcanvas.show .offcanvas-btn span:first-child {
+      display: none;
+    }
+
+    .offcanvas.show .offcanvas-btn span:last-child {
+      display: inline;
+    }
 
 
-      .navbar {
-        margin-bottom: 20px;
-      }
+    .navbar {
+      margin-bottom: 20px;
+    }
 
-      .overflow-auto {
-        max-height: 1024px;
-      }
-    </style>
-  </head>
-  <body class="d-flex flex-column h-100">
-   <!-- SIDE MENU -->
-   <div class="offcanvas offcanvas-start" data-bs-scroll="true" id="demo">
+    .overflow-auto {
+      max-height: 1024px;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <!-- SIDE MENU -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" id="demo">
     <button class="btn btn-primary offcanvas-btn position-absolute mt-2" type="button" data-bs-toggle="offcanvas"
       data-bs-target="#demo">
       <span class="poffcanvasbutton">Open</span>
@@ -61,7 +62,7 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body pad-offcanvas card-body  nav-section cardextra">
-      <p class="pmd">Some text lorem ipsum.</p>
+      <p class="pmd">Navigate the website</p>
       <ul id="menu-primary">
         <li><a href="issue.html">Published Issues</a></li>
         <li><a href="documentation.html">Theme Documentation</a></li>
@@ -72,46 +73,45 @@
   </div>
   <!-- FIXED NAVBAR -->
   <header>
-      
+
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top appheader" aria-label="Third navbar example">
 
       <div class="container-fluid ">
-  
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
           aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse " id="navbarsExample03">
           <div class="p-1 flex-fill bd-highlight ">
-          <ul class=" col-xs-4 navbar-nav mx-auto justify-content-md-center">
-                <li class="nav-item active">
-                    <a class="navbar-brand" href="index.html"><img
-                        src="IMG/Group_4.png" alt="" width="26" height="24"
-                        class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
-                </li>
-            </ul>
-          </div>
-  
-          <div class="p-1 flex-fill bd-highlight">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
-              <li class="nav-item dropdown">
-                <a class="dropdown-toggle nav-link"  id="dropdown1" href="#" data-bs-toggle="dropdown"
-                  aria-expanded="false">Select Issue</a>
-                  <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
-                    <li> <button class="dropdown-item nav__link" type="button" value="article1"> <a href="issue.html">Issue No. 1</a></li>
-                    <li> <button class="dropdown-item nav__link" type="button" value="article2">Issue No. 2</li>
-                    <li> <button class="dropdown-item nav__link" type="button" value="article3">Issue No. 3</li>
-                  </ul>
+            <ul class=" col-xs-4 navbar-nav mx-auto justify-content-md-center">
+              <li class="nav-item active">
+                <a class="navbar-brand" href="index.html"><img src="IMG/Group_4.png" alt="" width="26" height="24"
+                    class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
               </li>
             </ul>
           </div>
-  
+
+          <div class="p-1 flex-fill bd-highlight">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" id="dropdown1" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">Select Issue</a>
+                <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
+                  <li> <button class="dropdown-item nav__link" type="button" value="article1"><a href="issue.html">Issue No. I</a></li>
+                  <li> <button class="dropdown-item nav__link" type="button" value="article2">Issue No. II</li>
+                  <li> <button class="dropdown-item nav__link" type="button" value="article3">Issue No. III</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
           <div class="p-1 flex-fill bd-highlight ">
             <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
               <li class="nav-item dropdown">
-                <a class="dropdown-toggle nav-link" id="dropdownMenuButton2" href="#" id="dropdown03" data-bs-toggle="dropdown"
-                  aria-expanded="false">Select Theme</a>
+                <a class="dropdown-toggle nav-link" id="dropdownMenuButton2" href="#" id="dropdown03"
+                  data-bs-toggle="dropdown" aria-expanded="false">Select Theme</a>
                 <ul class="dropdown-menu card-body shadow nav-section cardextra cardpad" aria-labelledby="dropdown03">
                   <li> <button class="dropdown-item nav__link" type="button"
                       onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
@@ -126,403 +126,565 @@
               </li>
             </ul>
           </div>
-  
+
         </div>
       </div>
     </nav>
   </header>
+  <!--MAIN CONTENT-->
+  <div class="container-fluid px-5 py-5" name="main">
+    <div class="row" name="spacer2"></div>
+    <!--H2 div-->
+    <div class="row">
+      <h2 class="issue">Documentation</h2>
+    </div>
+    <div class="row" name="spacer2"></div>
+    <!--SCROLLSPY CONTENT DIV-->
+    <div class="row flex-container ">
+      <div class="col cowboybgcolor" name="wide" style="height: 70vh; overflow-y: scroll; ">
 
-    <!--MAIN CONTENT-->
-      <div class="container-fluid px-5 py-5" name="main">
+        <section id="section1">
+          <h3 class="issue">What Is Technaissance About?</h3>
+          <p>
+            Welcome to Technaissance, a project created for the course "Web Technologies". This page is designed to
+            showcase the different tools and techniques learned in class, including HTML, markup, JavaScript, CSS, and
+            others.</p>
+
+          <p>The main goal of Technaissance is to provide a platform for users to explore the relationship between
+            technology and art. Through the use of four distinct styles - Cyberpunk, Brutalism, Cowboy, and Minimalism -
+            users can discover how technology has shaped the way we experience and create art.</p>
+
+          <p>The page features three articles, each delving into a different aspect of the role of technology in art.
+            Whether you're interested in the history of digital art, the latest developments in artificial intelligence
+            and generative art, or the ways in which technology is transforming the art world, Technaissance has
+            something for you.</p>
+
+          <p>So, take some time to explore the different styles, read the articles, and discover how technology and art
+            intersect. We hope you enjoy your visit to Technaissance!</p></span>
+          </p>
+        </section>
+        <hr>
+        <section id="section2">
+          <h3 class="issue">Text Markup Methodology</h3>
+          <p>
+            Technaissance page has been marked up using five different classes applied to span elements. These classes
+            are "people", "technical terms", "events", "keywords" and "quotes". These classes are used to create a
+            more interactive and engaging reading experience for the user, by making it easy to quickly identify and
+            understand key elements of the text.</p>
+
+          <p> To accomplish this, we utilized different JavaScript scripts to create checkbox elements on the page. When
+            a user selects one of these checkboxes, the corresponding class is displayed as a list element on the
+            page, allowing the user to easily navigate and identify the different types of information contained in
+            the text.</p>
+
+          <p> In addition to the functionality described earlier where the checkboxes allow the user to view the
+            different classes as a list element, the list elements themselves are also interactive. When a user
+            selects a list element, the corresponding text on the page is highlighted and the user is automatically
+            navigated to that location in the text.</p>
+
+          <p>This approach allows the user to easily navigate and understand the text in a way that is not possible
+            with traditional static text. It also gives the user the ability to customize their reading experience and
+            focus on the information that is most relevant to them.</p>
+
+          <p>So, the main idea is to make the text more interactive, engaging and easy to understand for the user. With
+            the use of checkboxes and classes, the user can easily navigate and identify key elements of the text,
+            giving them a more meaningful reading experience.</p>
+          </p>
+        </section>
+        <hr>
+
         <div class="row" name="spacer2"></div>
-        <!--H2 div-->
-        <div class="row">
-          <h2 class="issue">Documentation</h2>
-        </div> 
         <div class="row" name="spacer2"></div>
-        <!--SCROLLSPY CONTENT DIV-->
-        <div class="row flex-container ">
-          <div class="col cowboybgcolor" name="wide" style="height: 70vh; overflow-y: scroll; ">
 
-            <section id="section1">
-              <h3 class="issue">What Is Technaissance About?</h3>
-              <p>
-                About the project, its aim <span style="color:red">[NEED TO WRITE]</span>
+        <article>
+          <section id="section3">
+            <h3 class="issue">Documentation Of Cyberpunk Theme</h3>
+            <p>
+              The Cyberpunk theme is heavily influenced by the aesthetic of classic cyberpunk movies such as Akira and
+              Blade Runner, as well as modern examples like Cyberpunk 2077.</p>
+
+            <p>This theme is characterized by the use of neon and other vibrant colors, as well as a futuristic,
+              technologically advanced aesthetic. The goal of this theme is to evoke the sense of a modern, high-tech
+              metropolis, with all of the advanced technology and sleek design that entails.</p>
+
+            <p>A key element of the Cyberpunk theme is the use of neon and other bright, eye-catching colors. This is
+              used to create a sense of modernity and energy, as well as to draw the user's attention to different
+              elements on the page. Additionally, the use of a muted, desaturated color palette creates a feeling of
+              decay and decadence, evoking the darker side of a high-tech future.</p>
+
+            <p>In the theme we also want to reflect the idea of the divide and disparities in society, as well as the
+              loss of privacy and individuality that are characteristic of the cyberpunk genre, so we apply a lot of
+              overlapping of different layers and use of glitch effect.
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section3.1">Theme History</h5>
+            <p>The history of the Cyberpunk theme can be traced back to the 1980s, with the publication of the
+              groundbreaking science fiction novel "Neuromancer" by William Gibson. This novel, along with others from
+              the same era such as "Blade Runner" and "Akira," helped to define the cyberpunk genre, characterized by
+              high-tech advancements set against a dystopian backdrop.
+            </p>
+            <p>The cyberpunk aesthetic quickly spread to other forms of media, including film, comics, and video games.
+              In the 90s, movies such as "The Matrix" and "Ghost in the Shell" helped to solidify the genre's popularity
+              and influence. The cyberpunk aesthetic also heavily influenced the development of the cyberculture and
+              cyber-subcultures, in the early days of internet.
+            </p>
+            <p>In more recent years, the release of the video game "Cyberpunk 2077" has once again brought the cyberpunk
+              aesthetic to the forefront of popular culture. The game's aesthetic, which draws heavily from classic
+              cyberpunk sources, has served to re-popularize the genre and inspire a new generation of creators.
+
+          </section>
+          <section>
+            <h5 class="issue" id="section3.2">Inspirtation Sources</h5>
+            <p>
+              <p>The Cyberpunk theme has been heavily influenced by a variety of sources, both in the realm of science
+                fiction and in popular culture. Some of the most notable influences on the cyberpunk aesthetic include:
               </p>
-            </section>
-            <hr>
-            <section id="section2">
-              <h3 class="issue">Text Markup Methodology</h3>
-              <p>
-                The structure of the three selected article reflects a hierarchical form, composed of nested HTML elements, tags and a attributes. I added classes and specific id to better shape the diffent styles according to the elements of the page. Some complex characters and diacritical symbols have been repleaced by their respective marks to assure a correct reading by the HTML language. I also semantically marked up the article, in order to create a filtering feature for highlighting meaningful elements in respect to the central issue. With this purpose, I individuated mention persons, places, events, institution or companies, general concepts and different types of aggression perpetuated by policeman, mental disorders and ethnic group. Each element was therefore assigned to one or more classes, and detectable by the attribute "about", which we used to collect all elements of the same class and value, linking them to the checkboxes of our metadata panel to guarantee an efficient search.<br><span style="color:red">[stolen from other project, NEED TO WRITE OUR OWN]</span>
+              <p>- Science fiction literature: The cyberpunk genre was originally born out of science fiction literature
+                in the 1980s, with novels such as "Neuromancer" by William Gibson, "Do Androids Dream of Electric
+                Sheep?" by Philip K. Dick and "Snow Crash" by Neal Stephenson. These novels helped to establish the core
+                themes and aesthetic of the cyberpunk genre, such as high-tech advancements in a dystopian society.
               </p>
+              <p>- Cyberpunk film: Cyberpunk-inspired movies like Blade Runner, the Matrix and Ghost in the Shell have
+                also played a significant role in shaping the cyberpunk aesthetic. These films brought the aesthetic of
+                cyberpunk literature to a wider audience, and popularized many of the visual and thematic elements
+                associated with the genre.
+              </p>
+              <p>- Cyberpunk subculture: The cyberpunk aesthetic has also been heavily influenced by the cyberpunk
+                subculture, which emerged in the early days of the internet. This subculture, which is associated with
+                hacking, programming and a DIY attitude, is known for its rebellion against the status quo and its
+                emphasis on individualism and personal freedom.
+              </p>
+              <p>- Video games: Video games like Deus Ex, Syndicate and more recently, Cyberpunk 2077, have been hugely
+                influential in maintaining the popularity of the cyberpunk aesthetic and inspire a new generation of
+                creators. The immersive nature of the gameplay in these games has made the worlds they depict feel
+                incredibly real, providing an unmatched level of immersion into the cyberpunk genre.</p>
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section3.3">Mood-Board For Theme</h5>
+            <p> This Pinterest pin serves as a mood board for the Cyberpunk theme. We used it to capture the various
+              visual and aesthetic
+              elements associated with the cyberpunk genre, providing inspiration for the overall look and feel of the
+              theme.
+            </p>
+            <p>Some of the key characteristics of the cyberpunk aesthetic that can be seen in the Pinterest pin include:
+            </p>
+            <p>- Futuristic technology: The cyberpunk aesthetic is heavily influenced by the idea of a high-tech,
+              advanced future. This can be seen in the images of sleek, futuristic buildings and technology on the mood
+              board.
+            </p>
+            <p>- Neon and other bright, vibrant colors: The use of neon and other bright, eye-catching colors is a key
+              element of the cyberpunk aesthetic. This can be seen in the various images of neon lights, holographic
+              displays, and other brightly colored elements on the mood board.
+            </p>
+            <p>- Dystopian elements: The cyberpunk genre is known for its dystopian themes, and this can be seen in the
+              images of decrepit, run-down cityscapes and other elements on the mood board.
+            </p>
+            <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80"
+              href="https://in.pinterest.com/jpcasado/cyberpunk/"></a>
+          </section>
+          <section>
+            <h5 class="issue" id="section3.4">Design System</h5>
+            <p>
+              <p>The design system for the Cyberpunk theme of Technaissance project is based on the latest version of
+                Bootstrap, a popular open-source toolkit for building responsive and mobile-first web pages. Bootstrap
+                provides a solid foundation for the project's layout and design, while allowing for customization to
+                create the unique cyberpunk aesthetic.
+
+              </p>
+            </p>
+            <h6 class="issue">Typographic Families</h6>
+            <p>FONT FAMILIES</p>
+            <p>The font family chosen for the Cyberpunk theme of the Technaissance project is a combination of Rajdhani,
+              Advent Pro, and PT Mono. Rajdhani, a clean and elegant sans-serif font, is used for the headers and navbar
+              elements, giving a futuristic and technology-inspired feel. Advent Pro, a versatile font with a geometric
+              and modern look, is used for the headers, giving a bold and sharp appearance to the text. PT Mono, a
+              monospace font, is used for body and general text, providing a clean and distinctive look, which matches
+              with the cyberpunk aesthetic and the feeling of a high-tech future.</p>
+            <p>HEADERS AND THEIR WEIGHTS</p>
+            <p>The headers are designed to reflect the hierarchy of importance of the different titles throughout the
+              page. We used six different types of headers, ranging from largest to smallest, by order of importance. To
+              further emphasize the importance of the these elements, we used two unique styles to display them. The
+              first style uses a glitched effect, adding a dynamic and futuristic feeling to the text. The second style
+              uses a tilting underline, placed after the last word of the header, adding a unique and striking visual
+              element to the text, providing an additional layer of emphasis and a cohesive cyberpunk aesthetic.
+            </p>
+            <P>PARAGRAPH TYPES</P>
+            <p>The paragraph styles used in the Cyberpunk theme of the Technaissance project are designed to prioritize
+              responsiveness of the page. The styles are in a free form which allows flexibility and adaptability to
+              different devices and screen sizes</p>
+            <h6 class="issue">Color Styles</h6>
+            <p>The color scheme used is heavily influenced by the neon aesthetic of the genre. The primary colors used
+              are yellow, cyan and red, creating a vibrant and eye-catching feel. Black is used as the secondary color, 
+              providing a darker and more subdued contrast.Gradients, primarily red and black, are used to create a sense of depth and movement throughout the
+              design. Opacity is mainly used in the gradients to add a subtle, translucent effect. Tints and shades of
+              the primary colors are also used throughout the design, to create a cohesive and harmonious visual
+              experience that fits the cyberpunk theme.
+            </p>
+
+            <h6 class="issue">Shape Styles</h6>
+            <p>The shape styles used in the Cyberpunk theme of the Technaissance project mostly follow a cybernetic aesthetic, with round typography and organic shapes. But also use of lines are implemented to add more of a technological feel. Borders are mostly used for cards, providing a clear visual separation between different elements on the page, and adding a cyberpunk edge to the overall design. This creates a consistent, cohesive look that fits well with the overall theme of the project.
+            </p>
+
+            <h6 class="issue">Effect Styles</h6>
+            <P>
+              <p>The Technaissance project features the following design elements in regards to shadows and image manipulation:</p>
+              
+                <p>-Shadows: Shadows are used mainly for cards, providing depth and dimension to the elements, and highlighting the cyberpunk aesthetic. </p>
+                <p>-Image manipulation: Images used throughout the project are made responsive and with transparent backgrounds. This allows them to adapt seamlessly to different devices and screen sizes while preserving the look and feel of the design.</p>
+              </ul>
+            </P>
+
+            <h6 class="issue">Logo Styles</h6>
+            <p>A consistent logo is used across the website, ensuring a recognizable brand identity.</p>
+            <h6 class="issue">Cursor Styles</h6>
+            <p>The default cursor style is maintained, providing a familiar and consistent user experience.</p>
+            <h6 class="issue">Icons Styles</h6>
+            <p>There is no use of icons in this design, but the quotes are designed in a chrome style to match the overall cyberpunk aesthetic.</p>
+            <h6 class="issue">Notification/Alert Styles</h6>
+            <p>The default style is used for notifications and alerts, providing a consistent look and feel throughout the website</p>
+          </section>
+          <hr>
+        </article>
+
+        <div class="row" name="spacer2"></div>
+        <div class="row" name="spacer2"></div>
+
+        <article>
+          <section id="section4">
+            <h3 class="issue">Documentation Of Cowboy Theme</h3>
+            <p>
+            The Cowboy theme of Technaissance project is a web page that evokes the style of the American West, with influences from Spaghetti Westerns. The theme is characterized by the use of warm colors such as red, yellow, and brown, which help to create a rustic and authentic feeling. The aesthetic is heavily influenced by classic western movies and traditional western iconography, with elements such as horses, guns, and cowboy hats featured prominently throughout the design. The theme aims to bring a sense of the wild west, with a touch of nostalgia and adventure.</p>
+    
+          </section>
+          <section>
+            <h5 class="issue" id="section4.1">Theme History</h5>
+            <p>The history of the Cowboy theme can be traced back to the late 19th century, with the settlement of the
+              American West and the rise of the cowboy as a cultural icon. The cowboy aesthetic was popularized by
+              literature, theater and later on cinema, from the dime novels of the late 1800s to the classic Hollywood
+              western films of the mid-20th century. Spaghetti Westerns, a genre of Western films produced in Italy,
+              also had an important role in shaping the Cowboy theme and its aesthetics.
+            </p>
+            <p> The Cowboy theme continues to be a popular and enduring cultural style, seen in various forms of media,
+              including film, television, and video games. Even today, the cowboy archetype remains a timeless symbol of
+              American frontier spirit and individualism.
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section4.2">Inspirtation Sources</h5>
+            <p>The Cowboy theme in Technaissance project draws inspiration from a variety of sources, including classic
+              Hollywood Westerns, Spaghetti Westerns and also the rugged individualism of the cowboy archetype.
+            </p>
+            <p> Classic Hollywood Westerns, starring actors like Clint Eastwood, John Wayne, and Roy Rogers, helped to
+              popularize the cowboy aesthetic and establish many of the visual and thematic elements associated with the
+              genre. These films often featured iconic imagery such as gunslingers, horseback rides, and wide-open
+              landscapes that are now considered classic elements of the cowboy aesthetic.
+            </p>
+            <p> Spaghetti Westerns also had a big influence on the cowboy theme, introducing new ways of filming,
+              editing, music and story-telling, bringing a different perspective to the American Western genre. This
+              made the cowboy theme more epic and romantic, with a touch of violence.
+          </section>
+          <section>
+            <h5 class="issue" id="section4.3">Mood-Board For Theme</h5>
+            <p>We used a Pinterest moodboard for the Cowboy theme. It is heavily inspired by classic Hollywood Westerns
+              and Spaghetti Westerns. The moodboard captures the various visual and aesthetic elements associated with
+              the Cowboy genre, providing inspiration for the overall look and feel of the theme. It features imagery
+              such as rugged landscapes, horses, guns, and cowboy hats, which are all iconic elements of the cowboy
+              aesthetic.
+            </p>
+            <p> The moodboard also includes pictures of main actors of Hollywood Westerns and Spaghetti Westerns, such
+              as Clint Eastwood, who embodies the spirit of the cowboy archetype.
+            </p>
+            <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80"
+              href="https://in.pinterest.com/jpcasado/cowboy/"></a>
             </section>
-            <hr>
+            <section>
+              <h5 class="issue" id="section4.4">Design System</h5>
+              <p> The wireframe used in the design system is transversal to all the themes,and allows for consistency in layout, navigation and overall
+                user experience, while still achieving the desired aesthetic of the cowboy theme. The design system is
+                focused on the use of Bootstrap's grid layout system, providing flexibility and adaptability to
+                different screen sizes and devices, ensuring that the page looks great on desktop, tablet, and mobile
+                devices.
+              </p>
+              <h6 class="issue">Typographic Families</h6>
+              <p>FONT FAMILIES</p>
+              <p>The font families, headers, and paragraphs styles used in the Cowboy theme of the Technaissance project are designed to reflect the aesthetic of the American West.
+              </p>
+              <p>The main font family used is "The Dead Saloon" it is a typography heavily used in Westerns, this gives a rustic and authentic feeling to the theme. It's mainly used for almost every element that uses typography. Additionally, we also used PT Mono, a monospace font, and a sans-serif font that complement the main font family and provide a balance of modernity and tradition.
+              </p>
+              <p>HEADERS AND THEIR WEIGHTS</p>
+              <p>The headers are similar to those used in the Cyberpunk theme, with six different types of headers, ranging from largest to smallest, by order of importance. This reflect the hierarchy of the text in the page and make easy for the user to understand the content.
+              </p> 
+              <P>PARAGRAPH TYPES</P>
+              <p>Paragraphs types are free to privilege responsiveness on all devices, allowing for optimal readability and user experience across different devices</p>
+              <h6 class="issue">Color Styles</h6>
 
-            <div class="row" name="spacer2"></div>
-            <div class="row" name="spacer2"></div>
+              <p>
+              </p>
 
-            <article>
-              <section id="section3">
-                <h3 class="issue">Documentation Of Cyberpunk Theme</h3>
-                <p>
-                  JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide pragrammatic control over them.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section3.1">Theme History</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section3.2">Inspirtation Sources</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section3.3">Mood-Board For Theme</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-                <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80" href="https://in.pinterest.com/manusrivastava/brutalist/"></a>
-              </section>
-              <section>
-                <h5 class="issue" id="section3.4">Design System</h5>
-                <p>
-                  JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-                </p>
-                <h6 class="issue">Typographic Families</h6>
-                <p>FONT FAMILIES</p>
-                <p>HEADERS AND THEIR WEIGHTS</p>
-                <P>PARAGRAPH TYPES</P>
+            <h6 class="issue">Shape Styles</h6>
+            <p>The shape and styles used are designed to evoke the feeling
+              of the American West. The shapes and styles follow a traditional western aesthetic, with an emphasis on a
+              rustic, authentic look. The shapes used are simple, with a focus on rectangles and squares, and the
+              textured look to give the feeling of rough materials. The styles used include subtle patterns and textures that are reminiscent of the western style, such as
+              wood grain and leather with the aim of creating a feeling of nostalgia and adventure,
+              reminiscent of the wild west era.
+            </p>
+            <h6 class="issue">Effect Styles</h6>
+            <P>
+              Shadows<br><p>The shadows were mainly used for the card elements</p>
+              Image manipulation<br> <p> we used a vintage black and white filter on images aiming for a nostalgic feel.</p>
 
-                <h6 class="issue">Color Styles</h6>
-                <p>Primary<br>
-                  Secondary<br>
-                  Gradients<br>
-                  Opacity<br>
-                  Tints<br>
-                  Shades<br>
-                </p>
+            </P>
 
-                <h6 class="issue">Shape Styles</h6>
-                <P>
-                  Shape Styles</span>
-                  Border<br>
-                  State styles<br>
-                  Patterns<br>
-                </P>
+            <h6 class="issue">Logo Styles</h6>
+            <p>As we mentioned in the Cyberpunk theme, the same logo is used across the website, ensuring a recognizable brand identity.</p>
+            <h6 class="issue">Cursor Styles</h6>
+            <p> The default cursor style is maintained, providing a familiar and consistent user experience.</p>
+            <h6 class="issue">Icons Styles</h6>
+            <p>We used the cowboy hats as icons in the bibliography, aiming for a sober look and feel with a touch of western style.</p>
+            <h6 class="issue">Notification/Alert Styles</h6>
+            <p>The default style is used for notifications and alerts, providing a consistent look and feel throughout the website.</p>
+          </section>
+        </article>
 
-                <h6 class="issue">Effect Styles</h6>
-                <P>
-                  Shadows<br>
-                  blurs<br>
-                  Image manipulation<br>
-                </P>
+        <div class="row" name="spacer2"></div>
+        <div class="row" name="spacer2"></div>
 
-                <h6 class="issue">Logo Styles</h6>
-                <h6 class="issue">Cursor Styles</h6>
-                <h6 class="issue">Icons Styles</h6>
-                <h6 class="issue">Notification/Alert Styles</h6>
-              </section>
-              <hr>
-            </article>
+        <article>
+          <section id="section5">
+            <h3 class="issue">Documentation Of Geometric Minimalism Theme</h3>
+            <p>
+              JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
+              language. Inside a host environment (for example, a web browser), JavaScript can be connected to the
+              objects of its environment to provide pragrammatic control over them.
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section5.1">Theme History</h5>
+            <p>
+              Client-side JavaScript extends the core language by supplying objects to control a browser and its
+              Document Object Model (DOM). For example, client-side extensions allow an application to place elements on
+              an HTML form and respond to user events such
+              as mouse clicks, form input, and page navigation.
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section5.2">Inspirtation Sources</h5>
+            <p>
+              Client-side JavaScript extends the core language by supplying objects to control a browser and its
+              Document Object Model (DOM). For example, client-side extensions allow an application to place elements on
+              an HTML form and respond to user events such
+              as mouse clicks, form input, and page navigation.
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section5.3">Mood-Board For Theme</h5>
+            <p>
+              Client-side JavaScript extends the core language by supplying objects to control a browser and its
+              Document Object Model (DOM). For example, client-side extensions allow an application to place elements on
+              an HTML form and respond to user events such
+              as mouse clicks, form input, and page navigation.
+            </p>
+            <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80"
+              href="https://in.pinterest.com/manusrivastava/brutalist/"></a>
+          </section>
+          <section>
+            <h5 class="issue" id="section5.4">Design System</h5>
+            <p>
+              JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+              language elements such as operators, control structures, and statements. Core JavaScript can be extended
+              for a variety of purposes by supplementing it with additional objects; for example:
+            </p>
+            <h6 class="issue">Typographic Families</h6>
+            <p>FONT FAMILIES</p>
+            <p>HEADERS AND THEIR WEIGHTS</p>
+            <P>PARAGRAPH TYPES</P>
 
-            <div class="row" name="spacer2"></div>
-            <div class="row" name="spacer2"></div>
+            <h6 class="issue">Color Styles</h6>
+            <p>Primary<br>
+              Secondary<br>
+              Gradients<br>
+              Opacity<br>
+              Tints<br>
+              Shades<br>
+            </p>
 
-            <article>
-              <section id="section4">
-                <h3 class="issue">Documentation Of Cowboy Theme</h3>
-                <p>
-                  JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide pragrammatic control over them.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section4.1">Theme History</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section4.2">Inspirtation Sources</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section4.3">Mood-Board For Theme</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-                <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80" href="https://in.pinterest.com/manusrivastava/brutalist/"></a>
-              </section>
-              <section>
-                <h5 class="issue" id="section4.4">Design System</h5>
-                <p>
-                  JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-                </p>
-                <h6 class="issue">Typographic Families</h6>
-                <p>FONT FAMILIES</p>
-                <p>HEADERS AND THEIR WEIGHTS</p>
-                <P>PARAGRAPH TYPES</P>
+            <h6 class="issue">Shape Styles</h6>
+            <P>
+              Shape Styles</span>
+              Border<br>
+              State styles<br>
+              Patterns<br>
+            </P>
 
-                <h6 class="issue">Color Styles</h6>
-                <p>Primary<br>
-                  Secondary<br>
-                  Gradients<br>
-                  Opacity<br>
-                  Tints<br>
-                  Shades<br>
-                </p>
+            <h6 class="issue">Effect Styles</h6>
+            <P>
+              Shadows<br>
+              blurs<br>
+              Image manipulation<br>
+            </P>
 
-                <h6 class="issue">Shape Styles</h6>
-                <P>
-                  Shape Styles</span>
-                  Border<br>
-                  State styles<br>
-                  Patterns<br>
-                </P>
+            <h6 class="issue">Logo Styles</h6>
+            <h6 class="issue">Cursor Styles</h6>
+            <h6 class="issue">Icons Styles</h6>
+            <h6 class="issue">Notification/Alert Styles</h6>
+          </section>
+        </article>
 
-                <h6 class="issue">Effect Styles</h6>
-                <P>
-                  Shadows<br>
-                  blurs<br>
-                  Image manipulation<br>
-                </P>
+        <div class="row" name="spacer2"></div>
+        <div class="row" name="spacer2"></div>
 
-                <h6 class="issue">Logo Styles</h6>
-                <h6 class="issue">Cursor Styles</h6>
-                <h6 class="issue">Icons Styles</h6>
-                <h6 class="issue">Notification/Alert Styles</h6>
-              </section>
-            </article>
+        <article>
+          <section id="section6">
+            <h3 class="issue">Documentation Of Web Brutalism Theme</h3>
+            <p>
+              JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
+              language. Inside a host environment (for example, a web browser), JavaScript can be connected to the
+              objects of its environment to provide pragrammatic control over them.
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section6.1">Theme History</h5>
+            <p>
+              Client-side JavaScript extends the core language by supplying objects to control a browser and its
+              Document Object Model (DOM). For example, client-side extensions allow an application to place elements on
+              an HTML form and respond to user events such
+              as mouse clicks, form input, and page navigation.
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section6.2">Inspirtation Sources</h5>
+            <p>
+              Client-side JavaScript extends the core language by supplying objects to control a browser and its
+              Document Object Model (DOM). For example, client-side extensions allow an application to place elements on
+              an HTML form and respond to user events such
+              as mouse clicks, form input, and page navigation.
+            </p>
+          </section>
+          <section>
+            <h5 class="issue" id="section6.3">Mood-Board For Theme</h5>
+            <p>
+              Client-side JavaScript extends the core language by supplying objects to control a browser and its
+              Document Object Model (DOM). For example, client-side extensions allow an application to place elements on
+              an HTML form and respond to user events such
+              as mouse clicks, form input, and page navigation.
+            </p>
+            <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80"
+              href="https://in.pinterest.com/manusrivastava/brutalist/"></a>
+          </section>
+          <section>
+            <h5 class="issue" id="section6.4">Design System</h5>
+            <p>
+              JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+              language elements such as operators, control structures, and statements. Core JavaScript can be extended
+              for a variety of purposes by supplementing it with additional objects; for example:
+            </p>
+            <h6 class="issue">Typographic Families</h6>
+            <p>FONT FAMILIES</p>
+            <p>HEADERS AND THEIR WEIGHTS</p>
+            <P>PARAGRAPH TYPES</P>
 
-            <div class="row" name="spacer2"></div>
-            <div class="row" name="spacer2"></div>
+            <h6 class="issue">Color Styles</h6>
+            <p>The color scheme used in the Cyberpunk theme of Technaissance project is heavily influenced by the neon aesthetic of the genre. The primary colors used are yellow, cyan and red, creating a vibrant and eye-catching feel. Black is used as the secondary color, providing a darker and more subdued contrast. Gradients, primarily red and black, are used to create a sense of depth and movement throughout the design. Opacity is mainly used in the gradients to add a subtle, translucent effect. Tints and shades of the primary colors are also used throughout the design, to create a cohesive and harmonious visual experience that fits the cyberpunk theme.
+            </p>
 
-            <article>
-              <section id="section5">
-                <h3 class="issue">Documentation Of Geometric Minimalism Theme</h3>
-                <p>
-                  JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide pragrammatic control over them.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section5.1">Theme History</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section5.2">Inspirtation Sources</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section5.3">Mood-Board For Theme</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-                <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80" href="https://in.pinterest.com/manusrivastava/brutalist/"></a>
-              </section>
-              <section>
-                <h5 class="issue" id="section5.4">Design System</h5>
-                <p>
-                  JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-                </p>
-                <h6 class="issue">Typographic Families</h6>
-                <p>FONT FAMILIES</p>
-                <p>HEADERS AND THEIR WEIGHTS</p>
-                <P>PARAGRAPH TYPES</P>
+            <h6 class="issue">Shape Styles</h6>
+            <p>The shape styles used in the Cyberpunk theme of the Technaissance project mostly follow a cybernetic aesthetic, with round typography and organic shapes. But also use of lines are implemented to add more of a technological feel. Borders are mostly used for cards, providing a clear visual separation between different elements on the page, and adding a cyberpunk edge to the overall design. This creates a consistent, cohesive look that fits well with the overall theme of the project.
+            </p>
+            <h6 class="issue">Effect Styles</h6>
+            <P>
+              Shadows<br>
+              blurs<br>
+              Image manipulation<br>
+            </P>
 
-                <h6 class="issue">Color Styles</h6>
-                <p>Primary<br>
-                  Secondary<br>
-                  Gradients<br>
-                  Opacity<br>
-                  Tints<br>
-                  Shades<br>
-                </p>
+            <h6 class="issue">Logo Styles</h6>
+            <p>A consistent logo is used across the website, ensuring a recognizable brand identity.</p>
+            <h6 class="issue">Cursor Styles</h6>
+            <p>The default cursor style is maintained, providing a familiar and consistent user experience.</p>
+            <h6 class="issue">Icons Styles</h6>
+            <p>There is no use of icons in this design, but the quotes are designed in a chrome style to match the overall cyberpunk aesthetic.</p>
+            <h6 class="issue">Notification/Alert Styles</h6>
+            <p>The default style is used for notifications and alerts, providing a consistent look and feel throughout the website.</p>
+          </section>
+        </article>
 
-                <h6 class="issue">Shape Styles</h6>
-                <P>
-                  Shape Styles</span>
-                  Border<br>
-                  State styles<br>
-                  Patterns<br>
-                </P>
 
-                <h6 class="issue">Effect Styles</h6>
-                <P>
-                  Shadows<br>
-                  blurs<br>
-                  Image manipulation<br>
-                </P>
-
-                <h6 class="issue">Logo Styles</h6>
-                <h6 class="issue">Cursor Styles</h6>
-                <h6 class="issue">Icons Styles</h6>
-                <h6 class="issue">Notification/Alert Styles</h6>
-              </section>
-            </article>
-
-            <div class="row" name="spacer2"></div>
-            <div class="row" name="spacer2"></div>
-
-            <article>
-              <section id="section6">
-                <h3 class="issue">Documentation Of Web Brutalism Theme</h3>
-                <p>
-                  JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide pragrammatic control over them.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section6.1">Theme History</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section6.2">Inspirtation Sources</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-              </section>
-              <section>
-                <h5 class="issue" id="section6.3">Mood-Board For Theme</h5>
-                <p>
-                  Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such
-                  as mouse clicks, form input, and page navigation.
-                </p>
-                <a data-pin-do="embedBoard" data-pin-board-width="900" data-pin-scale-height="600" data-pin-scale-width="80" href="https://in.pinterest.com/manusrivastava/brutalist/"></a>
-              </section>
-              <section>
-                <h5 class="issue" id="section6.4">Design System</h5>
-                <p>
-                  JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-                </p>
-                <h6 class="issue">Typographic Families</h6>
-                <p>FONT FAMILIES</p>
-                <p>HEADERS AND THEIR WEIGHTS</p>
-                <P>PARAGRAPH TYPES</P>
-
-                <h6 class="issue">Color Styles</h6>
-                <p>Primary<br>
-                  Secondary<br>
-                  Gradients<br>
-                  Opacity<br>
-                  Tints<br>
-                  Shades<br>
-                </p>
-
-                <h6 class="issue">Shape Styles</h6>
-                <P>
-                  Shape Styles</span>
-                  Border<br>
-                  State styles<br>
-                  Patterns<br>
-                </P>
-
-                <h6 class="issue">Effect Styles</h6>
-                <P>
-                  Shadows<br>
-                  blurs<br>
-                  Image manipulation<br>
-                </P>
-
-                <h6 class="issue">Logo Styles</h6>
-                <h6 class="issue">Cursor Styles</h6>
-                <h6 class="issue">Icons Styles</h6>
-                <h6 class="issue">Notification/Alert Styles</h6>
-              </section>
-            </article>
-
-            
-          </div>
-           <!--SCROLLSPY INDEX DIV-->
-          <div class="col cowboybgcolor msPadding" name="narrow" style="height: 70vh; ">
-            <ul id="nav">
-              <li><a href="#section1">About Technaissance </a></li>
-              <li><a href="#section2">Text Markup Methodology</a></li>
-              <li><a href="#section3">Documentation: Cyberpunk Theme</a></li>
-              <li><a href="#section3.1">&emsp;&emsp;&emsp; Theme History</a></li>
-              <li><a href="#section3.2">&emsp;&emsp;&emsp; Inspirtation Sources</a></li>
-              <li><a href="#section3.3">&emsp;&emsp;&emsp; Mood-Board</a></li>
-              <li><a href="#section3.4">&emsp;&emsp;&emsp; Design System</a></li>
-              <li><a href="#section4">Documentation: Cowboy Theme</a></li>
-              <li><a href="#section4.1">&emsp;&emsp;&emsp; Theme History</a></li>
-              <li><a href="#section4.2">&emsp;&emsp;&emsp; Inspirtation Sources</a></li>
-              <li><a href="#section4.3">&emsp;&emsp;&emsp; Mood-Board</a></li>
-              <li><a href="#section4.4">&emsp;&emsp;&emsp; Design System</a></li>
-              <li><a href="#section5">Documentation: Geometric Minimalism Theme</a></li>
-              <li><a href="#section5.1">&emsp;&emsp;&emsp; Theme History</a></li>
-              <li><a href="#section5.2">&emsp;&emsp;&emsp; Inspirtation Sources</a></li>
-              <li><a href="#section5.3">&emsp;&emsp;&emsp; Mood-Board</a></li>
-              <li><a href="#section5.4">&emsp;&emsp;&emsp; Design System</a></li>
-              <li><a href="#section6">Documentation: Web Brutalism Theme</a></li>
-              <li><a href="#section6.1">&emsp;&emsp;&emsp; Theme History</a></li>
-              <li><a href="#section6.2">&emsp;&emsp;&emsp; Inspirtation Sources</a></li>
-              <li><a href="#section6.3">&emsp;&emsp;&emsp; Mood-Board</a></li>
-              <li><a href="#section6.4">&emsp;&emsp;&emsp; Design System</a></li>
-            </ul>
-            
-          </div>
-        </div>
       </div>
+      <!--SCROLLSPY INDEX DIV-->
+      <div class="col cowboybgcolor" name="narrow" style="height: 70vh; overflow-y: scroll; ">
+        <ul id="nav" class="listdocumentation">
+          <li><a href="#section1">About Technaissance </a></li>
+          <li><a href="#section2">Text Markup Methodology</a></li>
+          <li><a href="#section3">Documentation: Cyberpunk Theme</a></li>
+          <li><a href="#section3.1">&emsp;&emsp;&emsp; Theme History</a></li>
+          <li><a href="#section3.2">&emsp;&emsp;&emsp; Inspirtation Sources</a></li>
+          <li><a href="#section3.3">&emsp;&emsp;&emsp; Mood-Board</a></li>
+          <li><a href="#section3.4">&emsp;&emsp;&emsp; Design System</a></li>
+          <li><a href="#section4">Documentation: Cowboy Theme</a></li>
+          <li><a href="#section4.1">&emsp;&emsp;&emsp; Theme History</a></li>
+          <li><a href="#section4.2">&emsp;&emsp;&emsp; Inspirtation Sources</a></li>
+          <li><a href="#section4.3">&emsp;&emsp;&emsp; Mood-Board</a></li>
+          <li><a href="#section4.4">&emsp;&emsp;&emsp; Design System</a></li>
+          <li><a href="#section5">Documentation: Geometric Minimalism Theme</a></li>
+          <li><a href="#section5.1">&emsp;&emsp;&emsp; Theme History</a></li>
+          <li><a href="#section5.2">&emsp;&emsp;&emsp; Inspirtation Sources</a></li>
+          <li><a href="#section5.3">&emsp;&emsp;&emsp; Mood-Board</a></li>
+          <li><a href="#section5.4">&emsp;&emsp;&emsp; Design System</a></li>
+          <li><a href="#section6">Documentation: Web Brutalism Theme</a></li>
+          <li><a href="#section6.1">&emsp;&emsp;&emsp; Theme History</a></li>
+          <li><a href="#section6.2">&emsp;&emsp;&emsp; Inspirtation Sources</a></li>
+          <li><a href="#section6.3">&emsp;&emsp;&emsp; Mood-Board</a></li>
+          <li><a href="#section6.4">&emsp;&emsp;&emsp; Design System</a></li>
+        </ul>
 
-    </main>
-    <!-- FOOTER CODE HERE -->
-    <footer class="footer mt-auto py-3  text-center">
-      <div>
-        <span class="pmd">Made with <span class="heart">♥</span> remotely from Anywhere</span>
-        <span style='color:red;margin-right:1.25em; display:inline-block;' class="pmd">&nbsp;</span>
-        <span class="pmd">&copy; 2022 CC BY 4.0.</span>
       </div>
-    </footer>
-  </body>
-  <!-- SCRIPTS HERE -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-  <script src="JS/DynLoad.js">
-  </script>
-  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-  <script>
-    let div = document.querySelector("#myDiv");
-div.addEventListener("scroll", function() {
-  let scrollPos = div.scrollTop;
-  let sections = document.querySelectorAll(".section");
-  let navLinks = document.querySelectorAll("#nav a");
+    </div>
+  </div>
 
-  for (let i = 0; i < sections.length; i++) {
-    let section = sections[i];
-    let top = section.offsetTop;
-    let bottom = top + section.offsetHeight;
-    if (scrollPos >= top && scrollPos < bottom) {
-      // The current section is in view
-      // Highlight the corresponding link in the navigation
-      navLinks[i].classList.add("active");
-    } else {
-      navLinks[i].classList.remove("active");
+  </main>
+  <!-- FOOTER CODE HERE -->
+  <footer class="footer mt-auto py-3  text-center">
+    <div>
+      <span class="pmd">Made with <span class="heart">♥</span> remotely from Anywhere</span>
+      <span style='color:red;margin-right:1.25em; display:inline-block;' class="pmd">&nbsp;</span>
+      <span class="pmd">&copy; 2022 CC BY 4.0.</span>
+    </div>
+  </footer>
+</body>
+<!-- SCRIPTS HERE -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script src="JS/DynLoad.js">
+</script>
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script>
+  let div = document.querySelector("#myDiv");
+  div.addEventListener("scroll", function () {
+    let scrollPos = div.scrollTop;
+    let sections = document.querySelectorAll(".section");
+    let navLinks = document.querySelectorAll("#nav a");
+
+    for (let i = 0; i < sections.length; i++) {
+      let section = sections[i];
+      let top = section.offsetTop;
+      let bottom = top + section.offsetHeight;
+      if (scrollPos >= top && scrollPos < bottom) {
+        // The current section is in view
+        // Highlight the corresponding link in the navigation
+        navLinks[i].classList.add("active");
+      } else {
+        navLinks[i].classList.remove("active");
+      }
     }
-  }
-});
-  </script>
+  });
+</script>
+
 </html>
