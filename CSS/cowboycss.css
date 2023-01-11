@@ -46,6 +46,8 @@ li{
 .dynbutton
 {color:rgb(0, 0, 0);
   padding: .5rem 1rem;
+  font-family: "The Dead Saloon", sans-serif;
+  font-size: 1rem;
 }
 
 .h1titles, .authors, .dates{
@@ -123,7 +125,17 @@ li{
 
 }
 
+.listdocumentation
+{
+  font-size: 1rem;
+  line-height: 1.28rem;
+  font-family: "The Dead Saloon", sans-serif;
+  color:#000A00;
+}
 
+.listdocumentation a{
+  color:#D28C3D !important; 
+}
 
 p, .pmd{
   color:white;
@@ -198,7 +210,13 @@ p {
   }
 }
 
+.card-title{
+  font-size: 1.5rem;
+  line-height: 1.28rem;
+  font-family: "The Dead Saloon", sans-serif;
+  color:white;
 
+}
 .card-body {
   zoom: 1;
   background-color: #d28c3d;
@@ -212,6 +230,7 @@ p {
 
 .card {
   border: none !important;
+  background-color: #B43C4C;
 }
 
 h2.issue {
@@ -244,10 +263,16 @@ h5.issue {
 
 h6.issue {
   font-family: 'PT Mono', monospace;
-  font-size: 0.6remrem;
+  font-size: 1.2rem;
   line-height: 1.2rem;
   font-weight: 700;
   color:white;
+}
+
+photo{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -328,6 +353,7 @@ td, th{
   font-size: 16px;
   line-height: 1.4;
   position: relative;
+  color:#000A00;
   /* margin: 50px; */
   padding: 1.5rem;
   /* padding-right: 74px; */
@@ -369,7 +395,9 @@ cite {
 
 
 
-
+.coverp{
+  line-height: 2rem;
+}
 
 
 .quote {

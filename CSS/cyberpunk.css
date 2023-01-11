@@ -31,6 +31,22 @@
     /* border-radius: 71% 29% 82% 18% / 24% 76% 24% 76%; */
 }
 
+.card-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+.cardBannerI {
+
+  width: inherit;
+  height: 90%;
+
+}
+
 .dynbutton
 {
   padding: .5rem 1rem;
@@ -51,8 +67,18 @@ a{color:#2be4ea}
   margin-top:5%;
 }
 
+
+.listdocumentation
+{
+  font-size: 1rem;
+  line-height: 1.28rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
 .coverp
-{color:white;}
+{color:white;
+line-height: 2rem;
+}
 
 .bottomtext{
   position : absolute;
@@ -257,6 +283,7 @@ a:hover {
 
 .card {
   border: transparent;
+  
 }
 
 .card-bg {
@@ -350,6 +377,18 @@ a:hover {
   font-size: 100%;
   line-height: 1.4;
   margin: 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #f9f002;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0,0,0,.125); */
+  /* border-radius: .25rem; */
 }
 
 .cardextra {
@@ -647,7 +686,7 @@ h5.issue {
 }
 
 h6.issue {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
   font-weight: 700;
   color:black;
