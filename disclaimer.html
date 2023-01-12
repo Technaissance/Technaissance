@@ -60,7 +60,7 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body pad-offcanvas card-body  nav-section cardextra">
-      <p class="pmd">Some text lorem ipsum.</p>
+      <p class="pmd">Navigate the website</p>
       <ul id="menu-primary">
         <li><a href="issue.html">Published Issues</a></li>
         <li><a href="documentation.html">Theme Documentation</a></li>
@@ -71,43 +71,64 @@
   </div>
   <!-- FIXED NAVBAR -->
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top appheader">
-        <ul class=" col-xs-4 navbar-nav mx-auto">
-            <li class="nav-item active">
-                <a class="navbar-brand" href="index.html"><img
-                    src="IMG/Group_4W.png" alt="" width="26" height="24"
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top appheader" aria-label="Third navbar example">
+
+      <div class="container-fluid ">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+          aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarsExample03">
+          <div class="p-1 flex-fill bd-highlight ">
+            <ul class=" col-xs-4 navbar-nav mx-auto justify-content-md-center">
+              <li class="nav-item active">
+                <a class="navbar-brand" href="index.html"><img src="IMG/Group_4.png" alt="" width="26" height="24"
                     class="d-inline-block align-text-top" id="logo">TECHnaissance</a>
-            </li>
-        </ul>
-        <div class="dropdown col-xs-4 navbar-nav mx-auto">
-            <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <!--CLASS = btn btn-secondary dropdown-toggle-->
-            Select Issue
-            </button>
-            <ul id="navbarDropdown" class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
-              <li> <button class="dropdown-item nav__link" type="button" data-article="article1">Issue No. 1</li>
-              <li> <button class="dropdown-item nav__link" type="button" data-article="article2">Issue No. 2</li>
-              <li> <button class="dropdown-item nav__link" type="button" data-article="article3">Issue No. 3</li>
+              </li>
             </ul>
-            
-        </div>
-        <div class="dropdown col-xs-4 navbar-nav mx-auto">
-            <button class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <!--CLASS = btn btn-secondary dropdown-toggle-->
-            Select Theme
-            </button>
-            <ul class="dropdown-menu card-body nav-section cardextra" aria-labelledby="dropdownMenuButton1">
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric Minimalism</li>
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web Brutalism</li>
-            <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
+          </div>
+
+          <div class="p-1 flex-fill bd-highlight">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" id="dropdown1" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">Select Issue</a>
+                <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
+                  <li> <button class="dropdown-item nav__link" type="button" value="article1"><a href="issue.html"> Issue No. I</a></li>
+                  <li> <button class="dropdown-item nav__link" type="button" value="article2"><a href="#">Issue No. II</a></li>
+                  <li> <button class="dropdown-item nav__link" type="button" value="article3"><a href="#">Issue No. III</a></li>
+                </ul>
+              </li>
             </ul>
+          </div>
+
+          <div class="p-1 flex-fill bd-highlight ">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0 justify-content-md-center">
+              <li class="nav-item dropdown">
+                <a class="dropdown-toggle nav-link" id="dropdownMenuButton2" href="#" id="dropdown03"
+                  data-bs-toggle="dropdown" aria-expanded="false">Select Theme</a>
+                <ul class="dropdown-menu card-body shadow nav-section cardextra cardpad" aria-labelledby="dropdown03">
+                  <li> <button class="dropdown-item nav__link" type="button"
+                      onclick="swapTheme('CSS/cyberpunk.css')">Cyberpunk theme</li>
+                  <li> <button class="dropdown-item nav__link" type="button"
+                      onclick="swapTheme('CSS/cowboycss.css')">Cowboy theme</li>
+                  <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/gm.css')">Geometric
+                      Minimalism</li>
+                  <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('CSS/wb.css')">Web
+                      Brutalism</li>
+                  <li> <button class="dropdown-item nav__link" type="button" onclick="swapTheme('#')">No Theme</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
         </div>
+      </div>
     </nav>
-</header>
+  </header>
 
     <main>
       <div class="container-fluid px-5 py-5" name="main">
@@ -116,7 +137,7 @@
           <h2 class="issue">Disclaimer and Copyrights</h2>
         </div>
         <div class="row" name="spacer2"></div>
-        <div class="row flex-container mS">
+        <div class="row flex-container ">
           <p>
             The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio Vitali. The documents contained in this web site have been selected for their length and complexity from variour Website.<br> <br>
 
