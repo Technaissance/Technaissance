@@ -27,6 +27,12 @@ body{
     font-family: 'BlueScreen', sans-serif;
   }
   
+  #box0 > #img1{
+    object-fit: cover;
+  }
+  .cardBannerI > img{
+    object-fit: cover;
+  }
 
   /*Navbar style*/
   .bg-dark{
@@ -53,11 +59,10 @@ body{
     text-shadow: 2px 2px 20px rgb(255, 255, 255);
     text-align: center;
   }
-
+  
   .nav-link{
     padding: 0 !important;
   }
-
   /*
   #dropdown1 {
     width: 25vw !important;
@@ -89,15 +94,6 @@ body{
 
   .active a img{
     margin-right: 10px;
-  }
-
-  .container-fluid > .row[name="spacer2"]{
-    border-style: dashed !important;
-    border-color: rgb(255, 255, 255) !important;
-    border-left-width: 0px !important;
-    border-right-width: 0px !important;
-    border-top-width: 0.5px !important;
-    border-bottom-width: 0px !important;
   }
 
   .row[name=spacer3]{
@@ -217,15 +213,10 @@ body{
 
 
   /*Scrolling wrapper issue styles*/
-  
+
   .cowboybgcolor{
     padding-left: calc(var(--bs-gutter-x) * 3);
     padding-right: calc(var(--bs-gutter-x) * 3);
-  }
-
-  .msPadding{
-    padding-left: calc(var(--bs-gutter-x) * 0);
-    padding-right: calc(var(--bs-gutter-x) * 0);
   }
 
   #TITLE{
@@ -234,7 +225,40 @@ body{
   #nav{
     list-style-type: none;
   }
+  /*Documentation styles*/
+  #nav > li >a{
+    font-size: 16pt;
+    color: rgb(255, 255, 255)!important;
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    text-decoration: none;
+  }
 
+  .col-sm-8 > .scrolling-wrapper-flexbox{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  .col-sm-8 > .scrolling-wrapper-flexbox > .cardBannerS{
+    height: 94%;
+  }
+  .card-img-top{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1rem;
+  }
+  .buttonWB{
+    position: absolute;
+    bottom: 1rem;
+  }
+  .cardbodyMS{
+    position:absolute;
+    top:0%;
+    right: 0%;
+    width: 50%;
+    height: 100%;
+
+  }
   .accordion-item{
     background-color: #000000;
     border-bottom: 1rem solid #C4C4C4;
@@ -304,29 +328,6 @@ body{
     
   }
 
-  #article > p{
-    margin-bottom: 3rem;
-  }
-
-
-  /*Documentation styles*/
-  #nav > li >a{
-    font-size: 10pt;
-    color: rgb(255, 255, 255)!important;
-    text-shadow: 2px 2px 10px rgb(255, 255, 255);
-    text-decoration: none;
-  }
-
-  /*Team styles*/
-  .col[name=mem1] > p{
-    font-size: calc(0.5rem + 0.5vw);
-  }
-
-  .mS{
-    padding-top: 5%;
-    padding-right: 40%;
-    padding-left: 3.6rem;
-  }
 
   /*Footer styles*/
   footer{
@@ -351,11 +352,7 @@ body{
     ul > li > a{
       font-size: 12pt;
     }
-    .col[name=mem1] > p{
-      font-size: calc(0.5rem + 0.3vw);
-    }
   }
-  
 
   @media (min-width: 1600px) {
     .active a{
@@ -363,11 +360,5 @@ body{
     }
     ul > li > a{
       font-size: 26pt;
-    }
-  }
-
-  @media screen and (min-width: 960px) {
-    .col[name=mem1] > p{
-      font-size: calc(0.5rem + 0.3vw);
     }
   }

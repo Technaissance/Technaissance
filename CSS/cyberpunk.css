@@ -1036,7 +1036,7 @@ hr {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 650px;
   margin: 0 auto;
   padding: 0 40px;
   font-family: "VT323";
