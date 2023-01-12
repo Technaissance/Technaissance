@@ -6,9 +6,32 @@ html{
   scroll-padding-top: 90px;
 }
 
-html{
-    scroll-behavior: smooth;
-  }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 500; /* Sit on top */
+  left: 0%;
+  top: 0%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content{
+  position: absolute;
+  top: 25%;
+  left:25%;
+  width: 50%;
+  height: 50%;
+  padding: 1%;
+}
+.close{
+  position: absolute;
+  width: 96%;
+  bottom: 15%;
+  background-color: #b30000;
+}
 /*
 .indexcard{
   
@@ -148,7 +171,7 @@ border: 0;
 
 /*Main content styles-TEAMS*/
 .col[name=mem1]{
-  height: 67vh;
+  height: 70%;
 }
 
 /* Team photo styles*/
