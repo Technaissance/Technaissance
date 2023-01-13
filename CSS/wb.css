@@ -304,6 +304,8 @@ body{
   }
   .col-sm-8 > .scrolling-wrapper-flexbox > .cardBannerS{
     height: 94%;
+    background-color: #000000;
+    border: 0.5px dashed #C4C4C4;
   }
   .card-img-top{
     width: 50%;
