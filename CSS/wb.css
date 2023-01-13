@@ -123,18 +123,66 @@ body{
     font-size: 1.35rem;
     cursor: pointer;
     border: 3px solid black;
-    background: linear-gradient(to right, black 50%, white 0%);
-    background-repeat: repeat;
-    background-size: 200%;
-    background-position: 100% 0;
-    box-shadow: 0.4rem 0.4rem 0 rgb(72, 72, 72);
+    background: linear-gradient(to right, black 50%, white 0%) !important;
+    background-repeat: repeat !important;
+    background-size: 200% !important;
+    background-position: 100% 0 !important;
+    box-shadow: 0.4rem 0.4rem 0 rgb(72, 72, 72) !important;
     transition: all 0.3s;
-    color: #000000;
+    color: #000000 !important;
     font-family: 'BlueScreen';
     font-size: 16pt;
     color: rgba(32, 185, 18, 1) !important;
     /*text-shadow: 10px 10px 20px 0px rgba(196, 196, 196, 0.75);*/
     text-shadow: 2px 2px 20px rgb(255, 255, 255);
+}
+
+.offcanvas-btn{
+  left:29.5vw !important ;
+}
+  /* SIDE-MENU SYLES */
+
+.offcanvas{
+  
+  background-color: rgba(255, 255, 255, 0);
+  filter: blur(5x);
+  border: none;
+  width: 30%;
+}
+.offcanvas-header{
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: blur(5x);
+  border: 1px dashed rgb(255, 255, 255);
+
+}
+.offcanvas-title{
+  color: #fafafa;
+  text-shadow:  2px 2px 20px rgb(255, 255, 255);
+}
+
+.offcanvas-body{
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: blur(5x);
+  border: 1px dashed rgb(255, 255, 255);
+}
+.offcanvas > .card-body{
+ margin-top: 4%;
+}
+
+.offcanvas-body > ul{
+  list-style-type: none;
+  padding: 0% !important;
+}
+
+.offcanvas-body > ul > li{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.offcanvas-body > ul > li > a{
+  font-size: calc(0.4rem + 1.5vw);
+  font-weight: bold;
 }
 
   /*scrolling wrapper home page*/
@@ -146,10 +194,17 @@ body{
     border-style: dashed !important;
     border-color: rgb(255, 255, 255) !important;
   }
-
-  .container[name=cover]{
+  .row[name=wrapper] > .col-sm-6 > .card{
+    background-color: black;
+  }
+  .cover{
     filter: grayscale(90%);
+    border-radius: 0; 
   }  
+  .col-sm-6 > .indexcard > .cardBannerI > img{
+    height: 40%;
+    position: absolute;
+  }
   /*Side Space Container*/
   .cardBanner {
     flex: 0 0 auto;
