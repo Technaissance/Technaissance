@@ -208,9 +208,12 @@ body{
     margin-bottom: 1.5rem;
   }
   .lastMS{
-    width: 40%;
+    width: 35%;
     left: 60% !important;
     border: 0.5px dashed aquamarine;
+    margin-top: 1.5rem;
+    margin-left: 3%;
+    background-color: rgba(32, 185, 18, 0.12);
   }
   /*Side Space Container*/
   .cardBanner {
