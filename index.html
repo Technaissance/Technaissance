@@ -92,7 +92,7 @@
                   aria-expanded="false">Select Issue</a>
                 <ul class="dropdown-menu card-body shadow nav-section cardextra" aria-labelledby="dropdown03">
                   <li> <button class="dropdown-item nav__link" type="button" value="article1"><a href="issue.html"> Issue No. I</a></li>
-                  <li> <button class="dropdown-item nav__link" type="button" value="article2"><a href="#">Issue No. II</a></li>
+                  <li> <button class="dropdown-item nav__link" type="button" value="article2" id="open-modal"><a href="#">Issue No. II</a></li>
                   <li> <button class="dropdown-item nav__link" type="button" value="article3"><a href="#">Issue No. III</a></li>
                 </ul>
               </li>
@@ -181,21 +181,21 @@
             <!-- Add a class to the buttons to select them in JavaScript -->
             <div class="card mb-3 cardBannerI">
               <img src="https://pablo751.github.io/various/indeximage2.jpg" id="img2" class="card-img cover" alt="...">
-              <div class="card-img-overlay d-flex align-items-end">
+              <div class="card-img-overlay d-flex align-items-end lastMS">
                 <button class="dynbutton cardextra" id="box1" >Article I</button>
               </div>
             </div>
             <div class="card mb-3 cardBannerI">
               <img src="https://pablo751.github.io/various/RL-011-1.jpg"
                 class="card-img cover" id="img3" alt="...">
-              <div class="card-img-overlay d-flex align-items-end">
+              <div class="card-img-overlay d-flex align-items-end lastMS">
                 <button class="dynbutton cardextra" id="box2">Article II</button>
               </div>
             </div>
             <div class="card mb-3 cardBannerI">
               <img src="https://pablo751.github.io/various/wiley_2019.jpg" id="img4"
                 class="card-img cover" alt="...">
-              <div class="card-img-overlay d-flex align-items-end">
+              <div class="card-img-overlay d-flex align-items-end lastMS">
                 <button class="dynbutton cardextra" id="box3">Article III</button>
               </div>
             </div>
@@ -204,7 +204,19 @@
           </div>
         </div>
       </div>
+      <!--
+      <!-- MODAL CODE HERE --
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          
+          <p> You must be a fast reader!!</p>
+          <p> The issue you clicked on has still not been uploaded yet, maybe drop you email so we can notify you when we publish it?</p>
 
+          <span class="close"> Close Modal &times;</span>
+        </div>
+      </div>
+      -->
+      
 
     </div>
   </main>
@@ -278,6 +290,27 @@ buttonContainer.addEventListener("click", function(event){
 
 </script>
 
+<!--Script for modal
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("open-modal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x),
+span.onclick = function(){
+  modal.style.display="none";
+}
+</script>
+-->
 
 </html>
