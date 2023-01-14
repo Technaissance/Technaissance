@@ -202,8 +202,15 @@ body{
     border-radius: 0; 
   }  
   .col-sm-6 > .indexcard > .cardBannerI > img{
-    height: 40%;
     position: absolute;
+    height: 97%;
+    width: 60%;
+    margin-bottom: 1.5rem;
+  }
+  .lastMS{
+    width: 40%;
+    left: 60% !important;
+    border: 0.5px dashed aquamarine;
   }
   /*Side Space Container*/
   .cardBanner {
